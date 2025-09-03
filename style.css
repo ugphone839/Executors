@@ -44,8 +44,8 @@
     --glass-dark: rgba(0, 0, 0, 0.05);
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     --glow: 0 0 30px rgba(88, 101, 242, 0.2);
-    --card-bg: rgba(0, 0, 0, 0.7);
-    --card-border: rgba(255, 255, 255, 0.05);
+    --card-bg: rgba(255, 255, 255, 0.9);
+    --card-border: rgba(0, 0, 0, 0.1);
     --text-color: #1a1a1a;
     --text-secondary: rgba(0, 0, 0, 0.8);
 }
@@ -807,4 +807,4 @@ h1::after {
         opacity: 1;
         transform: translateY(0);
     }
-}
+} 
