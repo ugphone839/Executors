@@ -1,38 +1,23 @@
-/* Light/Dark Mode Toggle Button */
-.btn-theme-toggle {
-    background-color: transparent;
-    border: none;
-    color: var(--text-color);
-    font-size: 1.5rem;
-    cursor: pointer;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    transition: color 0.3s ease;
+/* Variables for colors - Default is Dark Mode */
+:root {
+    --bg-color-main: #1a1a2e; /* Màu nền chính */
+    --card-bg-color: rgba(255, 255, 255, 0.05); /* Màu nền thẻ */
+    --border-color: rgba(255, 255, 255, 0.1); /* Màu viền */
+    --text-color: #e0e0e0; /* Màu chữ */
+    --primary-color: #e94560; /* Màu chính (ví dụ: nút Download) */
+    --secondary-color: #4b4b62; /* Màu phụ */
+    --btn-color: #3b3b4d; /* Màu nút khác */
+    --glass-bg: rgba(255, 255, 255, 0.08); /* Màu nền hiệu ứng kính */
+    --glass-border: 1px solid rgba(255, 255, 255, 0.18); /* Viền hiệu ứng kính */
+    --glass-box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); /* Đổ bóng hiệu ứng kính */
+    --search-bg: #2b2b4d; /* Màu nền thanh tìm kiếm */
+    --search-text: #e0e0e0; /* Màu chữ thanh tìm kiếm */
+    --link-color: #fff; /* Màu liên kết */
+    --link-hover-color: #e94560; /* Màu liên kết khi hover */
 }
 
-.btn-theme-toggle:hover {
-    color: var(--primary-color);
-}
-
-/* Dark Mode Styles */
-body.dark-mode {
-    --bg-color-main: #1a1a2e;
-    --card-bg-color: rgba(255, 255, 255, 0.05);
-    --border-color: rgba(255, 255, 255, 0.1);
-    --text-color: #e0e0e0;
-    --primary-color: #e94560;
-    --secondary-color: #4b4b62;
-    --btn-color: #3b3b4d;
-    --glass-bg: rgba(255, 255, 255, 0.08);
-    --glass-border: 1px solid rgba(255, 255, 255, 0.18);
-    --glass-box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    --search-bg: #2b2b4d;
-    --search-text: #e0e0e0;
-}
-
-/* Light Mode Styles (default) */
-body:not(.dark-mode) {
+/* Light Mode specific variables */
+body.light-mode {
     --bg-color-main: #f0f2f5;
     --card-bg-color: rgba(255, 255, 255, 0.8);
     --border-color: rgba(0, 0, 0, 0.1);
@@ -45,13 +30,19 @@ body:not(.dark-mode) {
     --glass-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     --search-bg: #e8eaf6;
     --search-text: #333;
+    --link-color: #3f51b5;
+    --link-hover-color: #303f9f;
 }
 
-/* Update colors based on variables */
+/* Apply variables to existing elements */
 body {
     background-color: var(--bg-color-main);
     color: var(--text-color);
     transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.container {
+    background-color: transparent; /* Giữ nguyên nền trong suốt */
 }
 
 .glass-card {
@@ -71,10 +62,34 @@ body {
     opacity: 0.7;
 }
 
-.btn-primary {
-    background-color: var(--primary-color);
+.btn-primary, .btn-download, .btn-alt {
+    background-color: var(--primary-color); /* Có thể cần điều chỉnh để phù hợp */
+    color: var(--text-color); /* Đảm bảo màu chữ trên nút dễ đọc */
 }
 
-.btn-download, .btn-alt {
-    background-color: var(--btn-color);
+.btn-primary:hover, .btn-download:hover, .btn-alt:hover {
+    filter: brightness(1.1); /* Làm sáng hơn khi hover */
 }
+
+/* Style for theme toggle button */
+.btn-theme-toggle {
+    background-color: transparent; /* Nút trong suốt */
+    border: none;
+    color: var(--text-color); /* Màu biểu tượng */
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute; /* Đặt vị trí tuyệt đối */
+    top: 20px; /* Cách trên 20px */
+    right: 20px; /* Cách phải 20px */
+    transition: color 0.3s ease;
+}
+
+.btn-theme-toggle:hover {
+    color: var(--primary-color); /* Đổi màu khi hover */
+}
+
+/* Adjustments for header to accommodate the button */
+header {
+    position: relative; /* Đặt position relative cho header để nút theme-toggle có thể định vị tuyệt đối trong nó */
+}
+
