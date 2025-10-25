@@ -52,10 +52,10 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Krnl iOS",
                 logo: "https://cdn.wearedevs.net/images/thumbnails/krnl.jpeg",
-                version: "2.685",
+                version: "2.695",
                 status: "Online",
                 links: [
-                    { text: "Global", url: "https://krnl.filenetwork.vip/file/Krnl_release_694.ipa", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "Global", url: "https://krnl.filenetwork.vip/file/Krnl_release_695.ipa", className: "btn-download-main", statusText: "Global: Online" },
                     { text: "VNG", url: "https://krnl.filenetwork.vip/file/Krnl_vng_release_685.ipa", className: "btn-download-alt", statusText: "VNG: Online" }
                 ]
             },
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Arceus X Neo iOS",
                 logo: "https://sf-static.upanhlaylink.com/img/image_2025091341b69c6afa4e02709bf1ba299bdbafbd.jpg",
-                version: "2.685",
+                version: "2.694",
                 status: "Offline",
                 links: [{ text: "Download", url: "https://www.mediafire.com/file/6lcgdmn244ta2n5/ArceusX_1.6.4_2.668.658.ipa/file", className: "btn-download-main", statusText: "Status: Offline" }]
             },
@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Codex iOS",
                 logo: "https://codex.lol/static/icons/icon.svg",
-                version: "2.685",
+                version: "2.694",
                 status: "Offline",
                 links: [{ text: "Download", url: "https://www.mediafire.com/file/7afzer5xxo1110n/Codex_2.674.782.ipa/file", className: "btn-download-main", statusText: "Status: Offline" }]
             },
@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Delta iOS",
                 logo: "https://sf-static.upanhlaylink.com/img/image_2025091320b780aa4e49c945bdddf569984a41b6.jpg",
-                version: "2.685",
+                version: "2.695",
                 status: "Online",
                 links: [{ text: "Download", url: "https://deltaios-executor.com/", className: "btn-download-main", statusText: "Status: Online" }]
             }
