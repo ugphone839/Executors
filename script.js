@@ -1,68 +1,84 @@
 document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('executor-search');
     const filterTags = document.querySelectorAll('.filter-tag');
-    const sections = document.querySelectorAll('.glass-card');
+    const sections = document.querySelectorAll('.glass-section'); // Đã sửa tên class
     const executorCards = document.querySelectorAll('.executor-card');
+    const themeToggle = document.querySelector('.theme-toggle');
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('reveal');
-            }
-        });
-    }, { threshold: 0.1 });
-
-    sections.forEach(section => observer.observe(section));
+    // --- 1. Filter Logic ---
 
     function filterExecutors() {
         const searchTerm = searchInput.value.toLowerCase();
+        // Lấy filter đang active từ thẻ có class 'active'
         const activeFilter = document.querySelector('.filter-tag.active')?.getAttribute('data-filter') || 'all';
 
-        executorCards.forEach(card => {
-            const sectionId = card.closest('section').id;
-            const executorName = card.querySelector('h3').textContent.toLowerCase();
-            const matchesSearch = !searchTerm || executorName.includes(searchTerm);
-            const matchesFilter = activeFilter === 'all' || sectionId === activeFilter;
-
-            card.classList.toggle('hidden', !(matchesSearch && matchesFilter));
-        });
-
         sections.forEach(section => {
-            const hasVisibleCards = section.querySelectorAll('.executor-card:not(.hidden)').length > 0;
-            section.classList.toggle('hidden', !hasVisibleCards);
+            const sectionId = section.id;
+            let hasVisibleCardsInSection = false;
+
+            // Lọc từng card trong section
+            section.querySelectorAll('.executor-card').forEach(card => {
+                const executorName = card.querySelector('h3').textContent.toLowerCase();
+                const matchesSearch = !searchTerm || executorName.includes(searchTerm);
+
+                // Nếu filter là 'all' HOẶC sectionId khớp với filter
+                const matchesFilter = activeFilter === 'all' || sectionId === activeFilter;
+
+                // Nếu khớp cả tìm kiếm và bộ lọc section
+                const isVisible = matchesSearch && matchesFilter;
+                
+                // Ẩn/hiện card
+                card.style.display = isVisible ? 'block' : 'none';
+
+                if (isVisible) {
+                    hasVisibleCardsInSection = true;
+                }
+            });
+
+            // Ẩn/hiện toàn bộ Section
+            if (activeFilter === 'all' || activeFilter === sectionId) {
+                // Nếu activeFilter là 'all', chỉ ẩn section nếu không có card nào khớp với tìm kiếm.
+                // Nếu activeFilter là sectionId, luôn hiện section đó (nếu có card).
+                section.style.display = hasVisibleCardsInSection ? 'block' : 'none';
+                section.classList.toggle('hidden', !hasVisibleCardsInSection);
+            } else {
+                 // Nếu không khớp với filter đang chọn thì ẩn section đi
+                section.style.display = 'none';
+                section.classList.add('hidden');
+            }
         });
     }
 
-    if (searchInput) {
-        searchInput.addEventListener('input', filterExecutors);
-    }
+    // Event listeners cho Search
+    searchInput.addEventListener('input', filterExecutors);
 
+    // Event listeners cho Filter Tags
     filterTags.forEach(tag => {
         tag.addEventListener('click', () => {
+            // Xóa active khỏi tất cả các tags
             filterTags.forEach(t => t.classList.remove('active'));
+            // Thêm active vào tag được click
             tag.classList.add('active');
+            
+            // Xóa input tìm kiếm (để lọc theo tag chính xác hơn)
+            searchInput.value = '';
+
+            // Chạy lại hàm lọc
             filterExecutors();
         });
     });
-
-    window.addEventListener('mousemove', (e) => {
-        const moveX = (e.clientX - window.innerWidth / 2) * 0.01;
-        const moveY = (e.clientY - window.innerHeight / 2) * 0.01;
-
-        document.querySelectorAll('.blob').forEach(blob => {
-            const speed = parseInt(blob.classList[0].replace('blob', '')) * 0.5;
-            blob.style.transform = `translate(${moveX * speed}px, ${moveY * speed}px)`;
-        });
-    });
-
+    
+    // Khởi tạo trạng thái lọc ban đầu
     filterExecutors();
 
-    // Theme Toggle Functionality
-    const themeToggle = document.querySelector('.theme-toggle');
+
+    // --- 2. Theme Toggle Logic ---
+    
+    // Check local storage for theme preference
+    const savedTheme = localStorage.getItem('theme');
     const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
 
-    // Set initial theme based on user preference or saved preference
-    const savedTheme = localStorage.getItem('theme');
+    // Set initial theme
     const initialTheme = savedTheme || (prefersDarkScheme.matches ? 'dark' : 'light');
     document.documentElement.setAttribute('data-theme', initialTheme);
     updateThemeIcon(initialTheme);
