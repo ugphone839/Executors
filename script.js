@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Cryptic",
                 logo: "https://getcryptic.net/assets/moonglow-HcoSKqMr.png",
-                version: "2.694",
+                version: "2.695",
                 status: "Online",
                 links: [
                     { text: "Global", url: "https://www.mediafire.com/file/6q6vmnynk7gu2uv/Cryptic_2.695.956_APK.apk/file", className: "btn-download-main", statusText: "Global: Online" },
