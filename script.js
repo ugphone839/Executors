@@ -19,8 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 name: "Velocity",
                 logo: "https://files.catbox.moe/tj6brv.png", 
                 version: "version-4aeb17bd13994560",
-                status: "Maintenance",
-                statusNote: "(Chưa Update)",
+                status: "Offline",
                 links: [{ text: "Download", url: "https://gofile.io/d/OAdat2", className: "btn-download-main" }]
             },
             // SWIFT
@@ -56,8 +55,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 version: "2.685",
                 status: "Online",
                 links: [
-                    { text: "Global", url: "https://krnl.filenetwork.vip/file/Krnl_release_694.ipa", className: "btn-download-main", statusText: "Status Global: Online" },
-                    { text: "VNG", url: "https://krnl.filenetwork.vip/file/Krnl_vng_release_685.ipa", className: "btn-download-alt", statusText: "Status VNG: Online" }
+                    { text: "Global", url: "https://krnl.filenetwork.vip/file/Krnl_release_694.ipa", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "VNG", url: "https://krnl.filenetwork.vip/file/Krnl_vng_release_685.ipa", className: "btn-download-alt", statusText: "VNG: Online" }
                 ]
             },
             // ARCEUS X NEO iOS
@@ -93,8 +92,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 version: "6.695",
                 status: "Online",
                 links: [
-                    { text: "Global", url: "https://www.mediafire.com/file/llra8r3n7gi6n8a/Roblox_Arceus_X_NEO_1.9.0_-_FIXED.apk/file", className: "btn-download-main", statusText: "Status Global: Online" },
-                    { text: "VNG", url: "https://www.mediafire.com/file/glclfeebbmhzxeq/Roblox_-_VNG_Arceus_X_NEO_1.9.0.apk/file", className: "btn-download-alt", statusText: "Status VNG: Online" }
+                    { text: "Global", url: "https://www.mediafire.com/file/llra8r3n7gi6n8a/Roblox_Arceus_X_NEO_1.9.0_-_FIXED.apk/file", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "VNG", url: "https://www.mediafire.com/file/glclfeebbmhzxeq/Roblox_-_VNG_Arceus_X_NEO_1.9.0.apk/file", className: "btn-download-alt", statusText: "VNG: Online" }
                 ]
             },
             // CODEX
@@ -104,8 +103,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 version: "2.695",
                 status: "Online",
                 links: [
-                    { text: "Global", url: "https://gofile.io/d/UzbLud", className: "btn-download-main", statusText: "Status Global: Online" },
-                    { text: "VNG", url: "https://www.mediafire.com/file/3piv87u6044r554/Codex_v2.689_VNG.apk/file", className: "btn-download-alt", statusText: "Status VNG: Online" }
+                    { text: "Global", url: "https://gofile.io/d/UzbLud", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "VNG", url: "https://www.mediafire.com/file/3piv87u6044r554/Codex_v2.689_VNG.apk/file", className: "btn-download-alt", statusText: "VNG: Online" }
                 ]
             },
             // CRYPTIC
@@ -115,8 +114,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 version: "2.694",
                 status: "Online",
                 links: [
-                    { text: "Global", url: "https://www.mediafire.com/file/j1rssfpm6urbpu1/Cryptic_2.694.983_APK.apk/file", className: "btn-download-main", statusText: "Status Global: Online" },
-                    { text: "VNG", url: "https://www.mediafire.com/file/pf4k4kacl46v02b/Cryptic+2.689.880+VNG.apk/file", className: "btn-download-alt", statusText: "Status VNG: Online" }
+                    { text: "Global", url: "https://www.mediafire.com/file/6q6vmnynk7gu2uv/Cryptic_2.695.956_APK.apk/file", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "VNG", url: "https://www.mediafire.com/file/pf4k4kacl46v02b/Cryptic+2.689.880+VNG.apk/file", className: "btn-download-alt", statusText: "VNG: Offline" }
                 ]
             },
             // DELTA
@@ -134,8 +133,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 version: "2.695",
                 status: "Online",
                 links: [
-                    { text: "Global", url: "https://wearedevs.net/d/Ronix", className: "btn-download-main", statusText: "Status Global: Online" },
-                    { text: "VNG", url: "https://wearedevs.net/d/Ronix", className: "btn-download-alt", statusText: "Status VNG: Online" }
+                    { text: "Global", url: "https://wearedevs.net/d/Ronix", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "VNG", url: "https://wearedevs.net/d/Ronix", className: "btn-download-alt", statusText: "VNG: Online" }
                 ]
             },
             // KRNL
@@ -145,8 +144,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 version: "2.695",
                 status: "Online",
                 links: [
-                    { text: "Global", url: "https://krnl.filenetwork.vip/android.html", className: "btn-download-main", statusText: "Status Global: Online" },
-                    { text: "VNG", url: "https://krnl.filenetwork.vip/android.html", className: "btn-download-alt", statusText: "Status VNG: Online" }
+                    { text: "Global", url: "https://krnl.filenetwork.vip/android.html", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "VNG", url: "https://krnl.filenetwork.vip/android.html", className: "btn-download-alt", statusText: "VNG: Online" }
                 ]
             },
             // TRIGON
