@@ -480,3 +480,23 @@ footer {
         gap: 0.5rem;
     }
 }
+/* BỔ SUNG để các nút Download xuống dòng */
+.card-actions {
+    flex-wrap: wrap; /* Cho phép các nút xuống dòng */
+    gap: 8px; /* Thêm khoảng cách giữa các nút */
+}
+
+.card-actions .btn {
+    flex-grow: 1; /* Cho phép các nút mở rộng */
+    max-width: 100%; /* Đảm bảo nút chiếm 100% chiều rộng khi cần xuống dòng */
+}
+
+/* Tối ưu hóa trên điện thoại để các nút không quá to */
+@media (max-width: 600px) {
+    .card-actions {
+        flex-direction: column; /* Trên màn hình nhỏ, buộc các nút xuống dòng hoàn toàn */
+    }
+    .card-actions .btn {
+        width: 100%; /* Đảm bảo nút chiếm toàn bộ chiều rộng */
+    }
+}
