@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // VOLCANO
             {
                 name: "Volcano",
-                logo: "https://volcano.wtf/assets/img/logo.png",
+                logo: "https://files.catbox.moe/ucf3km.png",
                 version: "version-4aeb17bd13994560",
                 status: "Online",
                 links: [{ text: "Download", url: "https://volcano.wtf/", className: "btn-download-main" }]
@@ -17,8 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // VELOCITY
             {
                 name: "Velocity",
-                // ⚠️ HÃY THAY THẾ LINK SAU BẰNG LINK ẢNH PNG GỐC CỦA VELOCITY
-                logo: "https://YOUR-VELOCITY-PNG-LINK.png", 
+                logo: "https://files.catbox.moe/tj6brv.png", 
                 version: "version-4aeb17bd13994560",
                 status: "Maintenance",
                 statusNote: "(Chưa Update)",
@@ -27,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // SWIFT
             {
                 name: "Swift",
-                logo: "https://getswift.vip/assets/img/logo.png",
+                logo: "https://files.catbox.moe/5krpqt.webp",
                 version: "version-4aeb17bd13994560",
                 status: "Offline",
                 links: [{ text: "Download", url: "https://getswift.vip/download", className: "btn-download-main" }]
@@ -35,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // SOLARA
             {
                 name: "Solara",
-                logo: "https://getsolara.dev/assets/logo.png",
+                logo: "https://files.catbox.moe/gjzzjt.png",
                 version: "version-4aeb17bd13994560",
                 status: "Online",
                 links: [{ text: "Download", url: "https://getsolara.dev/download/", className: "btn-download-main" }]
@@ -43,8 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // XENO
             {
                 name: "Xeno",
-                // ⚠️ HÃY THAY THẾ LINK SAU BẰNG LINK ẢNH PNG GỐC CỦA XENO
-                logo: "https://YOUR-XENO-PNG-LINK.png", 
+                logo: "https://www.xeno.onl/images/xeno.png", 
                 version: "version-4aeb17bd13994560",
                 status: "Online",
                 links: [{ text: "Download", url: "https://www.mediafire.com/file/tteuvpbe9k4p20f/Xeno-v1.2.85.zip/file", className: "btn-download-main" }]
