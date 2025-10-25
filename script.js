@@ -17,7 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
             // VELOCITY
             {
                 name: "Velocity",
-                logo: "https://i.imgur.com/exampleVelocity.png", // Dùng link ảnh placeholder
+                // ⚠️ HÃY THAY THẾ LINK SAU BẰNG LINK ẢNH PNG GỐC CỦA VELOCITY
+                logo: "https://YOUR-VELOCITY-PNG-LINK.png", 
                 version: "version-4aeb17bd13994560",
                 status: "Maintenance",
                 statusNote: "(Chưa Update)",
@@ -42,7 +43,8 @@ document.addEventListener('DOMContentLoaded', () => {
             // XENO
             {
                 name: "Xeno",
-                logo: "https://i.imgur.com/exampleXeno.png", // Dùng link ảnh placeholder
+                // ⚠️ HÃY THAY THẾ LINK SAU BẰNG LINK ẢNH PNG GỐC CỦA XENO
+                logo: "https://YOUR-XENO-PNG-LINK.png", 
                 version: "version-4aeb17bd13994560",
                 status: "Online",
                 links: [{ text: "Download", url: "https://www.mediafire.com/file/tteuvpbe9k4p20f/Xeno-v1.2.85.zip/file", className: "btn-download-main" }]
