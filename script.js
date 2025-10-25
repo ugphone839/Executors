@@ -1,15 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('executor-search');
     const filterTags = document.querySelectorAll('.filter-tag');
-    const sections = document.querySelectorAll('.glass-section'); // Đã sửa tên class
-    const executorCards = document.querySelectorAll('.executor-card');
+    const sections = document.querySelectorAll('.glass-section');
     const themeToggle = document.querySelector('.theme-toggle');
 
     // --- 1. Filter Logic ---
 
     function filterExecutors() {
         const searchTerm = searchInput.value.toLowerCase();
-        // Lấy filter đang active từ thẻ có class 'active'
+        // Lấy data-filter của thẻ đang active, mặc định là 'all'
         const activeFilter = document.querySelector('.filter-tag.active')?.getAttribute('data-filter') || 'all';
 
         sections.forEach(section => {
@@ -21,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const executorName = card.querySelector('h3').textContent.toLowerCase();
                 const matchesSearch = !searchTerm || executorName.includes(searchTerm);
 
-                // Nếu filter là 'all' HOẶC sectionId khớp với filter
+                // Kiểm tra xem section có khớp với filter đang chọn không
                 const matchesFilter = activeFilter === 'all' || sectionId === activeFilter;
 
                 // Nếu khớp cả tìm kiếm và bộ lọc section
@@ -36,16 +35,9 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             // Ẩn/hiện toàn bộ Section
-            if (activeFilter === 'all' || activeFilter === sectionId) {
-                // Nếu activeFilter là 'all', chỉ ẩn section nếu không có card nào khớp với tìm kiếm.
-                // Nếu activeFilter là sectionId, luôn hiện section đó (nếu có card).
-                section.style.display = hasVisibleCardsInSection ? 'block' : 'none';
-                section.classList.toggle('hidden', !hasVisibleCardsInSection);
-            } else {
-                 // Nếu không khớp với filter đang chọn thì ẩn section đi
-                section.style.display = 'none';
-                section.classList.add('hidden');
-            }
+            const shouldShowSection = activeFilter === 'all' ? hasVisibleCardsInSection : activeFilter === sectionId;
+            
+            section.style.display = shouldShowSection ? 'block' : 'none';
         });
     }
 
@@ -60,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Thêm active vào tag được click
             tag.classList.add('active');
             
-            // Xóa input tìm kiếm (để lọc theo tag chính xác hơn)
+            // Xóa input tìm kiếm để lọc theo tag chính xác hơn
             searchInput.value = '';
 
             // Chạy lại hàm lọc
