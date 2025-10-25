@@ -1,10 +1,10 @@
 /* --- Filter Tags Styling --- */
 .filter-tags {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+    display: flex; /* Bật Flexbox để căn chỉnh các thẻ */
+    justify-content: center; /* Căn giữa */
+    gap: 10px; /* Khoảng cách giữa các thẻ */
     margin-top: 1.5rem;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Cho phép các thẻ xuống dòng trên màn hình nhỏ */
 }
 
 .filter-tag {
@@ -43,7 +43,7 @@
 
 /* Ẩn section khi không được chọn */
 .glass-section.hidden {
-    display: none;
+    display: none !important;
     opacity: 0;
     transform: translateY(20px);
     transition: all 0.5s ease;
