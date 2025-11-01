@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Volcano",
                 logo: "https://files.catbox.moe/ucf3km.png",
-                version: "version-4aeb17bd13994560",
+                version: "version-889d2588b25a43d1",
                 status: "Online",
                 links: [{ text: "Download", url: "https://volcano.wtf/", className: "btn-download-main" }]
             },
@@ -18,9 +18,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Velocity",
                 logo: "https://files.catbox.moe/tj6brv.png", 
-                version: "version-4aeb17bd13994560",
+                version: "version-889d2588b25a43d1",
                 status: "Offline",
-                links: [{ text: "Download", url: "https://gofile.io/d/OAdat2", className: "btn-download-main" }]
+                links: [{ text: "Download", url: "https://gofile.io/d/YDhJnQ", className: "btn-download-main" }]
             },
             // SWIFT
             {
@@ -34,17 +34,17 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Solara",
                 logo: "https://files.catbox.moe/gjzzjt.png",
-                version: "version-4aeb17bd13994560",
+                version: "version-889d2588b25a43d1",
                 status: "Online",
-                links: [{ text: "Download", url: "https://getsolara.dev/download/", className: "btn-download-main" }]
+                links: [{ text: "Download", url: "https://www.mediafire.com/file/hja37f4c4cesnjd/Solara.Dir.zip/file/", className: "btn-download-main" }]
             },
             // XENO
             {
                 name: "Xeno",
                 logo: "https://www.xeno.onl/images/xeno.png", 
-                version: "version-4aeb17bd13994560",
+                version: "version-889d2588b25a43d1",
                 status: "Online",
-                links: [{ text: "Download", url: "https://www.mediafire.com/file/tteuvpbe9k4p20f/Xeno-v1.2.85.zip/file", className: "btn-download-main" }]
+                links: [{ text: "Download", url: "https://www.mediafire.com/file/5mr3ciegnrf8xnw/Xeno-v1.2.85.zip/file", className: "btn-download-main" }]
             }
         ],
         ios: [
