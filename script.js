@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 version: "2.695",
                 status: "Online",
                 links: [
-                    { text: "Global", url: "https://krnl.filenetwork.vip/file/Krnl_release_695.ipa", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "Global", url: "https://krnl.filenetwork.vip/file/Krnl_release_695.ipa", className: "btn-download-main", statusText: "Global: Offline" },
                     { text: "VNG", url: "https://krnl.filenetwork.vip/file/Krnl_vng_release_685.ipa", className: "btn-download-alt", statusText: "VNG: Offline" }
                 ]
             },
@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 version: "2.695",
                 status: "Online",
                 links: [
-                    { text: "Global", url: "https://gofile.io/d/UzbLud", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "Global", url: "https://gofile.io/d/UzbLud", className: "btn-download-main", statusText: "Global: Offline" },
                     { text: "VNG", url: "https://www.mediafire.com/file/3piv87u6044r554/Codex_v2.689_VNG.apk/file", className: "btn-download-alt", statusText: "VNG: Online" }
                 ]
             },
@@ -111,10 +111,10 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Cryptic",
                 logo: "https://getcryptic.net/assets/moonglow-HcoSKqMr.png",
-                version: "2.695",
+                version: "2.696",
                 status: "Online",
                 links: [
-                    { text: "Global", url: "https://www.mediafire.com/file/6q6vmnynk7gu2uv/Cryptic_2.695.956_APK.apk/file", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "Global", url: "https://www.mediafire.com/file/lj2ek86ykj6f9ld/Cryptic_2.696.799_APK.apk/file", className: "btn-download-main", statusText: "Global: Online" },
                     { text: "VNG", url: "https://www.mediafire.com/file/pf4k4kacl46v02b/Cryptic+2.689.880+VNG.apk/file", className: "btn-download-alt", statusText: "VNG: Offline" }
                 ]
             },
@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 version: "2.695",
                 status: "Online",
                 links: [
-                    { text: "Global", url: "https://wearedevs.net/d/Ronix", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "Global", url: "https://wearedevs.net/d/Ronix", className: "btn-download-main", statusText: "Global: Offline" },
                     { text: "VNG", url: "https://wearedevs.net/d/Ronix", className: "btn-download-alt", statusText: "VNG: Online" }
                 ]
             },
@@ -152,17 +152,17 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Trigon",
                 logo: "https://trigonevo.com/wp-content/uploads/2021/09/cropped-New-Trigon-with-Shadow-300x300.png.webp",
-                version: "2.695",
+                version: "2.696",
                 status: "Online",
-                links: [{ text: "Download", url: "https://www.mediafire.com/file/wb805lrhytsypk5/Trigon_v2.695.956.apk/file", className: "btn-download-main", statusText: "Status Global: Online" }]
+                links: [{ text: "Download", url: "https://www.mediafire.com/file/ydbo0w4g2d2r6vp/Trigon_v2.696.799.apk/file", className: "btn-download-main", statusText: "Status Global: Online" }]
             },
             // VEGA X
             {
                 name: "Vega X",
                 logo: "https://vegax.gg/assets/img/V_logo_white.png",
-                version: "2.695",
+                version: "2.696",
                 status: "Online",
-                links: [{ text: "Download", url: "https://github.com/1f0yt/community/releases/download/Vegax/Vega-X-v695.apk", className: "btn-download-main", statusText: "Status Global: Online" }]
+                links: [{ text: "Download", url: "https://www.mediafire.com/file/zzsqmekg8q49a3c/Vega-X-696.apk/file", className: "btn-download-main", statusText: "Status Global: Online" }]
             }
         ]
     };
