@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 name: "Volcano",
                 logo: "https://files.catbox.moe/ucf3km.png",
                 version: "version-889d2588b25a43d1",
-                status: "Online",
+                status: "Offline",
                 links: [{ text: "Download", url: "https://volcano.wtf/", className: "btn-download-main" }]
             },
             // VELOCITY
@@ -35,16 +35,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 name: "Solara",
                 logo: "https://files.catbox.moe/gjzzjt.png",
                 version: "version-889d2588b25a43d1",
-                status: "Online",
+                status: "Offline",
                 links: [{ text: "Download", url: "https://www.mediafire.com/file/hja37f4c4cesnjd/Solara.Dir.zip/file/", className: "btn-download-main" }]
             },
             // XENO
             {
                 name: "Xeno",
                 logo: "https://www.xeno.onl/images/xeno.png", 
-                version: "version-889d2588b25a43d1",
+                version: "version-f6dd34ecac7b4642",
                 status: "Online",
-                links: [{ text: "Download", url: "https://www.mediafire.com/file/5mr3ciegnrf8xnw/Xeno-v1.2.85.zip/file", className: "btn-download-main" }]
+                links: [{ text: "Download", url: "https://www.mediafire.com/file/vmgutpnc2xofe2x/Xeno-v1.2.90.zip/file", className: "btn-download-main" }]
             }
         ],
         ios: [
