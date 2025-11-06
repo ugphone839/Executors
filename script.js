@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 name: "Velocity",
                 logo: "https://files.catbox.moe/tj6brv.png", 
                 version: "version-889d2588b25a43d1",
-                status: "Offline",
+                status: "Online",
                 links: [{ text: "Download", url: "https://gofile.io/d/YDhJnQ", className: "btn-download-main" }]
             },
             // SWIFT
