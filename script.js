@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 name: "Velocity",
                 logo: "https://files.catbox.moe/tj6brv.png", 
                 version: "version-889d2588b25a43d1",
-                status: "Offline",
+                status: "Online",
                 links: [{ text: "Download", url: "https://gofile.io/d/YDhJnQ", className: "btn-download-main" }]
             },
             // BUNNI
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 name: "Solara",
                 logo: "https://files.catbox.moe/gjzzjt.png",
                 version: "version-889d2588b25a43d1",
-                status: "Offline",
+                status: "Online",
                 links: [{ text: "Download", url: "https://www.mediafire.com/file/hja37f4c4cesnjd/Solara.Dir.zip/file/", className: "btn-download-main" }]
             },
             // XENO
