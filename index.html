@@ -7,6 +7,35 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        .rainbow-text {
+            background: linear-gradient(
+                90deg,
+                #ff0000 0%,    /* Đỏ */
+                #ff7f00 16.6%, /* Cam */
+                #ffff00 33.3%, /* Vàng */
+                #00ff00 50%,   /* Xanh lá */
+                #0000ff 66.6%, /* Xanh dương */
+                #4b0082 83.3%, /* Chàm */
+                #8b00ff 100%   /* Tím */
+            );
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 200% 100%;
+            animation: rainbow-animation 3s linear infinite;
+            font-weight: bold;
+        }
+
+        @keyframes rainbow-animation {
+            0% {
+                background-position: 200% 0;
+            }
+            100% {
+                background-position: -200% 0;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="theme-toggle">
@@ -66,7 +95,7 @@
         </main>
         
         <footer>
-            <p>Designed with ✨ by <span class="footer-credit">DS_Zeus & Giang</p>
+            <p>Designed with <span class="rainbow-text">✨</span> by <span class="rainbow-text">DS_Zeus & Giang</span></p>
         </footer>
     </div>
     
