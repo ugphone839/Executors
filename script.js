@@ -19,8 +19,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 name: "Velocity",
                 logo: "https://files.catbox.moe/tj6brv.png", 
                 version: "version-889d2588b25a43d1",
-                status: "Online",
+                status: "Offline",
                 links: [{ text: "Download", url: "https://gofile.io/d/YDhJnQ", className: "btn-download-main" }]
+            },
+            // BUNNI
+            {
+                name: "Bunni",
+                logo: "https://cdn.discordapp.com/attachments/1361339819220926675/1435961614347145336/bunni-logo.png?ex=690ddef7&is=690c8d77&hm=af9053c8f46ad9c6334913f6c2b3cd2b0e83c5196305c40473df05b60c3021b2&",
+                version: "version-889d2588b25a43d1",
+                status: "Offline",
+                links: [{ text: "Download", url: "https://volcano.wtf/", className: "btn-download-main" }]
             },
             // SWIFT
             {
@@ -29,6 +37,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 version: "version-4aeb17bd13994560",
                 status: "Offline",
                 links: [{ text: "Download", url: "https://getswift.vip/download", className: "btn-download-main" }]
+            },
+            // TRIGON PC
+            {
+                name: "Trigon PC",
+                logo: "https://cdn.discordapp.com/attachments/1361339819220926675/1435962042207961140/trigon-executor-300x300.webp?ex=690ddf5d&is=690c8ddd&hm=7a97bb5e3139f4dab6d7a0bd994d05c605bfde6ddcced4b98c310d286f7e4c7e&",
+                version: "version-889d2588b25a43d1",
+                status: "Offline",
+                links: [{ text: "Download", url: "https://volcano.wtf/", className: "btn-download-main" }]
             },
             // SOLARA
             {
