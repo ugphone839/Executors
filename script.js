@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Swift",
                 logo: "https://files.catbox.moe/5krpqt.webp",
-                version: "version-4aeb17bd13994560",
+                version: "Chưa Up",
                 status: "Offline",
                 links: [{ text: "Download", url: "https://getswift.vip/download", className: "btn-download-main" }]
             },
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Trigon PC",
                 logo: "https://cdn.discordapp.com/attachments/1361339819220926675/1435962042207961140/trigon-executor-300x300.webp?ex=690ddf5d&is=690c8ddd&hm=7a97bb5e3139f4dab6d7a0bd994d05c605bfde6ddcced4b98c310d286f7e4c7e&",
-                version: "version-889d2588b25a43d1",
+                version: "Chờ Cập Nhật",
                 status: "Offline",
                 links: [{ text: "Download", url: "https://volcano.wtf/", className: "btn-download-main" }]
             },
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 logo: "https://files.catbox.moe/gjzzjt.png",
                 version: "version-f6dd34ecac7b4642",
                 status: "Online",
-                links: [{ text: "Download", url: "https://www.mediafire.com/file/hja37f4c4cesnjd/Solara.Dir.zip/file/", className: "btn-download-main" }]
+                links: [{ text: "Download", url: "https://getsolara.dev/", className: "btn-download-main" }]
             },
             // XENO
             {
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 logo: "https://www.xeno.onl/images/xeno.png", 
                 version: "version-f6dd34ecac7b4642",
                 status: "Online",
-                links: [{ text: "Download", url: "https://www.mediafire.com/file/vmgutpnc2xofe2x/Xeno-v1.2.90.zip/file", className: "btn-download-main" }]
+                links: [{ text: "Download", url: "https://www.xeno.onl/download", className: "btn-download-main" }]
             }
         ],
         ios: [
