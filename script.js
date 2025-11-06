@@ -26,8 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Bunni",
                 logo: "https://cdn.discordapp.com/attachments/1361339819220926675/1435961614347145336/bunni-logo.png?ex=690ddef7&is=690c8d77&hm=af9053c8f46ad9c6334913f6c2b3cd2b0e83c5196305c40473df05b60c3021b2&",
-                version: "version-889d2588b25a43d1",
-                status: "Offline",
+                version: "version-f6dd34ecac7b4642",
+                status: "Online",
                 links: [{ text: "Download", url: "https://github.com/vmp0rblx/bunni-download/raw/refs/heads/main/latestbunni.zip", className: "btn-download-main" }]
             },
             // SWIFT
@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 status: "Online",
                 links: [
                     { text: "Global", url: "https://www.mediafire.com/file/lh42jsncojxil7f/Roblox_Arceus_X_NEO_1.9.2.apk/file", className: "btn-download-main", statusText: "Global: Online" },
-                    { text: "VNG", url: "https://www.mediafire.com/file/glclfeebbmhzxeq/Roblox_-_VNG_Arceus_X_NEO_1.9.0.apk/file", className: "btn-download-alt", statusText: "VNG: Online" }
+                    { text: "VNG", url: "https://www.mediafire.com/file/glclfeebbmhzxeq/Roblox_-_VNG_Arceus_X_NEO_1.9.0.apk/file", className: "btn-download-alt", statusText: "VNG: Offline" }
                 ]
             },
             // CODEX
@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 status: "Online",
                 links: [
                     { text: "Global", url: "https://gofile.io/d/UzbLud", className: "btn-download-main", statusText: "Global: Offline" },
-                    { text: "VNG", url: "https://www.mediafire.com/file/3piv87u6044r554/Codex_v2.689_VNG.apk/file", className: "btn-download-alt", statusText: "VNG: Online" }
+                    { text: "VNG", url: "https://www.mediafire.com/file/3piv87u6044r554/Codex_v2.689_VNG.apk/file", className: "btn-download-alt", statusText: "VNG: Offline" }
                 ]
             },
             // CRYPTIC
@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 status: "Online",
                 links: [
                     { text: "Global", url: "https://wearedevs.net/d/Ronix", className: "btn-download-main", statusText: "Global: Offline" },
-                    { text: "VNG", url: "https://wearedevs.net/d/Ronix", className: "btn-download-alt", statusText: "VNG: Online" }
+                    { text: "VNG", url: "https://wearedevs.net/d/Ronix", className: "btn-download-alt", statusText: "VNG: Offline" }
                 ]
             },
             // KRNL
@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 status: "Online",
                 links: [
                     { text: "Global", url: "https://krnl.filenetwork.vip/android.html", className: "btn-download-main", statusText: "Global: Online" },
-                    { text: "VNG", url: "https://krnl.filenetwork.vip/android.html", className: "btn-download-alt", statusText: "VNG: Online" }
+                    { text: "VNG", url: "https://krnl.filenetwork.vip/android.html", className: "btn-download-alt", statusText: "VNG: Offline" }
                 ]
             },
             // TRIGON
