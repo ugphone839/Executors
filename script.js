@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // BUNNI
             {
                 name: "Bunni",
-                logo: "https://cdn.discordapp.com/attachments/1361339819220926675/1435961614347145336/bunni-logo.png?ex=690ddef7&is=690c8d77&hm=af9053c8f46ad9c6334913f6c2b3cd2b0e83c5196305c40473df05b60c3021b2&",
+                logo: "https://sf-static.upanhlaylink.com/view/image_20251107382dc06777b7dacdb18302351b2d33d9.jpg",
                 version: "version-f6dd34ecac7b4642",
                 status: "Online",
                 links: [{ text: "Download", url: "https://github.com/vmp0rblx/bunni-download/raw/refs/heads/main/latestbunni.zip", className: "btn-download-main" }]
