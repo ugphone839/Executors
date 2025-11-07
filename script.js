@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // TRIGON PC
             {
                 name: "Trigon PC",
-                logo: "https://cdn.discordapp.com/attachments/1361339819220926675/1435962042207961140/trigon-executor-300x300.webp?ex=690ddf5d&is=690c8ddd&hm=7a97bb5e3139f4dab6d7a0bd994d05c605bfde6ddcced4b98c310d286f7e4c7e&",
+                logo: "![trigon-executor-300x300.webp](https://sf-static.upanhlaylink.com/img/image_20251107cab32999e5fff2948d49ebe486e8b12a.jpg)",
                 version: "Chờ Cập Nhật",
                 status: "Offline",
                 links: [{ text: "Download", url: "https://volcano.wtf/", className: "btn-download-main" }]
