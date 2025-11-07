@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // BUNNI
             {
                 name: "Bunni",
-                logo: "https://sf-static.upanhlaylink.com/view/image_20251107382dc06777b7dacdb18302351b2d33d9.jpg",
+                logo: "https://sf-static.upanhlaylink.com/img/image_20251107ec93fb41bcff1cb31ece2f29c4c3d623.jpg",
                 version: "version-f6dd34ecac7b4642",
                 status: "Online",
                 links: [{ text: "Download", url: "https://github.com/vmp0rblx/bunni-download/raw/refs/heads/main/latestbunni.zip", className: "btn-download-main" }]
