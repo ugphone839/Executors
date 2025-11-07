@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // TRIGON PC
             {
                 name: "Trigon PC",
-                logo: "!![trigon-executor-300x300.webp](https://sf-static.upanhlaylink.com/img/image_20251107cab32999e5fff2948d49ebe486e8b12a.jpg)",
+                logo: "https://sf-static.upanhlaylink.com/img/image_20251107e5b9a4a53af563430e8892ad618a40cd.jpg",
                 version: "Chờ Cập Nhật",
                 status: "Offline",
                 links: [{ text: "Download", url: "https://volcano.wtf/", className: "btn-download-main" }]
