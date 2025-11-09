@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 logo: "https://files.catbox.moe/gjzzjt.png",
                 version: "version-f6dd34ecac7b4642",
                 status: "Online",
-                links: [{ text: "Download", url: "https://getsolara.dev/", className: "btn-download-main" }]
+                links: [{ text: "Download", url: "https://www.mediafire.com/file/93grfxuve1iroz1/Solara.Dir.zip/file", className: "btn-download-main" }]
             },
             // XENO
             {
