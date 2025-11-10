@@ -68,10 +68,10 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Krnl iOS",
                 logo: "https://cdn.wearedevs.net/images/thumbnails/krnl.jpeg",
-                version: "2.696",
+                version: "2.695",
                 status: "Online",
                 links: [
-                    { text: "Global", url: "https://krnl.filenetwork.vip/file/Krnl_release_697.ipa", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "Global", url: "https://krnl.filenetwork.vip/file/Krnl_release_695.ipa", className: "btn-download-main", statusText: "Global: Offline" },
                     { text: "VNG", url: "https://krnl.filenetwork.vip/file/Krnl_vng_release_685.ipa", className: "btn-download-alt", statusText: "VNG: Offline" }
                 ]
             },
@@ -95,13 +95,11 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Delta iOS",
                 logo: "https://sf-static.upanhlaylink.com/img/image_2025091320b780aa4e49c945bdddf569984a41b6.jpg",
-                version: "2.696",
+                version: "2.695",
                 status: "Online",
-                links: [
-                    { text: "Global", url: "https://cdn.gloopup.net/file/Delta-2.697.925.ipa", className: "btn-download-main", statusText: "Global: Online" },
-                    { text: "VNG", url: "https://krnl.filenetwork.vip/file/Krnl_vng_release_685.ipa", className: "btn-download-alt", statusText: "VNG: Offline" }
-                ]
-            },
+                links: [{ text: "Download", url: "https://cdn.gloopup.net/file/Delta-2.697.925.ipa/", className: "btn-download-main", statusText: "Status: Online" }]
+            }
+        ],
         android: [
             // ARCEUS X NEO
             {
