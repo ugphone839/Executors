@@ -100,8 +100,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 links: [
                     { text: "Global", url: "https://deltaios-executor.com/", className: "btn-download-main", statusText: "Status: Online" },
                     { text: "VNG(Mod)", url: "https://www.mediafire.com/file/glclfeebbmhzxeq/Roblox_-_VNG_Arceus_X_NEO_1.9.0.apk/file", className: "btn-download-alt", statusText: "VNG: Offline" }
-            }
-        ],
+            ]
+        },
         android: [
             // ARCEUS X NEO
             {
