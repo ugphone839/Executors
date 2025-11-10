@@ -95,13 +95,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Delta iOS",
                 logo: "https://sf-static.upanhlaylink.com/img/image_2025091320b780aa4e49c945bdddf569984a41b6.jpg",
-                version: "2.695",
+                version: "2.696",
                 status: "Online",
                 links: [
-                    { text: "Global", url: "https://deltaios-executor.com/", className: "btn-download-main", statusText: "Status: Online" },
-                    { text: "VNG(Mod)", url: "https://www.mediafire.com/file/glclfeebbmhzxeq/Roblox_-_VNG_Arceus_X_NEO_1.9.0.apk/file", className: "btn-download-alt", statusText: "VNG: Offline" }
-            ]
-        },
+                    { text: "Global", url: "https://cdn.gloopup.net/file/Delta-2.697.925.ipa", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "VNG", url: "https://krnl.filenetwork.vip/file/Krnl_vng_release_685.ipa", className: "btn-download-alt", statusText: "VNG: Offline" }
+                ]
+            },
         android: [
             // ARCEUS X NEO
             {
