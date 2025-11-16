@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Arceus X NEO",
                 logo: "https://sf-static.upanhlaylink.com/img/image_2025091341b69c6afa4e02709bf1ba299bdbafbd.jpg",
-                version: "6.696",
+                version: "6.698",
                 status: "Online",
                 links: [
                     { text: "Global", url: "https://www.mediafire.com/file/lh42jsncojxil7f/Roblox_Arceus_X_NEO_1.9.2.apk/file", className: "btn-download-main", statusText: "Global: Online" },
@@ -138,9 +138,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Delta",
                 logo: "https://sf-static.upanhlaylink.com/img/image_2025091320b780aa4e49c945bdddf569984a41b6.jpg",
-                version: "2.695",
+                version: "2.698",
                 status: "Offline",
-                links: [{ text: "Download", url: "https://delta.filenetwork.vip/android.html", className: "btn-download-main", statusText: "Status Global: Online" }]
+                links: [{ text: "Download", url: "https://cdn.gloopup.net/file/Delta-2.698.941.apk", className: "btn-download-main", statusText: "Status Global: Online" }]
             },
             // RONIX
             {
@@ -157,10 +157,10 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Krnl",
                 logo: "https://cdn.wearedevs.net/images/thumbnails/krnl.jpeg",
-                version: "2.696",
+                version: "2.698",
                 status: "Online",
                 links: [
-                    { text: "Global", url: "https://krnl.filenetwork.vip/android.html", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "Global", url: "https://krnl.filenetwork.vip/file/krnl_release_2.697.926_2025.11.2_53.apk", className: "btn-download-main", statusText: "Global: Online" },
                     { text: "VNG", url: "https://krnl.filenetwork.vip/android.html", className: "btn-download-alt", statusText: "VNG: Offline" }
                 ]
             },
@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 logo: "https://trigonevo.com/wp-content/uploads/2021/09/cropped-New-Trigon-with-Shadow-300x300.png.webp",
                 version: "2.696",
                 status: "Online",
-                links: [{ text: "Download", url: "https://www.mediafire.com/file/ydbo0w4g2d2r6vp/Trigon_v2.696.799.apk/file", className: "btn-download-main", statusText: "Status Global: Online" }]
+                links: [{ text: "Download", url: "https://www.mediafire.com/file/ydbo0w4g2d2r6vp/Trigon_v2.696.799.apk/file", className: "btn-download-main", statusText: "Status Global: Offline" }]
             },
             // VEGA X
             {
