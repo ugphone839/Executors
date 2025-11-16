@@ -101,18 +101,18 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         ],
         android: [
-            // ARCEUS X NEO
+            // ARCEUS X NEO Android
             {
                 name: "Arceus X NEO",
                 logo: "https://sf-static.upanhlaylink.com/img/image_2025091341b69c6afa4e02709bf1ba299bdbafbd.jpg",
                 version: "6.698",
                 status: "Online",
                 links: [
-                    { text: "Global", url: "https://www.mediafire.com/file/lh42jsncojxil7f/Roblox_Arceus_X_NEO_1.9.2.apk/file", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "Global", url: "https://www.mediafire.com/file/oa8gsy470nxu1ox/Roblox_Arceus_X_NEO_1.9.3.apk/file", className: "btn-download-main", statusText: "Global: Online" },
                     { text: "VNG", url: "https://www.mediafire.com/file/glclfeebbmhzxeq/Roblox_-_VNG_Arceus_X_NEO_1.9.0.apk/file", className: "btn-download-alt", statusText: "VNG: Offline" }
                 ]
             },
-            // CODEX
+            // CODEX Android
             {
                 name: "Codex",
                 logo: "https://codex.lol/static/icons/icon.svg",
@@ -123,26 +123,26 @@ document.addEventListener('DOMContentLoaded', () => {
                     { text: "VNG", url: "https://www.mediafire.com/file/3piv87u6044r554/Codex_v2.689_VNG.apk/file", className: "btn-download-alt", statusText: "VNG: Offline" }
                 ]
             },
-            // CRYPTIC
+            // CRYPTIC Android
             {
                 name: "Cryptic",
                 logo: "https://getcryptic.net/assets/moonglow-HcoSKqMr.png",
                 version: "2.696",
                 status: "Online",
                 links: [
-                    { text: "Global", url: "https://www.mediafire.com/file/lj2ek86ykj6f9ld/Cryptic_2.696.799_APK.apk/file", className: "btn-download-main", statusText: "Global: Offline" },
+                    { text: "Global", url: "https://www.mediafire.com/file/35kyvgcgrrzivzw/Cryptic_2.698.937_APK.apk/file", className: "btn-download-main", statusText: "Global: Online" },
                     { text: "VNG", url: "https://www.mediafire.com/file/pf4k4kacl46v02b/Cryptic+2.689.880+VNG.apk/file", className: "btn-download-alt", statusText: "VNG: Offline" }
                 ]
             },
-            // DELTA
+            // DELTA Android
             {
                 name: "Delta",
                 logo: "https://sf-static.upanhlaylink.com/img/image_2025091320b780aa4e49c945bdddf569984a41b6.jpg",
                 version: "2.698",
-                status: "Offline",
+                status: "Online",
                 links: [{ text: "Download", url: "https://cdn.gloopup.net/file/Delta-2.698.941.apk", className: "btn-download-main", statusText: "Status Global: Online" }]
             },
-            // RONIX
+            // RONIX Android
             {
                 name: "Ronix",
                 logo: "https://wearedevs.net/images/ronix/ronix-animated.gif",
@@ -153,7 +153,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     { text: "VNG", url: "https://wearedevs.net/d/Ronix", className: "btn-download-alt", statusText: "VNG: Offline" }
                 ]
             },
-            // KRNL
+            // KRNL Android
             {
                 name: "Krnl",
                 logo: "https://cdn.wearedevs.net/images/thumbnails/krnl.jpeg",
@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     { text: "VNG", url: "https://krnl.filenetwork.vip/android.html", className: "btn-download-alt", statusText: "VNG: Offline" }
                 ]
             },
-            // TRIGON
+            // TRIGON Android
             {
                 name: "Trigon",
                 logo: "https://trigonevo.com/wp-content/uploads/2021/09/cropped-New-Trigon-with-Shadow-300x300.png.webp",
@@ -172,7 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 status: "Online",
                 links: [{ text: "Download", url: "https://www.mediafire.com/file/c9isuhkj0d7oaua/Trigon_v2.698.937.apk/file", className: "btn-download-main", statusText: "Status Global: Online" }]
             },
-            // VEGA X
+            // VEGA X Android
             {
                 name: "Vega X",
                 logo: "https://vegax.gg/assets/img/V_logo_white.png",
@@ -189,7 +189,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ---------------------------------------------------------------------
     // =====================================================================
 
-    const searchInput = document.getElementById('executor-search');
+    = searchInput = document.getElementById('executor-search');
     const filterTags = document.querySelectorAll('.filter-tag');
     const sections = document.querySelectorAll('.glass-section');
     const themeToggle = document.querySelector('.theme-toggle');
