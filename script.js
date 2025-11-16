@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 version: "2.696",
                 status: "Online",
                 links: [
-                    { text: "Global", url: "https://www.mediafire.com/file/lj2ek86ykj6f9ld/Cryptic_2.696.799_APK.apk/file", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "Global", url: "https://www.mediafire.com/file/lj2ek86ykj6f9ld/Cryptic_2.696.799_APK.apk/file", className: "btn-download-main", statusText: "Global: Offline" },
                     { text: "VNG", url: "https://www.mediafire.com/file/pf4k4kacl46v02b/Cryptic+2.689.880+VNG.apk/file", className: "btn-download-alt", statusText: "VNG: Offline" }
                 ]
             },
@@ -169,8 +169,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 name: "Trigon",
                 logo: "https://trigonevo.com/wp-content/uploads/2021/09/cropped-New-Trigon-with-Shadow-300x300.png.webp",
                 version: "2.696",
-                status: "Online",
-                links: [{ text: "Download", url: "https://www.mediafire.com/file/ydbo0w4g2d2r6vp/Trigon_v2.696.799.apk/file", className: "btn-download-main", statusText: "Status Global: Offline" }]
+                status: "Offline",
+                links: [{ text: "Download", url: "https://www.mediafire.com/file/ydbo0w4g2d2r6vp/Trigon_v2.696.799.apk/file", className: "btn-download-main", statusText: "Status Global: Online" }]
             },
             // VEGA X
             {
