@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Cryptic",
                 logo: "https://getcryptic.net/assets/moonglow-HcoSKqMr.png",
-                version: "2.696",
+                version: "2.698",
                 status: "Online",
                 links: [
                     { text: "Global", url: "https://www.mediafire.com/file/35kyvgcgrrzivzw/Cryptic_2.698.937_APK.apk/file", className: "btn-download-main", statusText: "Global: Online" },
@@ -189,7 +189,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ---------------------------------------------------------------------
     // =====================================================================
 
-    = searchInput = document.getElementById('executor-search');
+    const searchInput = document.getElementById('executor-search');
     const filterTags = document.querySelectorAll('.filter-tag');
     const sections = document.querySelectorAll('.glass-section');
     const themeToggle = document.querySelector('.theme-toggle');
