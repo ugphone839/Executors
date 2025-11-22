@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Ronix",
                 logo: "https://wearedevs.net/images/ronix/ronix-animated.gif",
-                version: "2.695",
+                version: "2.698",
                 status: "Online",
                 links: [
                     { text: "Global", url: "https://cdn.discordapp.com/attachments/1412103207940919356/1441300508613677100/Ronix_64Bits_1.apk?ex=69229cb3&is=69214b33&hm=cd5ac567f5b25495f53bda0e37496f896e4be76ed4401937dc84f9f7b00f2eb1&", className: "btn-download-main", statusText: "Global: Online" },
