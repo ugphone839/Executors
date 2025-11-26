@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Arceus X NEO",
                 logo: "https://sf-static.upanhlaylink.com/img/image_2025091341b69c6afa4e02709bf1ba299bdbafbd.jpg",
-                version: "6.700",
+                version: "2.700",
                 status: "Online",
                 links: [
                     { text: "Global", url: "https://www.mediafire.com/file/0ujuago41yt3gy4/Roblox_Arceus_X_NEO_1.9.4.apk/file", className: "btn-download-main", statusText: "Global: Online" },
@@ -187,7 +187,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ---------------------------------------------------------------------
     // --- 2. LOGIC TẠO CARD & TÌM KIẾM (KHÔNG CẦN CHỈNH SỬA) ---
     // ---------------------------------------------------------------------
-    // =====2================================================================
+    // =====================================================================
 
     const searchInput = document.getElementById('executor-search');
     const filterTags = document.querySelectorAll('.filter-tag');
