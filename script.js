@@ -138,9 +138,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Delta",
                 logo: "https://sf-static.upanhlaylink.com/img/image_2025091320b780aa4e49c945bdddf569984a41b6.jpg",
-                version: "2.698",
+                version: "2.699",
                 status: "Online",
-                links: [{ text: "Download", url: "https://cdn.gloopup.net/file/Delta-2.698.941.apk", className: "btn-download-main", statusText: "Status Global: Online" }]
+                links: [{ text: "Download", url: "https://delta.filenetwork.vip/file/Delta-2.700.937.apk", className: "btn-download-main", statusText: "Status Global: Online" }]
             },
             // RONIX Android
             {
@@ -160,7 +160,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 version: "2.698",
                 status: "Online",
                 links: [
-                    { text: "Global", url: "https://krnl.filenetwork.vip/file/krnl_release_2.697.926_2025.11.2_53.apk", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "Global", url: "https://krnl.filenetwork.vip/file/krnl_release_2.697.926_2025.11.2_53.apk", className: "btn-download-main", statusText: "Global: Offline" },
                     { text: "VNG", url: "https://krnl.filenetwork.vip/android.html", className: "btn-download-alt", statusText: "VNG: Offline" }
                 ]
             },
@@ -176,7 +176,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Vega X",
                 logo: "https://vegax.gg/assets/img/V_logo_white.png",
-                version: "2.698",
+                version: "2.699",
                 status: "Online",
                 links: [{ text: "Download", url: "https://github.com/1f0yt/community/releases/download/Vegax/Vega.X.apk", className: "btn-download-main", statusText: "Status Global: Online" }]
             }
