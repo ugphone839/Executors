@@ -116,10 +116,10 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Codex",
                 logo: "https://codex.lol/static/icons/icon.svg",
-                version: "2.698",
+                version: "2.700",
                 status: "Online",
                 links: [
-                    { text: "Global", url: "https://gofile.io/d/UzbLud", className: "btn-download-main", statusText: "Global: Offline" },
+                    { text: "Global", url: "https://gofile.io/d/UzbLud", className: "btn-download-main", statusText: "Global: Online" },
                     { text: "VNG", url: "https://www.mediafire.com/file/3piv87u6044r554/Codex_v2.689_VNG.apk/file", className: "btn-download-alt", statusText: "VNG: Offline" }
                 ]
             },
