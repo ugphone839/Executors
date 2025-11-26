@@ -187,7 +187,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ---------------------------------------------------------------------
     // --- 2. LOGIC TẠO CARD & TÌM KIẾM (KHÔNG CẦN CHỈNH SỬA) ---
     // ---------------------------------------------------------------------
-    // =====================================================================
+    // =====2================================================================
 
     const searchInput = document.getElementById('executor-search');
     const filterTags = document.querySelectorAll('.filter-tag');
