@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 version: "2.700",
                 status: "Online",
                 links: [
-                    { text: "Global", url: "https://gofile.io/d/UzbLud", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "Global", url: "https://www.mediafire.com/file/xrq7h1tmzcf5p4z/Codex+V2.700.937.apk/file", className: "btn-download-main", statusText: "Global: Online" },
                     { text: "VNG", url: "https://www.mediafire.com/file/3piv87u6044r554/Codex_v2.689_VNG.apk/file", className: "btn-download-alt", statusText: "VNG: Offline" }
                 ]
             },
@@ -168,9 +168,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Trigon",
                 logo: "https://trigonevo.com/wp-content/uploads/2021/09/cropped-New-Trigon-with-Shadow-300x300.png.webp",
-                version: "2.698",
-                status: "Offline",
-                links: [{ text: "Download", url: "https://www.mediafire.com/file/c9isuhkj0d7oaua/Trigon_v2.698.937.apk/file", className: "btn-download-main", statusText: "Status Global: Online" }]
+                version: "2.700",
+                status: "Online",
+                links: [{ text: "Download", url: "https://www.mediafire.com/file/xeie944xu8lplc9/Trigon_v2.700.937.apk/file", className: "btn-download-main", statusText: "Status Global: Online" }]
             },
             // VEGA X Android
             {
