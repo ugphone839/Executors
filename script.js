@@ -105,10 +105,10 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Arceus X NEO",
                 logo: "https://sf-static.upanhlaylink.com/img/image_2025091341b69c6afa4e02709bf1ba299bdbafbd.jpg",
-                version: "6.698",
+                version: "6.700",
                 status: "Online",
                 links: [
-                    { text: "Global", url: "https://www.mediafire.com/file/oa8gsy470nxu1ox/Roblox_Arceus_X_NEO_1.9.3.apk/file", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "Global", url: "https://www.mediafire.com/file/0ujuago41yt3gy4/Roblox_Arceus_X_NEO_1.9.4.apk/file", className: "btn-download-main", statusText: "Global: Online" },
                     { text: "VNG", url: "https://www.mediafire.com/file/glclfeebbmhzxeq/Roblox_-_VNG_Arceus_X_NEO_1.9.0.apk/file", className: "btn-download-alt", statusText: "VNG: Offline" }
                 ]
             },
@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 version: "2.698",
                 status: "Online",
                 links: [
-                    { text: "Global", url: "https://gofile.io/d/UzbLud", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "Global", url: "https://gofile.io/d/UzbLud", className: "btn-download-main", statusText: "Global: Offline" },
                     { text: "VNG", url: "https://www.mediafire.com/file/3piv87u6044r554/Codex_v2.689_VNG.apk/file", className: "btn-download-alt", statusText: "VNG: Offline" }
                 ]
             },
@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 version: "2.698",
                 status: "Online",
                 links: [
-                    { text: "Global", url: "https://www.mediafire.com/file/35kyvgcgrrzivzw/Cryptic_2.698.937_APK.apk/file", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "Global", url: "https://www.mediafire.com/file/35kyvgcgrrzivzw/Cryptic_2.698.937_APK.apk/file", className: "btn-download-main", statusText: "Global: Offline" },
                     { text: "VNG", url: "https://www.mediafire.com/file/pf4k4kacl46v02b/Cryptic+2.689.880+VNG.apk/file", className: "btn-download-alt", statusText: "VNG: Offline" }
                 ]
             },
@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Delta",
                 logo: "https://sf-static.upanhlaylink.com/img/image_2025091320b780aa4e49c945bdddf569984a41b6.jpg",
-                version: "2.699",
+                version: "2.700",
                 status: "Online",
                 links: [{ text: "Download", url: "https://delta.filenetwork.vip/file/Delta-2.700.937.apk", className: "btn-download-main", statusText: "Status Global: Online" }]
             },
@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 version: "2.698",
                 status: "Online",
                 links: [
-                    { text: "Global", url: "https://cdn.discordapp.com/attachments/1412103207940919356/1441300508613677100/Ronix_64Bits_1.apk?ex=69229cb3&is=69214b33&hm=cd5ac567f5b25495f53bda0e37496f896e4be76ed4401937dc84f9f7b00f2eb1&", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "Global", url: "https://cdn.discordapp.com/attachments/1412103207940919356/1441300508613677100/Ronix_64Bits_1.apk?ex=69229cb3&is=69214b33&hm=cd5ac567f5b25495f53bda0e37496f896e4be76ed4401937dc84f9f7b00f2eb1&", className: "btn-download-main", statusText: "Global: Offline" },
                     { text: "VNG", url: "https://wearedevs.net/d/Ronix", className: "btn-download-alt", statusText: "VNG: Offline" }
                 ]
             },
@@ -169,14 +169,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 name: "Trigon",
                 logo: "https://trigonevo.com/wp-content/uploads/2021/09/cropped-New-Trigon-with-Shadow-300x300.png.webp",
                 version: "2.698",
-                status: "Online",
+                status: "Offline",
                 links: [{ text: "Download", url: "https://www.mediafire.com/file/c9isuhkj0d7oaua/Trigon_v2.698.937.apk/file", className: "btn-download-main", statusText: "Status Global: Online" }]
             },
             // VEGA X Android
             {
                 name: "Vega X",
                 logo: "https://vegax.gg/assets/img/V_logo_white.png",
-                version: "2.699",
+                version: "2.700",
                 status: "Online",
                 links: [{ text: "Download", url: "https://github.com/1f0yt/community/releases/download/Vegax/Vega.X.apk", className: "btn-download-main", statusText: "Status Global: Online" }]
             }
