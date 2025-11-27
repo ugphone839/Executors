@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 version: "2.700",
                 status: "Online",
                 links: [
-                    { text: "Global", url: "https://www.mediafire.com/file/0ujuago41yt3gy4/Roblox_Arceus_X_NEO_1.9.4.apk/file", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "Global", url: "https://www.mediafire.com/file/09w82odqxa0pl2f/Roblox_Arceus_X_NEO_1.9.5.apk/file", className: "btn-download-main", statusText: "Global: Online" },
                     { text: "VNG", url: "https://www.mediafire.com/file/glclfeebbmhzxeq/Roblox_-_VNG_Arceus_X_NEO_1.9.0.apk/file", className: "btn-download-alt", statusText: "VNG: Offline" }
                 ]
             },
@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 logo: "https://trigonevo.com/wp-content/uploads/2021/09/cropped-New-Trigon-with-Shadow-300x300.png.webp",
                 version: "2.700",
                 status: "Online",
-                links: [{ text: "Download", url: "https://www.mediafire.com/file/xeie944xu8lplc9/Trigon_v2.700.937.apk/file", className: "btn-download-main", statusText: "Status Global: Online" }]
+                links: [{ text: "Download", url: "https://www.mediafire.com/file/f64gdk82080cepo/Trigon_FIX_v2.700.937.apk/file", className: "btn-download-main", statusText: "Status Global: Online" }]
             },
             // VEGA X Android
             {
