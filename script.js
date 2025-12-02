@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Bunni",
                 logo: "https://sf-static.upanhlaylink.com/img/image_20251107ec93fb41bcff1cb31ece2f29c4c3d623.jpg",
-                version: "version-f6dd34ecac7b4642",
+                version: "version-e380c8edc8f6477c",
                 status: "Online",
                 links: [{ text: "Download", url: "https://github.com/vmp0rblx/bunni-download/raw/refs/heads/main/latestbunni.zip", className: "btn-download-main" }]
             },
@@ -50,17 +50,17 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Solara",
                 logo: "https://files.catbox.moe/gjzzjt.png",
-                version: "version-f6dd34ecac7b4642",
+                version: "version-e380c8edc8f6477c",
                 status: "Online",
-                links: [{ text: "Download", url: "https://www.mediafire.com/file/93grfxuve1iroz1/Solara.Dir.zip/file", className: "btn-download-main" }]
+                links: [{ text: "Download", url: "https://www.mediafire.com/file/v0rhes4h8s6x8ta/Solara.Dir.zip/file", className: "btn-download-main" }]
             },
             // XENO
             {
                 name: "Xeno",
                 logo: "https://www.xeno.onl/images/xeno.png", 
-                version: "version-f6dd34ecac7b4642",
+                version: "version-e380c8edc8f6477c",
                 status: "Online",
-                links: [{ text: "Download", url: "https://www.xeno.onl/download", className: "btn-download-main" }]
+                links: [{ text: "Download", url: "https://www.mediafire.com/file/c4ok6d5n1yadix1/Xeno-v1.3.0a.zip/file", className: "btn-download-main" }]
             }
         ],
         ios: [
@@ -95,9 +95,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Delta iOS",
                 logo: "https://sf-static.upanhlaylink.com/img/image_2025091320b780aa4e49c945bdddf569984a41b6.jpg",
-                version: "2.695",
+                version: "2.700",
                 status: "Online",
-                links: [{ text: "Download", url: "https://cdn.gloopup.net/file/Delta-2.697.925.ipa/", className: "btn-download-main", statusText: "Status: Online" }]
+                links: [{ text: "Download", url: "https://cdn.gloopup.net/file/Delta-2.700.937.ipa", className: "btn-download-main", statusText: "Status: Online" }]
             }
         ],
         android: [
@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 version: "2.698",
                 status: "Online",
                 links: [
-                    { text: "Global", url: "https://www.mediafire.com/file/35kyvgcgrrzivzw/Cryptic_2.698.937_APK.apk/file", className: "btn-download-main", statusText: "Global: Offline" },
+                    { text: "Global", url: "https://www.mediafire.com/file/m6qx2ddc3murw3u/Cryptic.apk/file", className: "btn-download-main", statusText: "Global: Online" },
                     { text: "VNG", url: "https://www.mediafire.com/file/pf4k4kacl46v02b/Cryptic+2.689.880+VNG.apk/file", className: "btn-download-alt", statusText: "VNG: Offline" }
                 ]
             },
