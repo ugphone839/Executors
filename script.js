@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Volcano",
                 logo: "https://files.catbox.moe/ucf3km.png",
-                version: "version-f6dd34ecac7b4642",
+                version: "version-e380c8edc8f6477c",
                 status: "Online",
                 links: [{ text: "Download", url: "https://volcano.wtf/", className: "btn-download-main" }]
             },
@@ -18,8 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Velocity",
                 logo: "https://files.catbox.moe/tj6brv.png", 
-                version: "version-f6dd34ecac7b4642",
-                status: "Online",
+                version: "version-e380c8edc8f6477c",
+                status: "Offline",
                 links: [{ text: "Download", url: "https://gofile.io/d/YDhJnQ", className: "btn-download-main" }]
             },
             // BUNNI
@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Cryptic",
                 logo: "https://getcryptic.net/assets/moonglow-HcoSKqMr.png",
-                version: "2.698",
+                version: "2.700",
                 status: "Online",
                 links: [
                     { text: "Global", url: "https://www.mediafire.com/file/m6qx2ddc3murw3u/Cryptic.apk/file", className: "btn-download-main", statusText: "Global: Online" },
