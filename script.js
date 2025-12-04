@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 logo: "https://sf-static.upanhlaylink.com/img/image_2025091320b780aa4e49c945bdddf569984a41b6.jpg",
                 version: "2.700",
                 status: "Online",
-                links: [{ text: "Download", url: "https://delta.filenetwork.vip/file/Delta-2.700.937.apk", className: "btn-download-main", statusText: "Status Global: Online" }]
+                links: [{ text: "Download", url: "https://delta.filenetwork.vip/file/Delta-2.700.937-p1.apk", className: "btn-download-main", statusText: "Status Global: Online" }]
             },
             // RONIX Android
             {
