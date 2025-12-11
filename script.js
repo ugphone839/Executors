@@ -138,19 +138,19 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Delta",
                 logo: "https://sf-static.upanhlaylink.com/img/image_2025091320b780aa4e49c945bdddf569984a41b6.jpg",
-                version: "2.700",
+                version: "2.701",
                 status: "Online",
-                links: [{ text: "Download", url: "https://delta.filenetwork.vip/file/Delta-2.700.937-p1.apk", className: "btn-download-main", statusText: "Status Global: Online" }]
+                links: [{ text: "Download", url: "https://delta.filenetwork.vip/file/Delta-2.701.966.apk", className: "btn-download-main", statusText: "Status Global: Online" }]
             },
             // RONIX Android
             {
                 name: "Ronix",
                 logo: "https://wearedevs.net/images/ronix/ronix-animated.gif",
-                version: "2.698",
+                version: "2.701",
                 status: "Online",
                 links: [
-                    { text: "Global", url: "https://cdn.discordapp.com/attachments/1412103207940919356/1441300508613677100/Ronix_64Bits_1.apk?ex=69229cb3&is=69214b33&hm=cd5ac567f5b25495f53bda0e37496f896e4be76ed4401937dc84f9f7b00f2eb1&", className: "btn-download-main", statusText: "Global: Offline" },
-                    { text: "VNG", url: "https://wearedevs.net/d/Ronix", className: "btn-download-alt", statusText: "VNG: Offline" }
+                    { text: "Global", url: "https://wearedevs.net/d/Ronix", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "VNG", url: "https://wearedevs.net/d/Ronix", className: "btn-download-alt", statusText: "VNG: Online" }
                 ]
             },
             // KRNL Android
