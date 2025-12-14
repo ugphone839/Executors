@@ -148,6 +148,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 version: "2.700",
                 status: "Online",
                 links: [{ text: "Download", url: "https://github.com/1f0yt/community/releases/download/Vegax/Vega.X.apk", className: "btn-download-main", statusText: "Status: Online" }]
+            },
+            {
+                name: "FluxusZ",
+                logo: "https://files.catbox.moe/qt87ws.webp",
+                version: "2.701",
+                status: "Online",
+                links: [{ text: "Download", url: "https://www.mediafire.com/file/7iizmrzio32qsve/FluxusZ+V3.0.6+ARM64.apk/file", className: "btn-download-main", statusText: "Status: Online" }]
             }
         ]
     };
