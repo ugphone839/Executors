@@ -294,7 +294,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 {
                         name: "Vega X",
                         logo: "https://vegax.gg/assets/img/V_logo_white.png",
-                        version: "2.700",
+                        version: "2.70",
                         status: "Online",
                         links: [
                                 {
