@@ -6,307 +6,151 @@ document.addEventListener('DOMContentLoaded', () => {
     // =====================================================================
     const EXECUTOR_DATA = {
         pc: [
-                {
-                        name: "Volcano",
-                        logo: "https://files.catbox.moe/ucf3km.png",
-                        version: "version-e380c8edc8f6477c",
-                        status: "Online",
-                        links: [
-                                {
-                                        text: "Download",
-                                        url: "https://volcano.wtf/",
-                                        className: "btn-download-main"
-                                }
-                        ]
-                },
-                {
-                        name: "Velocity",
-                        logo: "https://files.catbox.moe/tj6brv.png",
-                        version: "version-f6dd34ecac7b4642",
-                        status: "Offline",
-                        links: [
-                                {
-                                        text: "Download",
-                                        url: "https://gofile.io/d/YDhJnQ",
-                                        className: "btn-download-main"
-                                }
-                        ]
-                },
-                {
-                        name: "Bunni",
-                        logo: "https://sf-static.upanhlaylink.com/img/image_20251107ec93fb41bcff1cb31ece2f29c4c3d623.jpg",
-                        version: "version-e380c8edc8f6477c",
-                        status: "Online",
-                        links: [
-                                {
-                                        text: "Download",
-                                        url: "https://github.com/vmp0rblx/bunni-download/raw/refs/heads/main/latestbunni.zip",
-                                        className: "btn-download-main"
-                                }
-                        ]
-                },
-                {
-                        name: "Swift",
-                        logo: "https://files.catbox.moe/5krpqt.webp",
-                        version: "Chưa Up",
-                        status: "Offline",
-                        links: [
-                                {
-                                        text: "Download",
-                                        url: "https://getswift.vip/download",
-                                        className: "btn-download-main"
-                                }
-                        ]
-                },
-                {
-                        name: "Trigon PC",
-                        logo: "https://sf-static.upanhlaylink.com/img/image_20251107e5b9a4a53af563430e8892ad618a40cd.jpg",
-                        version: "Chờ Cập Nhật",
-                        status: "Offline",
-                        links: [
-                                {
-                                        text: "Download",
-                                        url: "https://volcano.wtf/",
-                                        className: "btn-download-main"
-                                }
-                        ]
-                },
-                {
-                        name: "Solara",
-                        logo: "https://files.catbox.moe/gjzzjt.png",
-                        version: "version-e380c8edc8f6477c",
-                        status: "Online",
-                        links: [
-                                {
-                                        text: "Download",
-                                        url: "https://www.mediafire.com/file/v0rhes4h8s6x8ta/Solara.Dir.zip/file",
-                                        className: "btn-download-main"
-                                }
-                        ]
-                },
-                {
-                        name: "Xeno",
-                        logo: "https://www.xeno.onl/images/xeno.png",
-                        version: "version-e380c8edc8f6477c",
-                        status: "Online",
-                        links: [
-                                {
-                                        text: "Download",
-                                        url: "https://www.mediafire.com/file/c4ok6d5n1yadix1/Xeno-v1.3.0a.zip/file",
-                                        className: "btn-download-main"
-                                }
-                        ]
-                }
+            {
+                name: "Volcano",
+                logo: "https://files.catbox.moe/ucf3km.png",
+                version: "version-e380c8edc8f6477c",
+                status: "Online",
+                links: [{ text: "Download", url: "https://volcano.wtf/", className: "btn-download-main" }]
+            },
+            {
+                name: "Velocity",
+                logo: "https://files.catbox.moe/tj6brv.png",
+                version: "version-f6dd34ecac7b4642",
+                status: "Offline",
+                links: [{ text: "Download", url: "https://gofile.io/d/YDhJnQ", className: "btn-download-main" }]
+            },
+            {
+                name: "Bunni",
+                logo: "https://sf-static.upanhlaylink.com/img/image_20251107ec93fb41bcff1cb31ece2f29c4c3d623.jpg",
+                version: "version-e380c8edc8f6477c",
+                status: "Online",
+                links: [{ text: "Download", url: "https://github.com/vmp0rblx/bunni-download/raw/refs/heads/main/latestbunni.zip", className: "btn-download-main" }]
+            },
+            {
+                name: "Swift",
+                logo: "https://files.catbox.moe/5krpqt.webp",
+                version: "Chưa Up",
+                status: "Offline",
+                links: [{ text: "Download", url: "https://getswift.vip/download", className: "btn-download-main" }]
+            },
+            {
+                name: "Trigon PC",
+                logo: "https://sf-static.upanhlaylink.com/img/image_20251107e5b9a4a53af563430e8892ad618a40cd.jpg",
+                version: "Chờ Cập Nhật",
+                status: "Offline",
+                links: [{ text: "Download", url: "https://volcano.wtf/", className: "btn-download-main" }]
+            },
+            {
+                name: "Solara",
+                logo: "https://files.catbox.moe/gjzzjt.png",
+                version: "version-e380c8edc8f6477c",
+                status: "Online",
+                links: [{ text: "Download", url: "https://www.mediafire.com/file/v0rhes4h8s6x8ta/Solara.Dir.zip/file", className: "btn-download-main" }]
+            },
+            {
+                name: "Xeno",
+                logo: "https://www.xeno.onl/images/xeno.png",
+                version: "version-e380c8edc8f6477c",
+                status: "Online",
+                links: [{ text: "Download", url: "https://www.mediafire.com/file/c4ok6d5n1yadix1/Xeno-v1.3.0a.zip/file", className: "btn-download-main" }]
+            }
         ],
         ios: [
-                {
-                        name: "Krnl iOS",
-                        logo: "https://cdn.wearedevs.net/images/thumbnails/krnl.jpeg",
-                        version: "2.695",
-                        status: "Online",
-                        links: [
-                                {
-                                        text: "Global",
-                                        url: "https://krnl.filenetwork.vip/file/Krnl_release_695.ipa",
-                                        className: "btn-download-main",
-                                        statusText: "Global: Offline"
-                                },
-                                {
-                                        text: "VNG",
-                                        url: "https://krnl.filenetwork.vip/file/Krnl_vng_release_685.ipa",
-                                        className: "btn-download-alt",
-                                        statusText: "VNG: Offline"
-                                }
-                        ]
-                },
-                {
-                        name: "Arceus X Neo iOS",
-                        logo: "https://sf-static.upanhlaylink.com/img/image_2025091341b69c6afa4e02709bf1ba299bdbafbd.jpg",
-                        version: "2.694",
-                        status: "Offline",
-                        links: [
-                                {
-                                        text: "Download",
-                                        url: "https://www.mediafire.com/file/6lcgdmn244ta2n5/ArceusX_1.6.4_2.668.658.ipa/file",
-                                        className: "btn-download-main",
-                                        statusText: "Status: Offline"
-                                }
-                        ]
-                },
-                {
-                        name: "Codex iOS",
-                        logo: "https://codex.lol/static/icons/icon.svg",
-                        version: "2.694",
-                        status: "Offline",
-                        links: [
-                                {
-                                        text: "Download",
-                                        url: "https://www.mediafire.com/file/7afzer5xxo1110n/Codex_2.674.782.ipa/file",
-                                        className: "btn-download-main",
-                                        statusText: "Status: Offline"
-                                }
-                        ]
-                },
-                {
-                        name: "Delta iOS",
-                        logo: "https://sf-static.upanhlaylink.com/img/image_2025091320b780aa4e49c945bdddf569984a41b6.jpg",
-                        version: "2.700",
-                        status: "Online",
-                        links: [
-                                {
-                                        text: "Download",
-                                        url: "https://cdn.gloopup.net/file/Delta-2.700.937.ipa",
-                                        className: "btn-download-main",
-                                        statusText: "Status: Online"
-                                }
-                        ]
-                }
+            {
+                name: "Krnl iOS",
+                logo: "https://cdn.wearedevs.net/images/thumbnails/krnl.jpeg",
+                version: "2.695",
+                status: "Online",
+                links: [{ text: "Global", url: "https://krnl.filenetwork.vip/file/Krnl_release_695.ipa", className: "btn-download-main", statusText: "Global: Offline" },
+                    { text: "VNG", url: "https://krnl.filenetwork.vip/file/Krnl_vng_release_685.ipa", className: "btn-download-alt", statusText: "VNG: Offline" }]
+            },
+            {
+                name: "Arceus X Neo iOS",
+                logo: "https://sf-static.upanhlaylink.com/img/image_2025091341b69c6afa4e02709bf1ba299bdbafbd.jpg",
+                version: "2.694",
+                status: "Offline",
+                links: [{ text: "Download", url: "https://www.mediafire.com/file/6lcgdmn244ta2n5/ArceusX_1.6.4_2.668.658.ipa/file", className: "btn-download-main", statusText: "Status: Offline" }]
+            },
+            {
+                name: "Codex iOS",
+                logo: "https://codex.lol/static/icons/icon.svg",
+                version: "2.694",
+                status: "Offline",
+                links: [{ text: "Download", url: "https://www.mediafire.com/file/7afzer5xxo1110n/Codex_2.674.782.ipa/file", className: "btn-download-main", statusText: "Status: Offline" }]
+            },
+            {
+                name: "Delta iOS",
+                logo: "https://sf-static.upanhlaylink.com/img/image_2025091320b780aa4e49c945bdddf569984a41b6.jpg",
+                version: "2.700",
+                status: "Online",
+                links: [{ text: "Download", url: "https://cdn.gloopup.net/file/Delta-2.700.937.ipa", className: "btn-download-main", statusText: "Status: Online" }]
+            }
         ],
         android: [
-                {
-                        name: "Arceus X NEO",
-                        logo: "https://sf-static.upanhlaylink.com/img/image_2025091341b69c6afa4e02709bf1ba299bdbafbd.jpg",
-                        version: "2.700",
-                        status: "Online",
-                        links: [
-                                {
-                                        text: "Global",
-                                        url: "https://www.mediafire.com/file/09w82odqxa0pl2f/Roblox_Arceus_X_NEO_1.9.5.apk/file",
-                                        className: "btn-download-main",
-                                        statusText: "Global: Online"
-                                },
-                                {
-                                        text: "VNG",
-                                        url: "https://www.mediafire.com/file/glclfeebbmhzxeq/Roblox_-_VNG_Arceus_X_NEO_1.9.0.apk/file",
-                                        className: "btn-download-alt",
-                                        statusText: "VNG: Offline"
-                                }
-                        ]
-                },
-                {
-                        name: "Codex",
-                        logo: "https://codex.lol/static/icons/icon.svg",
-                        version: "2.700",
-                        status: "Online",
-                        links: [
-                                {
-                                        text: "Global",
-                                        url: "https://www.mediafire.com/file/xrq7h1tmzcf5p4z/Codex+V2.700.937.apk/file",
-                                        className: "btn-download-main",
-                                        statusText: "Global: Online"
-                                },
-                                {
-                                        text: "VNG",
-                                        url: "https://www.mediafire.com/file/3piv87u6044r554/Codex_v2.689_VNG.apk/file",
-                                        className: "btn-download-alt",
-                                        statusText: "VNG: Offline"
-                                }
-                        ]
-                },
-                {
-                        name: "Cryptic",
-                        logo: "https://getcryptic.net/assets/moonglow-HcoSKqMr.png",
-                        version: "2.700",
-                        status: "Online",
-                        links: [
-                                {
-                                        text: "Global",
-                                        url: "https://www.mediafire.com/file/m6qx2ddc3murw3u/Cryptic.apk/file",
-                                        className: "btn-download-main",
-                                        statusText: "Global: Online"
-                                },
-                                {
-                                        text: "VNG",
-                                        url: "https://www.mediafire.com/file/pf4k4kacl46v02b/Cryptic+2.689.880+VNG.apk/file",
-                                        className: "btn-download-alt",
-                                        statusText: "VNG: Offline"
-                                }
-                        ]
-                },
-                {
-                        name: "Delta",
-                        logo: "https://sf-static.upanhlaylink.com/img/image_2025091320b780aa4e49c945bdddf569984a41b6.jpg",
-                        version: "2.701",
-                        status: "Online",
-                        links: [
-                                {
-                                        text: "Download",
-                                        url: "https://delta.filenetwork.vip/file/Delta-2.701.966.apk",
-                                        className: "btn-download-main",
-                                        statusText: "Status: Online"
-                                }
-                        ]
-                },
-                {
-                        name: "Ronix",
-                        logo: "https://wearedevs.net/images/ronix/ronix-animated.gif",
-                        version: "2.701",
-                        status: "Online",
-                        links: [
-                                {
-                                        text: "Global",
-                                        url: "https://wearedevs.net/d/Ronix",
-                                        className: "btn-download-main",
-                                        statusText: "Global: Online"
-                                },
-                                {
-                                        text: "VNG",
-                                        url: "https://wearedevs.net/d/Ronix",
-                                        className: "btn-download-alt",
-                                        statusText: "VNG: Online"
-                                }
-                        ]
-                },
-                {
-                        name: "Krnl",
-                        logo: "https://cdn.wearedevs.net/images/thumbnails/krnl.jpeg",
-                        version: "2.698",
-                        status: "Online",
-                        links: [
-                                {
-                                        text: "Global",
-                                        url: "https://krnl.filenetwork.vip/file/krnl_release_2.697.926_2025.11.2_53.apk",
-                                        className: "btn-download-main",
-                                        statusText: "Global: Offline"
-                                },
-                                {
-                                        text: "VNG",
-                                        url: "https://krnl.filenetwork.vip/android.html",
-                                        className: "btn-download-alt",
-                                        statusText: "VNG: Offline"
-                                }
-                        ]
-                },
-                {
-                        name: "Trigon",
-                        logo: "https://trigonevo.com/wp-content/uploads/2021/09/cropped-New-Trigon-with-Shadow-300x300.png.webp",
-                        version: "2.700",
-                        status: "Online",
-                        links: [
-                                {
-                                        text: "Download",
-                                        url: "https://www.mediafire.com/file/f64gdk82080cepo/Trigon_FIX_v2.700.937.apk/file",
-                                        className: "btn-download-main",
-                                        statusText: "Status Global: Online"
-                                }
-                        ]
-                },
-                {
-                        name: "Vega X",
-                        logo: "https://vegax.gg/assets/img/V_logo_white.png",
-                        version: "2.700",
-                        status: "Online",
-                        links: [
-                                {
-                                        text: "Download",
-                                        url: "https://github.com/1f0yt/community/releases/download/Vegax/Vega.X.apk",
-                                        className: "btn-download-main",
-                                        statusText: "Status Global: Online"
-                                }
-                        ]
-                }
+            {
+                name: "Arceus X NEO",
+                logo: "https://sf-static.upanhlaylink.com/img/image_2025091341b69c6afa4e02709bf1ba299bdbafbd.jpg",
+                version: "2.700",
+                status: "Online",
+                links: [{ text: "Global", url: "https://www.mediafire.com/file/09w82odqxa0pl2f/Roblox_Arceus_X_NEO_1.9.5.apk/file", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "VNG", url: "https://www.mediafire.com/file/glclfeebbmhzxeq/Roblox_-_VNG_Arceus_X_NEO_1.9.0.apk/file", className: "btn-download-alt", statusText: "VNG: Offline" }]
+            },
+            {
+                name: "Codex",
+                logo: "https://codex.lol/static/icons/icon.svg",
+                version: "2.700",
+                status: "Online",
+                links: [{ text: "Global", url: "https://www.mediafire.com/file/xrq7h1tmzcf5p4z/Codex+V2.700.937.apk/file", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "VNG", url: "https://www.mediafire.com/file/3piv87u6044r554/Codex_v2.689_VNG.apk/file", className: "btn-download-alt", statusText: "VNG: Offline" }]
+            },
+            {
+                name: "Cryptic",
+                logo: "https://getcryptic.net/assets/moonglow-HcoSKqMr.png",
+                version: "2.700",
+                status: "Online",
+                links: [{ text: "Global", url: "https://www.mediafire.com/file/m6qx2ddc3murw3u/Cryptic.apk/file", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "VNG", url: "https://www.mediafire.com/file/pf4k4kacl46v02b/Cryptic+2.689.880+VNG.apk/file", className: "btn-download-alt", statusText: "VNG: Offline" }]
+            },
+            {
+                name: "Delta",
+                logo: "https://sf-static.upanhlaylink.com/img/image_2025091320b780aa4e49c945bdddf569984a41b6.jpg",
+                version: "2.701",
+                status: "Online",
+                links: [{ text: "Download", url: "https://delta.filenetwork.vip/file/Delta-2.701.966.apk", className: "btn-download-main", statusText: "Status: Online" }]
+            },
+            {
+                name: "Ronix",
+                logo: "https://wearedevs.net/images/ronix/ronix-animated.gif",
+                version: "2.701",
+                status: "Online",
+                links: [{ text: "Global", url: "https://wearedevs.net/d/Ronix", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "VNG", url: "https://wearedevs.net/d/Ronix", className: "btn-download-alt", statusText: "VNG: Online" }]
+            },
+            {
+                name: "Krnl",
+                logo: "https://cdn.wearedevs.net/images/thumbnails/krnl.jpeg",
+                version: "2.698",
+                status: "Online",
+                links: [{ text: "Global", url: "https://krnl.filenetwork.vip/file/krnl_release_2.697.926_2025.11.2_53.apk", className: "btn-download-main", statusText: "Global: Offline" },
+                    { text: "VNG", url: "https://krnl.filenetwork.vip/android.html", className: "btn-download-alt", statusText: "VNG: Offline" }]
+            },
+            {
+                name: "Trigon",
+                logo: "https://trigonevo.com/wp-content/uploads/2021/09/cropped-New-Trigon-with-Shadow-300x300.png.webp",
+                version: "2.700",
+                status: "Online",
+                links: [{ text: "Download", url: "https://www.mediafire.com/file/f64gdk82080cepo/Trigon_FIX_v2.700.937.apk/file", className: "btn-download-main", statusText: "Status Global: Online" }]
+            },
+            {
+                name: "Vega X",
+                logo: "https://vegax.gg/assets/img/V_logo_white.png",
+                version: "2.701",
+                status: "Online",
+                links: [{ text: "Download", url: "httpa://hi.hu", className: "btn-download-main", statusText: "Status: Online" }]
+            }
         ]
-};
+    };
 
     // =====================================================================
     // ---------------------------------------------------------------------
