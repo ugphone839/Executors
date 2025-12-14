@@ -105,14 +105,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     { text: "VNG", url: "https://www.mediafire.com/file/3piv87u6044r554/Codex_v2.689_VNG.apk/file", className: "btn-download-alt", statusText: "VNG: Offline" }]
             },
             {
-                name: "Cryptic",
-                logo: "https://getcryptic.net/assets/moonglow-HcoSKqMr.png",
-                version: "2.700",
-                status: "Online",
-                links: [{ text: "Global", url: "https://www.mediafire.com/file/m6qx2ddc3murw3u/Cryptic.apk/file", className: "btn-download-main", statusText: "Global: Online" },
-                    { text: "VNG", url: "https://www.mediafire.com/file/pf4k4kacl46v02b/Cryptic+2.689.880+VNG.apk/file", className: "btn-download-alt", statusText: "VNG: Offline" }]
-            },
-            {
                 name: "Delta",
                 logo: "https://sf-static.upanhlaylink.com/img/image_2025091320b780aa4e49c945bdddf569984a41b6.jpg",
                 version: "2.701",
