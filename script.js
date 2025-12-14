@@ -124,8 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 logo: "https://wearedevs.net/images/ronix/ronix-animated.gif",
                 version: "2.701",
                 status: "Online",
-                links: [{ text: "Global", url: "https://wearedevs.net/d/Ronix", className: "btn-download-main", statusText: "Global: Online" },
-                    { text: "VNG", url: "https://wearedevs.net/d/Ronix", className: "btn-download-alt", statusText: "VNG: Online" }]
+                links: [{ text: "Download", url: "https://www.mediafire.com/file/iylc3zmrl0t8xi5/Ronix_64Bits.apk/file", className: "btn-download-main", statusText: "Status: Online" }]
             },
             {
                 name: "Krnl",
