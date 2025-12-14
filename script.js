@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Ronix",
                 logo: "https://wearedevs.net/images/ronix/ronix-animated.gif",
-                version: "2.701",
+                version: "2.702",
                 status: "Online",
                 links: [{ text: "Download", url: "https://www.mediafire.com/file/iylc3zmrl0t8xi5/Ronix_64Bits.apk/file", className: "btn-download-main", statusText: "Status: Online" }]
             },
