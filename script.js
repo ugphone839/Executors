@@ -147,6 +147,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 status: "Online",
                 links: [{ text: "Global", url: "https://www.mediafire.com/file/7iizmrzio32qsve/FluxusZ+V3.0.6+ARM64.apk/file", className: "btn-download-main", statusText: "Global: Online" },
                     { text: "VNG", url: "https://www.mediafire.com/file/v2iuh5a7klnu84j/FluxusZ+V3.0.6+VNG+ARM64.apk/file", className: "btn-download-alt", statusText: "VNG: Online" }]
+            },
+            {
+                name: "Cryptic",
+                logo: "https://getcryptic.net/assets/moonzglowz-HcoSKqMr.png",
+                version: "2.701",
+                status: "Online",
+                links: [{ text: "Global", url: "https://www.mediafire.com/file/t7cyqn9145t2zov/Cryptic_2.702.622.apk/file", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "VNG", url: "https://www.mediafire.com/file/t7cyqn9145t2zov/Cryptic_2.702.622.apk/file", className: "btn-download-alt", statusText: "VNG: Online" }]
             }
         ]
     };
