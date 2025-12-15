@@ -51,9 +51,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Xeno",
                 logo: "https://www.xeno.onl/images/xeno.png",
-                version: "version-e380c8edc8f6477c",
+                version: "version-eaebe135b3ec446b",
                 status: "Online",
-                links: [{ text: "Download", url: "https://www.mediafire.com/file/c4ok6d5n1yadix1/Xeno-v1.3.0a.zip/file", className: "btn-download-main" }]
+                links: [{ text: "Download", url: "https://www.mediafire.com/file/jluwufk5wzhp3z5/Xeno-v1.3.10c.zip/file", className: "btn-download-main", statusText: "Status: Online" }]
             }
         ],
         ios: [
