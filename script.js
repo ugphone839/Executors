@@ -7,13 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const EXECUTOR_DATA = {
         pc: [
             {
-                name: "Volcano",
-                logo: "https://files.catbox.moe/ucf3km.png",
-                version: "version-e380c8edc8f6477c",
-                status: "Offline",
-                links: [{ text: "Download", url: "https://volcano.wtf/", className: "btn-download-main", statusText: "Status: Offline" }]
-            },
-            {
                 name: "Velocity",
                 logo: "https://files.catbox.moe/tj6brv.png",
                 version: "version-f6dd34ecac7b4642",
