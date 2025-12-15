@@ -10,8 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 name: "Volcano",
                 logo: "https://files.catbox.moe/ucf3km.png",
                 version: "version-e380c8edc8f6477c",
-                status: "Online",
-                links: [{ text: "Download", url: "https://volcano.wtf/", className: "btn-download-main" }]
+                status: "Offline",
+                links: [{ text: "Download", url: "https://volcano.wtf/", className: "btn-download-main", statusText: "Status: Offline" }]
             },
             {
                 name: "Velocity",
