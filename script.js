@@ -24,8 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 name: "Bunni",
                 logo: "https://sf-static.upanhlaylink.com/img/image_20251107ec93fb41bcff1cb31ece2f29c4c3d623.jpg",
                 version: "version-e380c8edc8f6477c",
-                status: "Online",
-                links: [{ text: "Download", url: "https://github.com/vmp0rblx/bunni-download/raw/refs/heads/main/latestbunni.zip", className: "btn-download-main" }]
+                status: "Offline",
+                links: [{ text: "Download", url: "https://github.com/vmp0rblx/bunni-download/raw/refs/heads/main/latestbunni.zip", className: "btn-download-main", statusText: "Status: Offline" }]
             },
             {
                 name: "Swift",
