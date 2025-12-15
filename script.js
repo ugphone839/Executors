@@ -44,9 +44,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Solara",
                 logo: "https://files.catbox.moe/gjzzjt.png",
-                version: "version-e380c8edc8f6477c",
+                version: "version-eaebe135b3ec446b",
                 status: "Online",
-                links: [{ text: "Download", url: "https://www.mediafire.com/file/v0rhes4h8s6x8ta/Solara.Dir.zip/file", className: "btn-download-main" }]
+                links: [{ text: "Download", url: "https://www.mediafire.com/file/f6qgpqxxeakphey/Solara.Dir.zip/file", className: "btn-download-main", statusText: "Status: Online" }]
             },
             {
                 name: "Xeno",
