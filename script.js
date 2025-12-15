@@ -145,8 +145,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 logo: "https://files.catbox.moe/qt87ws.webp",
                 version: "2.702",
                 status: "Online",
-                links: [{ text: "Global", url: "https://www.mediafire.com/file/7iizmrzio32qsve/FluxusZ+V3.0.6+ARM64.apk/file", className: "btn-download-main", statusText: "Global: Online" },
-                    { text: "VNG", url: "https://www.mediafire.com/file/v2iuh5a7klnu84j/FluxusZ+V3.0.6+VNG+ARM64.apk/file", className: "btn-download-alt", statusText: "VNG: Online" }]
+                links: [{ text: "Global", url: "https://fluxusz.com/download", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "VNG", url: "https://fluxusz.com/download", className: "btn-download-alt", statusText: "VNG: Online" }]
             },
             {
                 name: "Cryptic",
