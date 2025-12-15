@@ -149,6 +149,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 status: "Online",
                 links: [{ text: "Global", url: "https://www.mediafire.com/file/t7cyqn9145t2zov/Cryptic_2.702.622.apk/file", className: "btn-download-main", statusText: "Global: Online" },
                     { text: "VNG", url: "https://www.mediafire.com/file/3yq3y5sp46wnn0p/Cryptic_VNG_2.702.613.apk/file", className: "btn-download-alt", statusText: "VNG: Online" }]
+            },
+            {
+                name: "Client test",
+                logo: "https://pornhub.com",
+                version: "2.7000000",
+                status: "Online",
+                links: [{ text: "Download", url: "https://xnhau.com", className: "btn-download-main", statusText: "Status: Online" }]
             }
         ]
     };
