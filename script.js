@@ -104,10 +104,10 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Arceus X NEO",
                 logo: "https://sf-static.upanhlaylink.com/img/image_2025091341b69c6afa4e02709bf1ba299bdbafbd.jpg",
-                version: "2.701",
-                status: "Partial",
+                version: "2.702",
+                status: "Online",
                 links: [
-                    { text: "Global", url: "https://www.mediafire.com/file/0rdrkif2bks2b52/Roblox_Arceus_X_NEO_1.9.6.apk/file", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "Global", url: "https://www.mediafire.com/file/0m8nayap26fhsi5/Roblox_Arceus_X_NEO_1.9.7.apk/file", className: "btn-download-main", statusText: "Global: Online" },
                     { text: "VNG", url: "https://www.mediafire.com/file/0rdrkif2bks2b52/Roblox_Arceus_X_NEO_1.9.6.apk/file", className: "btn-download-alt", statusText: "VNG: Offline" }
                 ]
             },
