@@ -45,19 +45,19 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Solara",
                 logo: "https://files.catbox.moe/gjzzjt.png",
-                version: "version-eaebe135b3ec446b",
+                version: "version-5b077c09380f4fe6",
                 status: "Online",
                 links: [
-                    { text: "Download", url: "https://www.mediafire.com/file/f6qgpqxxeakphey/Solara.Dir.zip/file", className: "btn-download-main", statusText: "Status: Online" }
+                    { text: "Download", url: "https://www.mediafire.com/file/0x7zlmy92g6o01x/Solara.Dir.zip/file", className: "btn-download-main", statusText: "Status: Online" }
                 ]
             },
             {
                 name: "Xeno",
                 logo: "https://www.xeno.onl/images/xeno.png",
-                version: "version-eaebe135b3ec446b",
+                version: "version-5b077c09380f4fe6",
                 status: "Online",
                 links: [
-                    { text: "Download", url: "https://www.mediafire.com/file/jluwufk5wzhp3z5/Xeno-v1.3.10c.zip/file", className: "btn-download-main", statusText: "Status: Online" }
+                    { text: "Download", url: "https://www.mediafire.com/file/4472tvbodz03neg/Xeno-v1.3.10c.zip/file", className: "btn-download-main", statusText: "Status: Online" }
                 ]
             }
         ],
