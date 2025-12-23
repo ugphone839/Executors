@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 name: "Krnl iOS",
                 logo: "https://cdn.wearedevs.net/images/thumbnails/krnl.jpeg",
                 version: "2.695",
-                status: "Online",
+                status: "Offline",
                 links: [
                     { text: "Global", url: "https://krnl.filenetwork.vip/file/Krnl_release_695.ipa", className: "btn-download-main", statusText: "Global: Offline" },
                     { text: "VNG", url: "https://krnl.filenetwork.vip/file/Krnl_vng_release_685.ipa", className: "btn-download-alt", statusText: "VNG: Offline" }
@@ -93,10 +93,10 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Delta iOS",
                 logo: "https://sf-static.upanhlaylink.com/img/image_2025091320b780aa4e49c945bdddf569984a41b6.jpg",
-                version: "2.700",
+                version: "2.701",
                 status: "Online",
                 links: [
-                    { text: "Download", url: "https://cdn.gloopup.net/file/Delta-2.700.937.ipa", className: "btn-download-main", statusText: "Status: Online" }
+                    { text: "Download", url: "https://cdn.gloopup.net/file/Delta-2.701.966.ipa", className: "btn-download-main", statusText: "Status: Online" }
                 ]
             }
         ],
