@@ -134,9 +134,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 name: "Ronix",
                 logo: "https://wearedevs.net/images/ronix/ronix-animated.gif",
                 version: "2.702",
-                status: "Online",
+                status: "Partial",
                 links: [
-                    { text: "Global", url: "https://wearedevs.net/d/Ronix", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "Global", url: "https://wearedevs.net/d/Ronix", className: "btn-download-main", statusText: "Global: Offline" },
                     { text: "VNG", url: "https://wearedevs.net/d/Ronix", className: "btn-download-alt", statusText: "VNG: Online" }
                 ]
             },
@@ -154,27 +154,27 @@ document.addEventListener('DOMContentLoaded', () => {
                 name: "Trigon",
                 logo: "https://trigonevo.com/wp-content/uploads/2021/09/cropped-New-Trigon-with-Shadow-300x300.png.webp",
                 version: "2.702",
-                status: "Online",
+                status: "Offline",
                 links: [
-                    { text: "Download", url: "https://www.mediafire.com/file/wc5z4lfg0obigk9/Trigon_2.702.632.apk/file", className: "btn-download-main", statusText: "Status: Online" }
+                    { text: "Download", url: "https://www.mediafire.com/file/wc5z4lfg0obigk9/Trigon_2.702.632.apk/file", className: "btn-download-main", statusText: "Status: Offline" }
                 ]
             },
             {
                 name: "Vega X",
                 logo: "https://vegax.gg/assets/img/V_logo_white.png",
                 version: "2.702",
-                status: "Online",
+                status: "Offline",
                 links: [
-                    { text: "Download", url: "https://github.com/1f0yt/community/releases/download/Vegax/Vega.X.apk", className: "btn-download-main", statusText: "Status: Online" }
+                    { text: "Download", url: "https://github.com/1f0yt/community/releases/download/Vegax/Vega.X.apk", className: "btn-download-main", statusText: "Status: Offline" }
                 ]
             },
             {
                 name: "FluxusZ",
                 logo: "https://files.catbox.moe/qt87ws.webp",
                 version: "2.702",
-                status: "Online",
+                status: "Partial",
                 links: [
-                    { text: "Global", url: "https://fluxusz.com/download", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "Global", url: "https://fluxusz.com/download", className: "btn-download-main", statusText: "Global: Offline" },
                     { text: "VNG", url: "https://fluxusz.com/download", className: "btn-download-alt", statusText: "VNG: Online" }
                 ]
             },
@@ -182,9 +182,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 name: "Cryptic",
                 logo: "https://getcryptic.net/assets/moonzglowz-HcoSKqMr.png",
                 version: "2.702",
-                status: "Online",
+                status: "Partial",
                 links: [
-                    { text: "Global", url: "https://www.mediafire.com/file/t7cyqn9145t2zov/Cryptic_2.702.622.apk/file", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "Global", url: "https://www.mediafire.com/file/t7cyqn9145t2zov/Cryptic_2.702.622.apk/file", className: "btn-download-main", statusText: "Global: Offline" },
                     { text: "VNG", url: "https://www.mediafire.com/file/3yq3y5sp46wnn0p/Cryptic_VNG_2.702.613.apk/file", className: "btn-download-alt", statusText: "VNG: Online" }
                 ]
             }
