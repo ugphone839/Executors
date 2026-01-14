@@ -181,10 +181,10 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Cryptic",
                 logo: "https://getcryptic.net/assets/moonzglowz-HcoSKqMr.png",
-                version: "2.702",
-                status: "Partial",
+                version: "2.703",
+                status: "Online",
                 links: [
-                    { text: "Global", url: "https://www.mediafire.com/file/t7cyqn9145t2zov/Cryptic_2.702.622.apk/file", className: "btn-download-main", statusText: "Global: Offline" },
+                    { text: "Global", url: "https://www.mediafire.com/file/7acd4zu3rl29po9/Cryptic_APK_2.703.1353.apk/file", className: "btn-download-main", statusText: "Global: Online" },
                     { text: "VNG", url: "https://www.mediafire.com/file/3yq3y5sp46wnn0p/Cryptic_VNG_2.702.613.apk/file", className: "btn-download-alt", statusText: "VNG: Online" }
                 ]
             }
