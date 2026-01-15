@@ -102,16 +102,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 ]
             },
             {
-                name: "Krnl",
-                logo: "https://cdn.wearedevs.net/images/thumbnails/krnl.jpeg",
-                version: "2.698",
-                status: "Online",
-                links: [
-                    { text: "Global", url: "https://krnl.filenetwork.vip/file/krnl_release_2.697.926_2025.11.2_53.apk", className: "btn-download-main", statusText: "Global: Offline" },
-                    { text: "VNG", url: "https://krnl.filenetwork.vip/android.html", className: "btn-download-alt", statusText: "VNG: Offline" }
-                ]
-            },
-            {
                 name: "Trigon",
                 logo: "https://trigonevo.com/wp-content/uploads/2021/09/cropped-New-Trigon-with-Shadow-300x300.png.webp",
                 version: "2.703",
@@ -147,16 +137,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 links: [
                     { text: "Global", url: "https://www.mediafire.com/file/7acd4zu3rl29po9/Cryptic_APK_2.703.1353.apk/file", className: "btn-download-main", statusText: "Global: Online" },
                     { text: "VNG", url: "https://www.mediafire.com/file/7acd4zu3rl29po9/Cryptic_APK_2.703.1353.apk/file", className: "btn-download-alt", statusText: "VNG: Online" }
-                ]
-            },
-            {
-                name: "Codex",
-                logo: "https://codex.lol/static/icons/icon.svg",
-                version: "2.703",
-                status: "Online",
-                links: [
-                    { text: "Global", url: "https://gofile.io/d/UzbLud", className: "btn-download-main", statusText: "Global: Online" },
-                    { text: "VNG", url: "https://gofile.io/d/UzbLud", className: "btn-download-alt", statusText: "VNG: Online" }
                 ]
             }
         ],
