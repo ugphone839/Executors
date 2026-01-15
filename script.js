@@ -118,9 +118,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 ]
             },
             {
-                name: "FluxusZ", logo: "https://files.catbox.moe/qt87ws.webp", version: "2.704", status: "Online",
+                name: "FluxusZ", logo: "https://files.catbox.moe/qt87ws.webp", version: "2.703", status: "Online",
                 links: [
-                    { text: "Global", url: "https://gofile.io/d/N0T8FI", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "Global", url: "https://fluxusz.com/download", className: "btn-download-main", statusText: "Global: Online" },
                     { text: "VNG", url: "https://fluxusz.com/download", className: "btn-download-alt", statusText: "VNG: Online" }
                 ]
             },
