@@ -148,6 +148,16 @@ document.addEventListener('DOMContentLoaded', () => {
                     { text: "Global", url: "https://www.mediafire.com/file/7acd4zu3rl29po9/Cryptic_APK_2.703.1353.apk/file", className: "btn-download-main", statusText: "Global: Online" },
                     { text: "VNG", url: "https://www.mediafire.com/file/7acd4zu3rl29po9/Cryptic_APK_2.703.1353.apk/file", className: "btn-download-alt", statusText: "VNG: Online" }
                 ]
+            },
+            {
+                name: "Codex",
+                logo: "https://codex.lol/static/icons/icon.svg",
+                version: "2.703",
+                status: "Online",
+                links: [
+                    { text: "Global", url: "https://gofile.io/d/UzbLud", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "VNG", url: "https://gofile.io/d/UzbLud", className: "btn-download-alt", statusText: "VNG: Online" }
+                ]
             }
         ],
         ios: [
