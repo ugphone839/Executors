@@ -102,16 +102,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 ]
             },
             {
-                name: "Krnl",
-                logo: "https://cdn.wearedevs.net/images/thumbnails/krnl.jpeg",
-                version: "2.698",
-                status: "Online",
-                links: [
-                    { text: "Global", url: "https://krnl.filenetwork.vip/file/krnl_release_2.697.926_2025.11.2_53.apk", className: "btn-download-main", statusText: "Global: Offline" },
-                    { text: "VNG", url: "https://krnl.filenetwork.vip/android.html", className: "btn-download-alt", statusText: "VNG: Offline" }
-                ]
-            },
-            {
                 name: "Trigon",
                 logo: "https://trigonevo.com/wp-content/uploads/2021/09/cropped-New-Trigon-with-Shadow-300x300.png.webp",
                 version: "2.703",
