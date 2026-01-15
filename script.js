@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Velocity",
                 logo: "https://files.catbox.moe/tj6brv.png",
-                version: "version-89d89cb2d6b649be",
+                version: "version-1588a9c58c674e38",
                 status: "Online",
                 links: [
                     { text: "Download", url: "https://gofile.io/d/N0T8FI", className: "btn-download-main", statusText: "Status: Online" }
@@ -18,10 +18,10 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Bunni",
                 logo: "https://sf-static.upanhlaylink.com/img/image_20251107ec93fb41bcff1cb31ece2f29c4c3d623.jpg",
-                version: "version-e380c8edc8f6477c",
-                status: "Offline",
+                version: "version-1588a9c58c674e38",
+                status: "Online",
                 links: [
-                    { text: "Download", url: "https://github.com/vmp0rblx/bunni-download/raw/refs/heads/main/latestbunni.zip", className: "btn-download-main", statusText: "Status: Offline" }
+                    { text: "Download", url: "https://github.com/peyton-bunni/bunni-download/raw/refs/heads/main/latestbunni.zip", className: "btn-download-main", statusText: "Status: Online" }
                 ]
             },
             {
@@ -45,19 +45,19 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Solara",
                 logo: "https://files.catbox.moe/gjzzjt.png",
-                version: "version-89d89cb2d6b649be",
+                version: "version-1588a9c58c674e38",
                 status: "Online",
                 links: [
-                    { text: "Download", url: "https://www.mediafire.com/file/xiusojeic6f4lto/Solara.Dir.zip/file", className: "btn-download-main", statusText: "Status: Online" }
+                    { text: "Download", url: "https://www.mediafire.com/file/a7qyrb1w71yjoof/Solara.Dir.zip/file", className: "btn-download-main", statusText: "Status: Online" }
                 ]
             },
             {
                 name: "Xeno",
                 logo: "https://www.xeno.onl/images/xeno.png",
-                version: "version-89d89cb2d6b649be",
+                version: "version-1588a9c58c674e38",
                 status: "Online",
                 links: [
-                    { text: "Download", url: "https://www.mediafire.com/file/oy5h14t683yhd0y/Xeno-v1.3.10c.zip/file", className: "btn-download-main", statusText: "Status: Online" }
+                    { text: "Download", url: "https://xeno.onl/40a25bcf88299d7d251541579671ca47/a92f0e88/5729899ebcd696a9?hash=4k3sp4sJNGzsQjOnJwHB8T7bTTSJm2Sc2KuewDUDU9xstpmGCHJxTs81vd2QeZwR", className: "btn-download-main", statusText: "Status: Online" }
                 ]
             }
         ],
