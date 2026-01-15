@@ -138,16 +138,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     { text: "Global", url: "https://fluxusz.com/download", className: "btn-download-main", statusText: "Global: Online" },
                     { text: "VNG", url: "https://fluxusz.com/download", className: "btn-download-alt", statusText: "VNG: Online" }
                 ]
-            },
-            {
-                name: "Cryptic",
-                logo: "https://sf-static.upanhlaylink.com/img/image_20260115f0fa0fd5bcdb5f652317e63a82997962.jpg",
-                version: "2.703",
-                status: "Online",
-                links: [
-                    { text: "Global", url: "https://www.mediafire.com/file/7acd4zu3rl29po9/Cryptic_APK_2.703.1353.apk/file", className: "btn-download-main", statusText: "Global: Online" },
-                    { text: "VNG", url: "https://www.mediafire.com/file/7acd4zu3rl29po9/Cryptic_APK_2.703.1353.apk/file", className: "btn-download-alt", statusText: "VNG: Online" }
-                ]
             }
         ],
         ios: [
