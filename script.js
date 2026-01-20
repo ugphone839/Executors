@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 version: "version-1588a9c58c674e38",
                 status: "Online",
                 links: [
-                    { text: "Download", url: "https://api.bunni.fun/download", className: "btn-download-main", statusText: "Status: Online" }
+                    { text: "Download", url: "https://github.com/peyton-bunni/bunni-download/raw/refs/heads/main/latestbunni.zip", className: "btn-download-main", statusText: "Status: Online" }
                 ]
             },
             {
@@ -172,7 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Delta iOS",
                 logo: "https://sf-static.upanhlaylink.com/img/image_2025091320b780aa4e49c945bdddf569984a41b6.jpg",
-                version: "2.702",
+                version: "2.703",
                 status: "Online",
                 links: [
                     { text: "Download", url: "https://deltaexploits.gg/delta-executor-ios", className: "btn-download-main", statusText: "Status: Online" }
