@@ -34,15 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 ]
             },
             {
-                name: "Trigon PC",
-                logo: "https://sf-static.upanhlaylink.com/img/image_20251107e5b9a4a53af563430e8892ad618a40cd.jpg",
-                version: "Chờ Cập Nhật",
-                status: "Offline",
-                links: [
-                    { text: "Download", url: "https://volcano.wtf/", className: "btn-download-main" }
-                ]
-            },
-            {
                 name: "Solara",
                 logo: "https://files.catbox.moe/gjzzjt.png",
                 version: "version-1588a9c58c674e38",
