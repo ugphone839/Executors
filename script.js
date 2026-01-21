@@ -142,16 +142,6 @@ document.addEventListener('DOMContentLoaded', () => {
         ],
         ios: [
             {
-                name: "Krnl iOS",
-                logo: "https://cdn.wearedevs.net/images/thumbnails/krnl.jpeg",
-                version: "2.695",
-                status: "Offline",
-                links: [
-                    { text: "Global", url: "https://krnl.filenetwork.vip/file/Krnl_release_695.ipa", className: "btn-download-main", statusText: "Global: Offline" },
-                    { text: "VNG", url: "https://krnl.filenetwork.vip/file/Krnl_vng_release_685.ipa", className: "btn-download-alt", statusText: "VNG: Offline" }
-                ]
-            },
-            {
                 name: "Arceus X Neo iOS",
                 logo: "https://sf-static.upanhlaylink.com/img/image_2025091341b69c6afa4e02709bf1ba299bdbafbd.jpg",
                 version: "2.694",
