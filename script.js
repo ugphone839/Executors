@@ -25,15 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 ]
             },
             {
-                name: "Swift",
-                logo: "https://files.catbox.moe/5krpqt.webp",
-                version: "Chưa Up",
-                status: "Offline",
-                links: [
-                    { text: "Download", url: "https://getswift.vip/download", className: "btn-download-main" }
-                ]
-            },
-            {
                 name: "Solara",
                 logo: "https://files.catbox.moe/gjzzjt.png",
                 version: "version-1588a9c58c674e38",
