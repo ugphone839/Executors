@@ -37,9 +37,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 name: "Xeno",
                 logo: "https://www.xeno.onl/images/xeno.png",
                 version: "version-1588a9c58c674e38",
-                status: "Online",
+                status: "Offline",
                 links: [
-                    { text: "Download", url: "https://xeno.onl/40a25bcf88299d7d251541579671ca47/a92f0e88/5729899ebcd696a9?hash=4k3sp4sJNGzsQjOnJwHB8T7bTTSJm2Sc2KuewDUDU9xstpmGCHJxTs81vd2QeZwR", className: "btn-download-main", statusText: "Status: Online" }
+                    { text: "Download", url: "https://xeno.onl/40a25bcf88299d7d251541579671ca47/a92f0e88/5729899ebcd696a9?hash=4k3sp4sJNGzsQjOnJwHB8T7bTTSJm2Sc2KuewDUDU9xstpmGCHJxTs81vd2QeZwR", className: "btn-download-main", statusText: "Status: Offline" }
                 ]
             },
             {
