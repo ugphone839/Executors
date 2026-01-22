@@ -19,9 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 name: "Bunni",
                 logo: "https://sf-static.upanhlaylink.com/img/image_20251107ec93fb41bcff1cb31ece2f29c4c3d623.jpg",
                 version: "version-1588a9c58c674e38",
-                status: "Offline",
+                status: "Online",
                 links: [
-                    { text: "Download", url: "https://github.com/peyton-bunni/bunni-download/raw/refs/heads/main/latestbunni.zip", className: "btn-download-main", statusText: "Status: Offline" }
+                    { text: "Download", url: "https://github.com/peyton-bunni/bunni-download/raw/refs/heads/main/latestbunni.zip", className: "btn-download-main", statusText: "Status: Online" }
                 ]
             },
             {
@@ -36,10 +36,10 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Xeno",
                 logo: "https://www.xeno.onl/images/xeno.png",
-                version: "version-1588a9c58c674e38",
-                status: "Offline",
+                version: "version-0f5223fb6e7e4955",
+                status: "Online",
                 links: [
-                    { text: "Download", url: "https://xeno.onl/40a25bcf88299d7d251541579671ca47/a92f0e88/5729899ebcd696a9?hash=4k3sp4sJNGzsQjOnJwHB8T7bTTSJm2Sc2KuewDUDU9xstpmGCHJxTs81vd2QeZwR", className: "btn-download-main", statusText: "Status: Offline" }
+                    { text: "Download", url: "https://xeno.onl/40a25bcf88299d7d251541579671ca47/a92f0e88/5729899ebcd696a9?hash=msT3l0rUql5bEO8R3cfEltzA28H4oLGqTI05IbQUDVtfM1qMntKCgVNQov9KIK4h", className: "btn-download-main", statusText: "Status: Online" }
                 ]
             },
             {
