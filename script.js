@@ -19,18 +19,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 name: "Bunni",
                 logo: "https://sf-static.upanhlaylink.com/img/image_20251107ec93fb41bcff1cb31ece2f29c4c3d623.jpg",
                 version: "version-1588a9c58c674e38",
-                status: "Offline",
+                status: "Online",
                 links: [
-                    { text: "Download", url: "https://github.com/peyton-bunni/bunni-download/raw/refs/heads/main/latestbunni.zip", className: "btn-download-main", statusText: "Status: Offline" }
+                    { text: "Download", url: "https://github.com/peyton-bunni/bunni-download/raw/refs/heads/main/latestbunni.zip", className: "btn-download-main", statusText: "Status: Online" }
                 ]
             },
             {
                 name: "Solara",
                 logo: "https://files.catbox.moe/gjzzjt.png",
-                version: "version-1588a9c58c674e38",
+                version: "version-0f5223fb6e7e4955",
                 status: "Online",
                 links: [
-                    { text: "Download", url: "https://www.mediafire.com/file/a7qyrb1w71yjoof/Solara.Dir.zip/file", className: "btn-download-main", statusText: "Status: Online" }
+                    { text: "Download", url: "https://getsolara.dev/download/static/files/Solara.Dir.zip", className: "btn-download-main", statusText: "Status: Online" }
                 ]
             },
             {
