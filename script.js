@@ -10,18 +10,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 name: "Velocity",
                 logo: "https://files.catbox.moe/tj6brv.png",
                 version: "version-1588a9c58c674e38",
-                status: "Online",
+                status: "Offline",
                 links: [
-                    { text: "Download", url: "https://gofile.io/d/N0T8FI", className: "btn-download-main", statusText: "Status: Online" }
+                    { text: "Download", url: "https://gofile.io/d/N0T8FI", className: "btn-download-main", statusText: "Status: Offline" }
                 ]
             },
             {
                 name: "Bunni",
                 logo: "https://sf-static.upanhlaylink.com/img/image_20251107ec93fb41bcff1cb31ece2f29c4c3d623.jpg",
                 version: "version-1588a9c58c674e38",
-                status: "Online",
+                status: "Offline",
                 links: [
-                    { text: "Download", url: "https://github.com/peyton-bunni/bunni-download/raw/refs/heads/main/latestbunni.zip", className: "btn-download-main", statusText: "Status: Online" }
+                    { text: "Download", url: "https://github.com/peyton-bunni/bunni-download/raw/refs/heads/main/latestbunni.zip", className: "btn-download-main", statusText: "Status: Offline" }
                 ]
             },
             {
@@ -46,9 +46,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 name: "Ronix PC",
                 logo: "https://wearedevs.net/images/ronix/ronix-animated.gif",
                 version: "version-1588a9c58c674e38",
-                status: "Online",
+                status: "Offline",
                 links: [
-                    { text: "Download", url: "https://gofile.io/d/iVZKbO", className: "btn-download-main", statusText: "Status: Online" }
+                    { text: "Download", url: "https://gofile.io/d/iVZKbO", className: "btn-download-main", statusText: "Status: Offline" }
                 ]
             }
         ],
