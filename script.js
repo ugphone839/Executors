@@ -36,10 +36,10 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Xeno",
                 logo: "https://www.xeno.onl/images/xeno.png",
-                version: "version-0f5223fb6e7e4955",
+                version: "version-8b8c34790f814a73",
                 status: "Online",
                 links: [
-                    { text: "Download", url: "https://xeno.onl/40a25bcf88299d7d251541579671ca47/a92f0e88/5729899ebcd696a9?hash=msT3l0rUql5bEO8R3cfEltzA28H4oLGqTI05IbQUDVtfM1qMntKCgVNQov9KIK4h", className: "btn-download-main", statusText: "Status: Online" }
+                    { text: "Download", url: "https://xeno.onl/40a25bcf88299d7d251541579671ca47/a92f0e88/5729899ebcd696a9?hash=4Fh0kO4HRJwY3r99YtMySM3kKNvfHrsZCWlZbs6iqjg6WuHfawHhRsoniXzd83Uh", className: "btn-download-main", statusText: "Status: Online" }
                 ]
             },
             {
