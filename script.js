@@ -153,10 +153,10 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Delta iOS",
                 logo: "https://sf-static.upanhlaylink.com/img/image_2025091320b780aa4e49c945bdddf569984a41b6.jpg",
-                version: "2.703",
+                version: "2.704",
                 status: "Online",
                 links: [
-                    { text: "Download", url: "https://deltaexploits.gg/delta-executor-ios", className: "btn-download-main", statusText: "Status: Online" }
+                    { text: "Download", url: "https://cdn.gloopup.net/file/Delta-2.704.1059.ipa", className: "btn-download-main", statusText: "Status: Online" }
                 ]
             }
         ]
