@@ -28,9 +28,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 name: "Solara",
                 logo: "https://files.catbox.moe/gjzzjt.png",
                 version: "version-0f5223fb6e7e4955",
-                status: "Online",
+                status: "Offline",
                 links: [
-                    { text: "Download", url: "https://getsolara.dev/download/static/files/Solara.Dir.zip", className: "btn-download-main", statusText: "Status: Online" }
+                    { text: "Download", url: "https://getsolara.dev/download/static/files/Solara.Dir.zip", className: "btn-download-main", statusText: "Status: Offline" }
                 ]
             },
             {
