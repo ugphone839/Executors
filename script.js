@@ -27,10 +27,10 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Solara",
                 logo: "https://files.catbox.moe/gjzzjt.png",
-                version: "version-0f5223fb6e7e4955",
-                status: "Offline",
+                version: "version-8b8c34790f814a73",
+                status: "Online",
                 links: [
-                    { text: "Download", url: "https://getsolara.dev/download/static/files/Solara.Dir.zip", className: "btn-download-main", statusText: "Status: Offline" }
+                    { text: "Download", url: "https://getsolara.dev/download/static/files/Solara.Dir.zip", className: "btn-download-main", statusText: "Status: Online" }
                 ]
             },
             {
