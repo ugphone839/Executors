@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Solara",
                 logo: "https://files.catbox.moe/gjzzjt.png",
-                version: "version-8b8c34790f814a73",
+                version: "version-f8734e043e1e40a2",
                 status: "Online",
                 links: [
                     { text: "Download", url: "https://getsolara.dev/download/static/files/Solara.Dir.zip", className: "btn-download-main", statusText: "Status: Online" }
@@ -56,10 +56,10 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Arceus X NEO",
                 logo: "https://sf-static.upanhlaylink.com/img/image_2025091341b69c6afa4e02709bf1ba299bdbafbd.jpg",
-                version: "2.704",
+                version: "2.703",
                 status: "Online",
                 links: [
-                    { text: "Global", url: "https://www.mediafire.com/file/c66vzndabr76zuc/Roblox_Arceus_X_NEO_1.9.9.apk/file", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "Global", url: "https://www.mediafire.com/file/8841v0l31pwj28e/Roblox_Arceus_X_NEO_1.9.8.apk/file", className: "btn-download-main", statusText: "Global: Online" },
                     { text: "VNG", url: "https://www.mediafire.com/file/o6a2yhenrvhqzr5/Roblox_-_VNG_Arceus_X_NEO_1.9.8.apk/file", className: "btn-download-alt", statusText: "VNG: Online" }
                 ]
             },
