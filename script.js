@@ -18,10 +18,10 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Bunni",
                 logo: "https://sf-static.upanhlaylink.com/img/image_20251107ec93fb41bcff1cb31ece2f29c4c3d623.jpg",
-                version: "version-1588a9c58c674e38",
-                status: "Offline",
+                version: "version-f8734e043e1e40a2",
+                status: "Online",
                 links: [
-                    { text: "Download", url: "https://github.com/peyton-bunni/bunni-download/raw/refs/heads/main/latestbunni.zip", className: "btn-download-main", statusText: "Status: Offline" }
+                    { text: "Download", url: "https://bunni-static.online/files/2c772d84-9dd7-4068-87d8-22ea5ee8704c", className: "btn-download-main", statusText: "Status: Online" }
                 ]
             },
             {
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Arceus X NEO",
                 logo: "https://sf-static.upanhlaylink.com/img/image_2025091341b69c6afa4e02709bf1ba299bdbafbd.jpg",
-                version: "2.704",
+                version: "2.703",
                 status: "Online",
                 links: [
                     { text: "Global", url: "https://www.mediafire.com/file/8841v0l31pwj28e/Roblox_Arceus_X_NEO_1.9.8.apk/file", className: "btn-download-main", statusText: "Global: Online" },
@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "FluxusZ",
                 logo: "https://files.catbox.moe/qt87ws.webp",
-                version: "2.704",
+                version: "2.703",
                 status: "Online",
                 links: [
                     { text: "Global", url: "https://fluxusz.com/download", className: "btn-download-main", statusText: "Global: Online" },
