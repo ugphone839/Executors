@@ -66,10 +66,10 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Codex",
                 logo: "https://codex.lol/static/icons/icon.svg",
-                version: "2.703",
-                status: "Online",
+                version: "2.704",
+                status: "Partial",
                 links: [
-                    { text: "Global", url: "https://gofile.io/d/UzbLud", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "Global", url: "https://www.mediafire.com/file/hot8zr1y5ggnk6q/Codex+v2.704.apk/file", className: "btn-download-main", statusText: "Global: Online" },
                     { text: "VNG", url: "https://www.mediafire.com/file/8dxf37l1y6xtcct/Codex+v2.701.apk/file", className: "btn-download-alt", statusText: "VNG: Offline" }
                 ]
             },
@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "FluxusZ",
                 logo: "https://files.catbox.moe/qt87ws.webp",
-                version: "2.703",
+                version: "2.704",
                 status: "Online",
                 links: [
                     { text: "Global", url: "https://fluxusz.com/download", className: "btn-download-main", statusText: "Global: Online" },
