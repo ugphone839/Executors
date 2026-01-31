@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Velocity",
                 logo: "https://files.catbox.moe/tj6brv.png",
-                version: "version-f8734e043e1e40a2",
+                version: "version-db4634f0e27d4d36",
                 status: "Online",
                 links: [
                     { text: "Download", url: "https://gofile.io/d/biQGwp", className: "btn-download-main", statusText: "Status: Online" }
@@ -36,16 +36,16 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Xeno",
                 logo: "https://www.xeno.onl/images/xeno.png",
-                version: "version-f8734e043e1e40a2",
+                version: "version-db4634f0e27d4d36",
                 status: "Online",
                 links: [
-                    { text: "Download", url: "https://xeno.onl/40a25bcf88299d7d251541579671ca47/a92f0e88/5729899ebcd696a9", className: "btn-download-main", statusText: "Status: Online" }
+                    { text: "Download", url: "https://xeno.onl/40a25bcf88299d7d251541579671ca47/a92f0e88/5729899ebcd696a9?hash=dTtQxKhyvl9aYSmTEHYJM5z5dQgjaT1fMqq6RNWTfPBgkaU4qSO9RJWxISULFDMS", className: "btn-download-main", statusText: "Status: Online" }
                 ]
             },
             {
                 name: "Ronix PC",
                 logo: "https://wearedevs.net/images/ronix/ronix-animated.gif",
-                version: "version-8b8c34790f814a73",
+                version: "version-db4634f0e27d4d36",
                 status: "Online",
                 links: [
                     { text: "Download", url: "https://wrdcdn.net/r/154522/1769203129478/RonixInstaller_NEW.exe", className: "btn-download-main", statusText: "Status: Online" }
