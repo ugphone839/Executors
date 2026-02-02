@@ -76,10 +76,10 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Delta",
                 logo: "https://sf-static.upanhlaylink.com/img/image_2025091320b780aa4e49c945bdddf569984a41b6.jpg",
-                version: "2.704",
+                version: "2.705",
                 status: "Online",
                 links: [
-                    { text: "Download", url: "https://delta.filenetwork.vip/file/Delta-2.704.1060.apk", className: "btn-download-main", statusText: "Status: Online" }
+                    { text: "Download", url: "https://delta.filenetwork.vip/file/Delta-2.705.942.apk", className: "btn-download-main", statusText: "Status: Online" }
                 ]
             },
             {
