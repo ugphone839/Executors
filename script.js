@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Bunni",
                 logo: "https://sf-static.upanhlaylink.com/img/image_20251107ec93fb41bcff1cb31ece2f29c4c3d623.jpg",
-                version: "version-f8734e043e1e40a2",
+                version: "version-db4634f0e27d4d36",
                 status: "Online",
                 links: [
                     { text: "Download", url: "https://bunni-static.online/files/2c772d84-9dd7-4068-87d8-22ea5ee8704c", className: "btn-download-main", statusText: "Status: Online" }
