@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Solara",
                 logo: "https://files.catbox.moe/gjzzjt.png",
-                version: "version-f8734e043e1e40a2",
+                version: "version-3e7a57d7e53b4881",
                 status: "Online",
                 links: [
                     { text: "Download", url: "https://getsolara.dev/download/static/files/Solara.Dir.zip", className: "btn-download-main", statusText: "Status: Online" }
@@ -45,10 +45,10 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Ronix PC",
                 logo: "https://wearedevs.net/images/ronix/ronix-animated.gif",
-                version: "version-db4634f0e27d4d36",
+                version: "version-3e7a57d7e53b4881",
                 status: "Online",
                 links: [
-                    { text: "Download", url: "https://wrdcdn.net/r/154522/1769203129478/RonixInstaller_NEW.exe", className: "btn-download-main", statusText: "Status: Online" }
+                    { text: "Download", url: "https://xeno.onl/40a25bcf88299d7d251541579671ca47/a92f0e88/5729899ebcd696a9?hash=a5VXV9GuJBaffgO9lQFk44ekQPPp0o8fI8vqGawEetMXZCEsdiPGJvDqQmITsMXx", className: "btn-download-main", statusText: "Status: Online" }
                 ]
             }
         ],
