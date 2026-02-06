@@ -10,24 +10,24 @@ document.addEventListener('DOMContentLoaded', () => {
                 name: "Velocity",
                 logo: "https://files.catbox.moe/tj6brv.png",
                 version: "version-db4634f0e27d4d36",
-                status: "Online",
+                status: "Offline",
                 links: [
-                    { text: "Download", url: "https://gofile.io/d/biQGwp", className: "btn-download-main", statusText: "Status: Online" }
+                    { text: "Download", url: "https://gofile.io/d/biQGwp", className: "btn-download-main", statusText: "Status: Offline" }
                 ]
             },
             {
                 name: "Bunni",
                 logo: "https://sf-static.upanhlaylink.com/img/image_20251107ec93fb41bcff1cb31ece2f29c4c3d623.jpg",
                 version: "version-db4634f0e27d4d36",
-                status: "Online",
+                status: "Offline",
                 links: [
-                    { text: "Download", url: "https://bunni-static.online/files/2c772d84-9dd7-4068-87d8-22ea5ee8704c", className: "btn-download-main", statusText: "Status: Online" }
+                    { text: "Download", url: "https://bunni-static.online/files/2c772d84-9dd7-4068-87d8-22ea5ee8704c", className: "btn-download-main", statusText: "Status: Offline" }
                 ]
             },
             {
                 name: "Solara",
                 logo: "https://files.catbox.moe/gjzzjt.png",
-                version: "version-3e7a57d7e53b4881",
+                version: "version-80c7b8e578f241ff",
                 status: "Online",
                 links: [
                     { text: "Download", url: "https://getsolara.dev/download/static/files/Solara.Dir.zip", className: "btn-download-main", statusText: "Status: Online" }
