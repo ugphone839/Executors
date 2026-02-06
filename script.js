@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 status: "Online",
                 links: [
                     { text: "Global", url: "https://www.mediafire.com/file/irmwqommrnt7p7l/Roblox_Arceus_X_NEO_2.0.1.apk/file", className: "btn-download-main", statusText: "Global: Online" },
-                    { text: "VNG", url: "https://www.mediafire.com/file/zxmdtejwocz4mw1/Roblox_-_VNG_Arceus_X_NEO_1.9.9.apk/file", className: "btn-download-alt", statusText: "VNG: Online" }
+                    { text: "VNG", url: "https://www.mediafire.com/file/x2i0s4vqkrqq2u7/Roblox_-_VNG_Arceus_X_NEO_2.0.1.apk/file", className: "btn-download-alt", statusText: "VNG: Online" }
                 ]
             },
             {
