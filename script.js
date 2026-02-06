@@ -36,19 +36,19 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Xeno",
                 logo: "https://www.xeno.onl/images/xeno.png",
-                version: "version-db4634f0e27d4d36",
+                version: "version-80c7b8e578f241ff",
                 status: "Online",
                 links: [
-                    { text: "Download", url: "https://xeno.onl/40a25bcf88299d7d251541579671ca47/a92f0e88/5729899ebcd696a9?hash=dTtQxKhyvl9aYSmTEHYJM5z5dQgjaT1fMqq6RNWTfPBgkaU4qSO9RJWxISULFDMS", className: "btn-download-main", statusText: "Status: Online" }
+                    { text: "Download", url: "undefined", className: "btn-download-main", statusText: "Status: Online" }
                 ]
             },
             {
                 name: "Ronix PC",
                 logo: "https://wearedevs.net/images/ronix/ronix-animated.gif",
-                version: "version-3e7a57d7e53b4881",
+                version: "version-80c7b8e578f241ff",
                 status: "Online",
                 links: [
-                    { text: "Download", url: "https://xeno.onl/40a25bcf88299d7d251541579671ca47/a92f0e88/5729899ebcd696a9?hash=a5VXV9GuJBaffgO9lQFk44ekQPPp0o8fI8vqGawEetMXZCEsdiPGJvDqQmITsMXx", className: "btn-download-main", statusText: "Status: Online" }
+                    { text: "Download", url: "https://wrdcdn.net/r/154522/1769203129478/RonixInstaller_NEW.exe", className: "btn-download-main", statusText: "Status: Online" }
                 ]
             }
         ],
@@ -66,10 +66,10 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Codex",
                 logo: "https://codex.lol/static/icons/icon.svg",
-                version: "2.705",
+                version: "2.706",
                 status: "Partial",
                 links: [
-                    { text: "Global", url: "https://www.mediafire.com/file/qnzbaba4c8rjncw/Codex+V2.705.924.apk/file", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "Global", url: "https://www.mediafire.com/file/v2wqjrqpgttq4fs/Codex+v2.706.750.apk/file", className: "btn-download-main", statusText: "Global: Online" },
                     { text: "VNG", url: "https://www.mediafire.com/file/8dxf37l1y6xtcct/Codex+v2.701.apk/file", className: "btn-download-alt", statusText: "VNG: Offline" }
                 ]
             },
@@ -95,16 +95,16 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Trigon",
                 logo: "https://trigonevo.com/wp-content/uploads/2021/09/cropped-New-Trigon-with-Shadow-300x300.png.webp",
-                version: "2.705",
+                version: "2.706",
                 status: "Online",
                 links: [
-                    { text: "Download", url: "https://www.mediafire.com/file/ehizxu3sghotolw/Trigon_2.705.924.apk/file", className: "btn-download-main", statusText: "Status: Online" }
+                    { text: "Download", url: "https://www.mediafire.com/file/de3636csdw4aqbe/Trigon_2.706.750.apk/file", className: "btn-download-main", statusText: "Status: Online" }
                 ]
             },
             {
                 name: "Vega X",
                 logo: "https://vegax.gg/assets/img/V_logo_white.png",
-                version: "2.705",
+                version: "2.706",
                 status: "Online",
                 links: [
                     { text: "Download", url: "https://github.com/1f0yt/community/releases/download/Vegax/Vega.X.apk", className: "btn-download-main", statusText: "Status: Online" }
