@@ -2,78 +2,401 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Admin Panel - Executors</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Executor Admin Panel</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        body { font-family: sans-serif; background: #1a1a1a; color: white; padding: 20px; }
-        textarea { width: 100%; height: 400px; background: #333; color: #0f0; border: 1px solid #555; padding: 10px; font-family: monospace; }
-        input { padding: 10px; width: 300px; }
-        button { padding: 10px 20px; background: #007bff; color: white; border: none; cursor: pointer; }
-        button:hover { background: #0056b3; }
-        #status { margin-top: 10px; }
+        :root {
+            --bg: #121212;
+            --surface: #1e1e1e;
+            --primary: #bb86fc;
+            --secondary: #03dac6;
+            --text: #e0e0e0;
+            --danger: #cf6679;
+            --success: #4caf50;
+        }
+
+        body { margin: 0; font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); overflow-x: hidden; }
+        
+        /* LOGIN SCREEN */
+        #login-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: var(--bg); z-index: 9999;
+            display: flex; justify-content: center; align-items: center; flex-direction: column;
+        }
+        .login-box { background: var(--surface); padding: 30px; border-radius: 10px; text-align: center; width: 300px; }
+        .login-box input { width: 90%; padding: 10px; margin: 10px 0; background: #333; border: 1px solid #555; color: white; border-radius: 5px; }
+        .btn { padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; transition: 0.2s; }
+        .btn-primary { background: var(--primary); color: black; }
+        .btn-success { background: var(--success); color: white; }
+        
+        /* MAIN LAYOUT */
+        #app { display: none; height: 100vh; display: flex; flex-direction: column; }
+        
+        /* HEADER */
+        .header {
+            background: var(--surface); padding: 15px; display: flex; align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.5); position: sticky; top: 0; z-index: 100;
+        }
+        .menu-btn { font-size: 24px; cursor: pointer; margin-right: 20px; color: var(--text); }
+        .title { font-size: 20px; font-weight: bold; }
+
+        /* SIDEBAR */
+        .sidebar {
+            position: fixed; left: -250px; top: 60px; bottom: 0; width: 250px;
+            background: #181818; transition: 0.3s; z-index: 99; padding-top: 20px;
+            border-right: 1px solid #333;
+        }
+        .sidebar.active { left: 0; }
+        .nav-item {
+            padding: 15px 20px; cursor: pointer; border-left: 3px solid transparent; transition: 0.2s;
+        }
+        .nav-item:hover, .nav-item.active { background: #2a2a2a; border-left-color: var(--primary); }
+        .nav-item i { margin-right: 10px; width: 20px; text-align: center; }
+
+        /* CONTENT */
+        .main-content { padding: 20px; flex: 1; overflow-y: auto; margin-left: 0; transition: 0.3s; }
+        .sidebar.active ~ .main-content { margin-left: 250px; } /* Desktop push */
+
+        /* EXECUTOR CARDS */
+        .executor-card {
+            background: var(--surface); border-radius: 10px; padding: 20px; margin-bottom: 20px;
+            border: 1px solid #333; position: relative;
+        }
+        .card-header { font-size: 18px; font-weight: bold; margin-bottom: 15px; color: var(--secondary); display: flex; justify-content: space-between; }
+        
+        .form-group { margin-bottom: 15px; }
+        .form-group label { display: block; margin-bottom: 5px; font-size: 14px; color: #aaa; }
+        .form-control {
+            width: 100%; padding: 10px; background: #2c2c2c; border: 1px solid #444;
+            color: white; border-radius: 5px; box-sizing: border-box;
+        }
+        .form-control:focus { outline: none; border-color: var(--primary); }
+
+        /* SAVE BUTTON (FLOATING) */
+        .fab-save {
+            position: fixed; bottom: 30px; right: 30px;
+            background: var(--success); color: white;
+            width: 60px; height: 60px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 24px; box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+            cursor: pointer; transition: 0.3s; z-index: 200;
+        }
+        .fab-save:hover { transform: scale(1.1); }
+        .fab-save.loading { background: #555; cursor: not-allowed; }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .sidebar.active ~ .main-content { margin-left: 0; opacity: 0.3; pointer-events: none; }
+        }
     </style>
 </head>
 <body>
-    <h1>⚙️ Chỉnh sửa Executors Data</h1>
-    
-    <div>
-        <label>Mật khẩu Admin:</label><br>
-        <input type="password" id="password" placeholder="Nhập mật khẩu...">
+
+    <!-- 1. LOGIN SCREEN -->
+    <div id="login-overlay">
+        <div class="login-box">
+            <h2>🔐 Admin Access</h2>
+            <input type="password" id="password-input" placeholder="Nhập mật khẩu...">
+            <button class="btn btn-primary" onclick="attemptLogin()">Đăng nhập</button>
+            <p id="login-msg" style="color: red; margin-top: 10px;"></p>
+        </div>
     </div>
-    <br>
-    
-    <div>
-        <label>Nội dung file script.js:</label><br>
-        <textarea id="editor">Đang tải dữ liệu...</textarea>
+
+    <!-- 2. MAIN APP -->
+    <div id="app" style="display: none;">
+        <!-- Header -->
+        <div class="header">
+            <i class="fas fa-bars menu-btn" onclick="toggleSidebar()"></i>
+            <div class="title">Executors Manager</div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <div class="nav-item active" onclick="switchTab('pc')">
+                <i class="fas fa-desktop"></i> PC Executors
+            </div>
+            <div class="nav-item" onclick="switchTab('android')">
+                <i class="fab fa-android"></i> Android Executors
+            </div>
+            <div class="nav-item" onclick="switchTab('ios')">
+                <i class="fab fa-apple"></i> iOS Executors
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="main-content" id="content-area">
+            <h2>Đang tải dữ liệu...</h2>
+        </div>
+
+        <!-- Save Button -->
+        <div class="fab-save" onclick="saveToGithub()" title="Hoàn thành & Lưu">
+            <i class="fas fa-save"></i>
+        </div>
     </div>
-    <br>
-    
-    <button onclick="saveData()">Lưu & Cập nhật Web</button>
-    <div id="status"></div>
 
     <script>
-        // Tải dữ liệu hiện tại khi vào trang
+        let DATA = null;
+        let PASSWORD = "";
+        let CURRENT_TAB = 'pc';
+
+        // --- AUTHENTICATION ---
+        function attemptLogin() {
+            const pass = document.getElementById('password-input').value;
+            if(!pass) return;
+            PASSWORD = pass;
+            // Giả lập login thành công để load data (Check pass thật ở server khi save)
+            document.getElementById('login-overlay').style.display = 'none';
+            document.getElementById('app').style.display = 'flex';
+            loadData();
+        }
+
+        // --- DATA HANDLING ---
         async function loadData() {
             try {
-                // Tải từ GitHub Raw để lấy code mới nhất
-                const res = await fetch('https://raw.githubusercontent.com/ugphone839/Executors/refs/heads/main/script.js');
+                // Tải RAW từ GitHub (Tránh cache)
+                const res = await fetch('https://raw.githubusercontent.com/ugphone839/Executors/refs/heads/main/script.js?t=' + Date.now());
+                if (!res.ok) throw new Error("Không thể tải file script.js");
                 const text = await res.text();
-                document.getElementById('editor').value = text;
+                
+                // Parse JS Object từ string
+                const match = text.match(/const EXECUTOR_DATA = ({[\s\S]*?});/);
+                if (match) {
+                    // Dùng eval một cách cẩn thận để parse object
+                    // Vì đây là tool admin nội bộ nên eval chấp nhận được
+                    DATA = eval('(' + match[1] + ')');
+                    renderTab(CURRENT_TAB);
+                } else {
+                    alert("Lỗi: Không tìm thấy biến EXECUTOR_DATA");
+                }
             } catch (e) {
-                document.getElementById('editor').value = "Lỗi tải dữ liệu: " + e;
+                alert("Lỗi tải dữ liệu: " + e.message);
             }
         }
-        loadData();
 
-        // Hàm lưu
-        async function saveData() {
-            const content = document.getElementById('editor').value;
-            const password = document.getElementById('password').value;
-            const status = document.getElementById('status');
+        // --- UI RENDERING ---
+        function toggleSidebar() {
+            document.getElementById('sidebar').classList.toggle('active');
+        }
 
-            if(!password) return alert("Chưa nhập mật khẩu!");
+        function switchTab(platform) {
+            CURRENT_TAB = platform;
+            // Update active class sidebar
+            document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
+            event.currentTarget.classList.add('active');
+            
+            // Mobile: Close sidebar after select
+            if(window.innerWidth < 768) toggleSidebar();
+            
+            renderTab(platform);
+        }
 
-            status.innerText = "⏳ Đang gửi yêu cầu update...";
-            status.style.color = "yellow";
+        function renderTab(platform) {
+            const container = document.getElementById('content-area');
+            container.innerHTML = `<h2>📱 Chỉnh sửa: ${platform.toUpperCase()}</h2>`;
 
+            if (!DATA || !DATA[platform]) {
+                container.innerHTML += "<p>Không có dữ liệu.</p>";
+                return;
+            }
+
+            DATA[platform].forEach((exe, index) => {
+                const isDual = exe.links.length > 1;
+                
+                // Tạo Options cho Status
+                let statusOptions = '';
+                if (isDual) {
+                    // 4 Options cho Dual Link
+                    const opts = [
+                        {val: 'Online', label: '🟢 Cả 2 Online'},
+                        {val: 'Offline', label: '🔴 Cả 2 Offline'},
+                        {val: 'Partial_GOn', label: '🟡 Global On / VNG Off'},
+                        {val: 'Partial_VOn', label: '🟡 Global Off / VNG On'}
+                    ];
+                    // Logic map status hiện tại sang dropdown
+                    // Cái này hơi phức tạp vì bot lưu text. Ta check exe.status và link statusText
+                    // Để đơn giản, ta map theo exe.status chính
+                    opts.forEach(o => {
+                        // Logic check selected (Đơn giản hóa)
+                        let selected = '';
+                        if (exe.status === 'Online' && o.val === 'Online') selected = 'selected';
+                        else if (exe.status === 'Offline' && o.val === 'Offline') selected = 'selected';
+                        // Partial logic check text inside link (Optional enhancement)
+                        statusOptions += `<option value="${o.val}" ${selected}>${o.label}</option>`;
+                    });
+                } else {
+                    // 2 Options cho Single Link
+                    statusOptions = `
+                        <option value="Online" ${exe.status === 'Online' ? 'selected' : ''}>🟢 Online</option>
+                        <option value="Offline" ${exe.status === 'Offline' ? 'selected' : ''}>🔴 Offline</option>
+                    `;
+                }
+
+                // Inputs cho Links
+                let linkInputs = '';
+                if (isDual) {
+                    linkInputs = `
+                        <div class="form-group">
+                            <label>Link Global:</label>
+                            <input type="text" class="form-control" value="${exe.links[0].url}" onchange="updateLink('${platform}', ${index}, 0, this.value)">
+                        </div>
+                        <div class="form-group">
+                            <label>Link VNG:</label>
+                            <input type="text" class="form-control" value="${exe.links[1].url}" onchange="updateLink('${platform}', ${index}, 1, this.value)">
+                        </div>
+                    `;
+                } else {
+                    linkInputs = `
+                        <div class="form-group">
+                            <label>Link Tải:</label>
+                            <input type="text" class="form-control" value="${exe.links[0].url}" onchange="updateLink('${platform}', ${index}, 0, this.value)">
+                        </div>
+                    `;
+                }
+
+                // Render Card
+                const card = `
+                    <div class="executor-card">
+                        <div class="card-header">
+                            <span>${exe.name}</span>
+                            <i class="fas fa-edit"></i>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Version:</label>
+                            <input type="text" class="form-control" value="${exe.version}" onchange="updateVersion('${platform}', ${index}, this.value)">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Trạng thái (Status):</label>
+                            <select class="form-control" onchange="updateStatus('${platform}', ${index}, this.value, ${isDual})">
+                                ${statusOptions}
+                            </select>
+                        </div>
+
+                        ${linkInputs}
+                    </div>
+                `;
+                container.innerHTML += card;
+            });
+        }
+
+        // --- UPDATING DATA IN MEMORY ---
+        function updateVersion(platform, index, newVal) {
+            DATA[platform][index].version = newVal;
+        }
+
+        function updateLink(platform, exeIndex, linkIndex, newVal) {
+            DATA[platform][exeIndex].links[linkIndex].url = newVal;
+        }
+
+        function updateStatus(platform, index, newVal, isDual) {
+            const exe = DATA[platform][index];
+            
+            if (!isDual) {
+                exe.status = newVal;
+                exe.links[0].statusText = `Status: ${newVal}`;
+            } else {
+                // Logic map lại status text cho Dual
+                if (newVal === 'Online') {
+                    exe.status = 'Online';
+                    exe.links[0].statusText = "Global: Online";
+                    exe.links[1].statusText = "VNG: Online";
+                } else if (newVal === 'Offline') {
+                    exe.status = 'Offline';
+                    exe.links[0].statusText = "Global: Offline";
+                    exe.links[1].statusText = "VNG: Offline";
+                } else if (newVal === 'Partial_GOn') { // Global On, VNG Off
+                    exe.status = 'Partial';
+                    exe.links[0].statusText = "Global: Online";
+                    exe.links[1].statusText = "VNG: Offline";
+                } else if (newVal === 'Partial_VOn') { // Global Off, VNG On
+                    exe.status = 'Partial';
+                    exe.links[0].statusText = "Global: Offline";
+                    exe.links[1].statusText = "VNG: Online";
+                }
+            }
+        }
+
+        // --- GENERATE JS STRING (Reverse Parser) ---
+        function generateJS(data) {
+            // Hàm này tái tạo lại chuỗi JS y hệt format của Bot
+            const formatLinks = (links) => {
+                return links.map(link => {
+                    let str = `{ text: "${link.text}", url: "${link.url}", className: "${link.className}"`;
+                    if (link.statusText) str += `, statusText: "${link.statusText}"`;
+                    str += ` }`;
+                    return str;
+                }).join(',\n                    ');
+            };
+
+            const platforms = Object.keys(data).map(p => {
+                if (!data[p]) return '';
+                const exeStrings = data[p].map(exe => `            {
+                name: "${exe.name}",
+                logo: "${exe.logo}",
+                version: "${exe.version}",
+                status: "${exe.status}",
+                links: [
+                    ${formatLinks(exe.links)}
+                ]
+            }`).join(',\n');
+                return `        ${p}: [\n${exeStrings}\n        ]`;
+            }).join(',\n');
+
+            return `{\n${platforms}\n    }`;
+        }
+
+        // --- SAVE TO GITHUB ---
+        async function saveToGithub() {
+            const btn = document.querySelector('.fab-save');
+            if(btn.classList.contains('loading')) return;
+
+            const confirmSave = confirm("Bạn có chắc muốn lưu các thay đổi lên GitHub không?");
+            if(!confirmSave) return;
+
+            btn.classList.add('loading');
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
+
+            // Tái tạo nội dung file JS
+            // Lưu ý: Cần lấy khung file gốc (nếu có biến khác) hoặc ghi đè toàn bộ nếu chỉ có EXECUTOR_DATA
+            // Để an toàn và đồng bộ với Bot, ta chỉ nên thay thế object EXECUTOR_DATA
+            // Nhưng ở Front-end khó fetch file gốc để replace string.
+            // Nên ta sẽ gửi object DATA về Server (api/save.js), server sẽ lo việc ghép string.
+            
+            // Cách tốt nhất: Gửi chuỗi object DATA đã format về
+            const newDataString = generateJS(DATA);
+            
+            // Tuy nhiên api/save.js hiện tại ghi đè toàn bộ file content.
+            // Để đơn giản và không cần sửa api/save.js phức tạp, ta sẽ fetch lại file gốc ở đây, replace và gửi full content.
+            
             try {
+                const resRaw = await fetch('https://raw.githubusercontent.com/ugphone839/Executors/refs/heads/main/script.js?t=' + Date.now());
+                const originalText = await resRaw.text();
+                
+                // Replace
+                const finalContent = originalText.replace(/const EXECUTOR_DATA = {[\s\S]*?};/, `const EXECUTOR_DATA = ${newDataString};`);
+
+                // Send to API
                 const res = await fetch('/api/save', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ content, password })
+                    body: JSON.stringify({ content: finalContent, password: PASSWORD })
                 });
 
-                const data = await res.json();
+                const json = await res.json();
 
                 if (res.ok) {
-                    status.innerText = "✅ " + data.message;
-                    status.style.color = "lime";
+                    alert("✅ " + json.message);
                 } else {
-                    status.innerText = "❌ " + data.message;
-                    status.style.color = "red";
+                    alert("❌ Lỗi: " + json.message);
                 }
+
             } catch (e) {
-                status.innerText = "❌ Lỗi mạng: " + e.message;
-                status.style.color = "red";
+                alert("❌ Lỗi kết nối: " + e.message);
+            } finally {
+                btn.classList.remove('loading');
+                btn.innerHTML = '<i class="fas fa-save"></i>';
             }
         }
     </script>
