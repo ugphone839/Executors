@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Panel - Executors</title>
+    <style>
+        body { font-family: sans-serif; background: #1a1a1a; color: white; padding: 20px; }
+        textarea { width: 100%; height: 400px; background: #333; color: #0f0; border: 1px solid #555; padding: 10px; font-family: monospace; }
+        input { padding: 10px; width: 300px; }
+        button { padding: 10px 20px; background: #007bff; color: white; border: none; cursor: pointer; }
+        button:hover { background: #0056b3; }
+        #status { margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <h1>⚙️ Chỉnh sửa Executors Data</h1>
+    
+    <div>
+        <label>Mật khẩu Admin:</label><br>
+        <input type="password" id="password" placeholder="Nhập mật khẩu...">
+    </div>
+    <br>
+    
+    <div>
+        <label>Nội dung file script.js:</label><br>
+        <textarea id="editor">Đang tải dữ liệu...</textarea>
+    </div>
+    <br>
+    
+    <button onclick="saveData()">Lưu & Cập nhật Web</button>
+    <div id="status"></div>
+
+    <script>
+        // Tải dữ liệu hiện tại khi vào trang
+        async function loadData() {
+            try {
+                // Tải từ GitHub Raw để lấy code mới nhất
+                const res = await fetch('https://raw.githubusercontent.com/ugphone839/Executors/refs/heads/main/script.js');
+                const text = await res.text();
+                document.getElementById('editor').value = text;
+            } catch (e) {
+                document.getElementById('editor').value = "Lỗi tải dữ liệu: " + e;
+            }
+        }
+        loadData();
+
+        // Hàm lưu
+        async function saveData() {
+            const content = document.getElementById('editor').value;
+            const password = document.getElementById('password').value;
+            const status = document.getElementById('status');
+
+            if(!password) return alert("Chưa nhập mật khẩu!");
+
+            status.innerText = "⏳ Đang gửi yêu cầu update...";
+            status.style.color = "yellow";
+
+            try {
+                const res = await fetch('/api/save', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ content, password })
+                });
+
+                const data = await res.json();
+
+                if (res.ok) {
+                    status.innerText = "✅ " + data.message;
+                    status.style.color = "lime";
+                } else {
+                    status.innerText = "❌ " + data.message;
+                    status.style.color = "red";
+                }
+            } catch (e) {
+                status.innerText = "❌ Lỗi mạng: " + e.message;
+                status.style.color = "red";
+            }
+        }
+    </script>
+</body>
+</html>
