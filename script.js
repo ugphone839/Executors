@@ -7,9 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const EXECUTOR_DATA = {
         pc: [
             {
-                name: "Velocity", logo: "https://files.catbox.moe/tj6brv.png", version: "version-db4634f0e27d4d36", status: "Offline",
+                name: "Velocity", logo: "https://files.catbox.moe/tj6brv.png", version: "version-80c7b8e578f241ff", status: "Online",
                 links: [
-                    { text: "Download", url: "https://gofile.io/d/biQGwp", className: "btn-download-main", statusText: "Status: Offline" }
+                    { text: "Download", url: "https://gofile.io/d/biQGwp", className: "btn-download-main", statusText: "Status: Online" }
                 ]
             },
             {
