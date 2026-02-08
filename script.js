@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Xeno", logo: "https://www.xeno.onl/images/xeno.png", version: "version-80c7b8e578f241ff", status: "Online",
                 links: [
-                    { text: "Download", url: "undefined", className: "btn-download-main", statusText: "Status: Online" }
+                    { text: "Download", url: "https://xeno.onl/40a25bcf88299d7d251541579671ca47/a92f0e88/5729899ebcd696a9?hash=ruwpt04OBYbX1UNyEi3jG7xOx35n11l7kW8uPwwC1Px9LBpGbdoGpUPV08A4f0zm", className: "btn-download-main", statusText: "Status: Online" }
                 ]
             },
             {
