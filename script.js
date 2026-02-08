@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 ]
             },
             {
-                name: "Ronix", logo: "https://wearedevs.net/images/ronix/ronix-animated.gif", version: "2.704", status: "Online",
+                name: "Ronix", logo: "https://wearedevs.net/images/ronix/ronix-animated.gif", version: "2.705", status: "Online",
                 links: [
                     { text: "Global", url: "https://wearedevs.net/d/Ronix", className: "btn-download-main", statusText: "Global: Online" },
                     { text: "VNG", url: "https://wearedevs.net/d/Ronix", className: "btn-download-alt", statusText: "VNG: Online" }
@@ -78,16 +78,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 ]
             },
             {
-                name: "FluxusZ", logo: "https://files.catbox.moe/qt87ws.webp", version: "2.704", status: "Online",
+                name: "FluxusZ", logo: "https://files.catbox.moe/qt87ws.webp", version: "2.704", status: "Offline",
                 links: [
-                    { text: "Global", url: "https://fluxusz.com/download", className: "btn-download-main", statusText: "Global: Online" },
-                    { text: "VNG", url: "https://fluxusz.com/download", className: "btn-download-alt", statusText: "VNG: Online" }
+                    { text: "Global", url: "https://fluxusz.com/download", className: "btn-download-main", statusText: "Global: Offline" },
+                    { text: "VNG", url: "https://fluxusz.com/download", className: "btn-download-alt", statusText: "VNG: Offline" }
                 ]
             },
             {
-                name: "Cryptic", logo: "https://getcryptic.net/logo.png", version: "2.704", status: "Online",
+                name: "Cryptic", logo: "https://getcryptic.net/logo.png", version: "2.705", status: "Online",
                 links: [
-                    { text: "Global", url: "https://www.mediafire.com/file/z1lophbifjti0g0/Cryptic_APK_2.704.1060.apk/file", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "Global", url: "https://www.mediafire.com/file/psf968uaeptev92/Cryptic_APK_2.705.924.apk/file", className: "btn-download-main", statusText: "Global: Online" },
                     { text: "VNG", url: "https://www.mediafire.com/file/ky9tepugo2qwmyi/Cryptic_VNG_APK_2.704.1057.apk/file", className: "btn-download-alt", statusText: "VNG: Online" }
                 ]
             }
