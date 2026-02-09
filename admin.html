@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Executor Admin Panel - Full Pro</title>
+    <title>Executor Admin Panel - Sync Pro</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         :root {
@@ -19,10 +19,11 @@
             background: var(--bg); z-index: 9999;
             display: flex; justify-content: center; align-items: center; flex-direction: column;
         }
-        .login-box { background: var(--surface); padding: 30px; border-radius: 10px; text-align: center; width: 300px; }
-        .login-box input { width: 90%; padding: 10px; margin: 10px 0; background: #333; border: 1px solid #555; color: white; border-radius: 5px; }
-        .btn { padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; transition: 0.2s; }
-        .btn-primary { background: var(--primary); color: black; }
+        .login-box { background: var(--surface); padding: 30px; border-radius: 10px; text-align: center; width: 300px; box-shadow: 0 10px 25px rgba(0,0,0,0.5); }
+        .login-box h2 { margin-bottom: 20px; color: var(--primary); }
+        .login-box input { width: 100%; padding: 12px; margin: 10px 0; background: #333; border: 1px solid #555; color: white; border-radius: 5px; box-sizing: border-box; }
+        .btn { padding: 12px 20px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; transition: 0.2s; }
+        .btn-primary { background: var(--primary); color: black; width: 100%; margin-top: 10px; }
         .btn-danger { background: var(--danger); color: white; }
         .btn-success { background: var(--success); color: white; margin-top: 10px; width: 100%; }
         
@@ -31,57 +32,63 @@
             background: var(--surface); padding: 15px; display: flex; align-items: center;
             box-shadow: 0 2px 5px rgba(0,0,0,0.5); position: sticky; top: 0; z-index: 100;
         }
-        .menu-btn { font-size: 24px; cursor: pointer; margin-right: 20px; }
+        .menu-btn { font-size: 24px; cursor: pointer; margin-right: 20px; color: var(--primary); }
 
         /* SIDEBAR */
         .sidebar {
-            position: fixed; left: -260px; top: 60px; bottom: 0; width: 250px;
-            background: #181818; transition: 0.3s; z-index: 99; padding-top: 20px;
-            border-right: 1px solid #333;
+            position: fixed; left: -280px; top: 0; bottom: 0; width: 260px;
+            background: #181818; transition: 0.3s; z-index: 1000; padding-top: 20px;
+            border-right: 1px solid #333; box-shadow: 5px 0 15px rgba(0,0,0,0.5);
         }
         .sidebar.active { left: 0; }
-        .nav-group { padding: 10px 20px; font-size: 12px; color: #666; text-transform: uppercase; letter-spacing: 1px; }
+        .nav-group { padding: 20px 20px 10px; font-size: 11px; color: #666; text-transform: uppercase; letter-spacing: 2px; }
         .nav-item {
-            padding: 12px 20px; cursor: pointer; display: flex; align-items: center; transition: 0.2s;
+            padding: 15px 20px; cursor: pointer; display: flex; align-items: center; transition: 0.2s; color: #ccc;
         }
         .nav-item:hover, .nav-item.active { background: #2a2a2a; color: var(--primary); }
-        .nav-item i { margin-right: 15px; width: 20px; text-align: center; }
+        .nav-item i { margin-right: 15px; width: 20px; text-align: center; font-size: 18px; }
+
+        /* OVERLAY FOR SIDEBAR */
+        #sidebar-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.7); z-index: 999; display: none;
+        }
+        #sidebar-overlay.active { display: block; }
 
         /* CONTENT */
-        .main-content { padding: 20px; max-width: 800px; margin: 0 auto; transition: 0.3s; padding-bottom: 100px; }
+        .main-content { padding: 20px; max-width: 800px; margin: 0 auto; transition: 0.3s; padding-bottom: 120px; }
 
-        /* CARDS & FORMS */
-        .card { background: var(--surface); border-radius: 10px; padding: 20px; margin-bottom: 20px; border: 1px solid #333; }
+        /* CARDS */
+        .card { background: var(--surface); border-radius: 12px; padding: 20px; margin-bottom: 20px; border: 1px solid #333; box-shadow: 0 4px 6px rgba(0,0,0,0.3); }
         .card-title { font-size: 18px; font-weight: bold; margin-bottom: 15px; color: var(--secondary); display: flex; justify-content: space-between; align-items: center; }
         
         .form-group { margin-bottom: 15px; }
-        .form-group label { display: block; margin-bottom: 5px; font-size: 13px; color: #aaa; }
+        .form-group label { display: block; margin-bottom: 8px; font-size: 13px; color: #aaa; font-weight: 600; }
         .form-control {
             width: 100%; padding: 12px; background: #2c2c2c; border: 1px solid #444;
-            color: white; border-radius: 5px; box-sizing: border-box;
+            color: white; border-radius: 6px; box-sizing: border-box; font-size: 14px;
         }
-        .form-control:focus { outline: none; border-color: var(--primary); }
+        .form-control:focus { outline: none; border-color: var(--primary); background: #333; }
 
-        /* DELETE LIST */
+        /* DELETE ITEM */
         .delete-item {
             display: flex; justify-content: space-between; align-items: center;
-            padding: 10px; border-bottom: 1px solid #333;
+            padding: 15px; border-bottom: 1px solid #333; background: #252525; border-radius: 8px; margin-bottom: 10px;
         }
-        .delete-item:last-child { border-bottom: none; }
 
         /* FAB SAVE */
         .fab-save {
             position: fixed; bottom: 30px; right: 30px;
-            background: var(--success); color: white; width: 60px; height: 60px; border-radius: 50%;
+            background: var(--success); color: white; width: 65px; height: 65px; border-radius: 50%;
             display: flex; align-items: center; justify-content: center;
-            font-size: 24px; box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+            font-size: 28px; box-shadow: 0 6px 15px rgba(0,0,0,0.6);
             cursor: pointer; z-index: 200; transition: 0.3s;
         }
-        .fab-save:hover { transform: scale(1.1); }
+        .fab-save:hover { transform: scale(1.1) rotate(5deg); background: #66bb6a; }
         .loading-spin { animation: spin 1s infinite linear; }
         @keyframes spin { from {transform:rotate(0deg)} to {transform:rotate(360deg)} }
 
-        .tag { font-size: 10px; padding: 2px 6px; border-radius: 4px; background: #444; margin-left: 10px; vertical-align: middle; }
+        .tag { font-size: 10px; padding: 3px 8px; border-radius: 12px; background: #444; color: #fff; margin-left: 10px; text-transform: uppercase; }
 
         #app { display: none; }
     </style>
@@ -90,32 +97,39 @@
 
     <div id="login-overlay">
         <div class="login-box">
-            <h2>🔐 Admin Panel</h2>
-            <input type="password" id="password-input" placeholder="Nhập mật khẩu...">
-            <button class="btn btn-primary" onclick="attemptLogin()" style="width: 100%;">Vào Hệ Thống</button>
+            <i class="fas fa-user-shield" style="font-size: 50px; color: var(--primary); margin-bottom: 15px;"></i>
+            <h2>Admin Login</h2>
+            <input type="password" id="password-input" placeholder="Mật khẩu hệ thống...">
+            <button class="btn btn-primary" onclick="attemptLogin()">ĐĂNG NHẬP</button>
         </div>
     </div>
+
+    <div id="sidebar-overlay" onclick="toggleSidebar()"></div>
 
     <div id="app">
         <div class="header">
             <i class="fas fa-bars menu-btn" onclick="toggleSidebar()"></i>
-            <div class="title" id="page-title">Chỉnh sửa: PC</div>
+            <div class="title" id="page-title">Quản lý: PC</div>
         </div>
 
         <div class="sidebar" id="sidebar">
-            <div class="nav-group">Chỉnh sửa</div>
-            <div class="nav-item active" onclick="switchView('edit', 'pc')"><i class="fas fa-desktop"></i> PC</div>
-            <div class="nav-item" onclick="switchView('edit', 'android')"><i class="fab fa-android"></i> Android</div>
-            <div class="nav-item" onclick="switchView('edit', 'ios')"><i class="fab fa-apple"></i> iOS</div>
+            <div style="text-align: center; padding: 20px 0; border-bottom: 1px solid #333;">
+                <i class="fas fa-tools" style="font-size: 40px; color: var(--primary);"></i>
+                <div style="margin-top: 10px; font-weight: bold;">HỆ THỐNG QUẢN TRỊ</div>
+            </div>
+            <div class="nav-group">Chỉnh sửa nội dung</div>
+            <div class="nav-item active" onclick="switchView('edit', 'pc')"><i class="fas fa-desktop"></i> PC Devices</div>
+            <div class="nav-item" onclick="switchView('edit', 'android')"><i class="fab fa-android"></i> Android Devices</div>
+            <div class="nav-item" onclick="switchView('edit', 'ios')"><i class="fab fa-apple"></i> iOS Devices</div>
             
-            <div class="nav-group">Quản lý</div>
-            <div class="nav-item" onclick="switchView('add')"><i class="fas fa-plus-circle"></i> Thêm Executor</div>
+            <div class="nav-group">Hành động nhanh</div>
+            <div class="nav-item" onclick="switchView('add')"><i class="fas fa-plus-circle"></i> Thêm Executor mới</div>
             <div class="nav-item" onclick="switchView('delete')"><i class="fas fa-trash-alt"></i> Xóa Executor</div>
         </div>
 
         <div class="main-content" id="content-area"></div>
 
-        <div class="fab-save" id="save-btn" onclick="saveToGithub()" title="Hoàn thành & Lưu lên GitHub">
+        <div class="fab-save" id="save-btn" onclick="saveToGithub()" title="Lưu tất cả thay đổi">
             <i class="fas fa-check"></i>
         </div>
     </div>
@@ -124,7 +138,7 @@
         let DATA = null;
         let PASSWORD = "";
         let CURRENT_PLATFORM = 'pc';
-        let CURRENT_VIEW = 'edit'; // edit, add, delete
+        let CURRENT_VIEW = 'edit'; 
 
         function attemptLogin() {
             PASSWORD = document.getElementById('password-input').value;
@@ -135,27 +149,50 @@
         }
 
         async function loadData() {
+            const area = document.getElementById('content-area');
+            area.innerHTML = "<div style='text-align:center; margin-top:50px;'><i class='fas fa-circle-notch fa-spin' style='font-size:40px; color:var(--primary)'></i><p>Đang đồng bộ dữ liệu...</p></div>";
+            
             try {
-                const res = await fetch('https://raw.githubusercontent.com/ugphone839/Executors/refs/heads/main/script.js?t=' + Date.now());
+                // LOAD TRỰC TIẾP TỪ FILE TẠI CHỖ (script.js trong cùng folder)
+                // Thêm timestamp để xóa cache trình duyệt
+                const res = await fetch('./script.js?t=' + Date.now());
+                if (!res.ok) throw new Error("Không tìm thấy file script.js tại thư mục này.");
                 const text = await res.text();
+                
                 const match = text.match(/const EXECUTOR_DATA = ({[\s\S]*?});/);
                 if (match) {
                     DATA = eval('(' + match[1] + ')');
                     render();
+                } else {
+                    throw new Error("Cấu trúc file script.js không hợp lệ (Thiếu biến EXECUTOR_DATA).");
                 }
-            } catch (e) { alert("Lỗi tải data: " + e.message); }
+            } catch (e) { 
+                area.innerHTML = `<div class="card" style="border-color:var(--danger)"><h3>❌ Lỗi Load Dữ Liệu</h3><p>${e.message}</p><button class="btn btn-primary" onclick="loadData()">Thử lại</button></div>`;
+            }
         }
 
-        function toggleSidebar() { document.getElementById('sidebar').classList.toggle('active'); }
+        function toggleSidebar() { 
+            document.getElementById('sidebar').classList.toggle('active'); 
+            document.getElementById('sidebar-overlay').classList.toggle('active');
+        }
 
         function switchView(view, platform = null) {
             CURRENT_VIEW = view;
             if(platform) CURRENT_PLATFORM = platform;
             
             document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
-            // Logic highlight item menu... (đơn giản hóa)
-            
-            toggleSidebar();
+            // Highlight item logic
+            if(platform) {
+                document.querySelectorAll('.nav-item').forEach(el => {
+                    if(el.innerText.toLowerCase().includes(platform)) el.classList.add('active');
+                });
+            } else if(view === 'add') {
+                document.querySelectorAll('.nav-item')[3].classList.add('active');
+            } else if(view === 'delete') {
+                document.querySelectorAll('.nav-item')[4].classList.add('active');
+            }
+
+            if(document.getElementById('sidebar').classList.contains('active')) toggleSidebar();
             render();
         }
 
@@ -168,37 +205,45 @@
                 title.innerText = "Chỉnh sửa: " + CURRENT_PLATFORM.toUpperCase();
                 renderEditView(area);
             } else if (CURRENT_VIEW === 'add') {
-                title.innerText = "➕ Thêm Executor Mới";
+                title.innerText = "Thêm Executor mới";
                 renderAddView(area);
             } else if (CURRENT_VIEW === 'delete') {
-                title.innerText = "🗑️ Xóa Executor";
+                title.innerText = "Xóa Executor";
                 renderDeleteView(area);
             }
         }
 
-        // --- VIEW: CHỈNH SỬA ---
         function renderEditView(container) {
             DATA[CURRENT_PLATFORM].forEach((exe, idx) => {
                 const isDual = exe.links.length > 1;
                 const card = document.createElement('div');
                 card.className = 'card';
+                
+                // Logic thông minh để chọn option status ban đầu
+                let currentStatusVal = exe.status;
+                if (isDual && exe.status === 'Partial') {
+                    const gText = exe.links[0].statusText.toLowerCase();
+                    if (gText.includes('online')) currentStatusVal = 'Partial_GOn';
+                    else currentStatusVal = 'Partial_VOn';
+                }
+
                 card.innerHTML = `
-                    <div class="card-title">${exe.name} <span class="tag">${isDual?'Dual':'Single'}</span></div>
+                    <div class="card-title">${exe.name} <span class="tag">${isDual?'Dual Links':'Single Link'}</span></div>
                     <div class="form-group">
-                        <label>Version:</label>
+                        <label><i class="fas fa-code-branch"></i> Phiên bản (Version):</label>
                         <input type="text" class="form-control" value="${exe.version}" oninput="DATA['${CURRENT_PLATFORM}'][${idx}].version = this.value">
                     </div>
                     <div class="form-group">
-                        <label>Status:</label>
+                        <label><i class="fas fa-signal"></i> Trạng thái hoạt động:</label>
                         <select class="form-control" onchange="updateStatusLogic('${CURRENT_PLATFORM}', ${idx}, this.value, ${isDual})">
-                            ${renderStatusOptions(exe.status, isDual)}
+                            ${renderStatusOptions(currentStatusVal, isDual)}
                         </select>
                     </div>
                     ${isDual ? `
-                        <div class="form-group"><label>Link Global:</label><input type="text" class="form-control" value="${exe.links[0].url}" oninput="DATA['${CURRENT_PLATFORM}'][${idx}].links[0].url = this.value"></div>
-                        <div class="form-group"><label>Link VNG:</label><input type="text" class="form-control" value="${exe.links[1].url}" oninput="DATA['${CURRENT_PLATFORM}'][${idx}].links[1].url = this.value"></div>
+                        <div class="form-group"><label><i class="fas fa-globe"></i> Link Global:</label><input type="text" class="form-control" value="${exe.links[0].url}" oninput="DATA['${CURRENT_PLATFORM}'][${idx}].links[0].url = this.value"></div>
+                        <div class="form-group"><label><i class="fas fa-flag"></i> Link VNG:</label><input type="text" class="form-control" value="${exe.links[1].url}" oninput="DATA['${CURRENT_PLATFORM}'][${idx}].links[1].url = this.value"></div>
                     ` : `
-                        <div class="form-group"><label>Link Tải:</label><input type="text" class="form-control" value="${exe.links[0].url}" oninput="DATA['${CURRENT_PLATFORM}'][${idx}].links[0].url = this.value"></div>
+                        <div class="form-group"><label><i class="fas fa-download"></i> Link Tải trực tiếp:</label><input type="text" class="form-control" value="${exe.links[0].url}" oninput="DATA['${CURRENT_PLATFORM}'][${idx}].links[0].url = this.value"></div>
                     `}
                 `;
                 container.appendChild(card);
@@ -207,13 +252,13 @@
 
         function renderStatusOptions(current, isDual) {
             if(!isDual) {
-                return `<option value="Online" ${current=='Online'?'selected':''}>🟢 Online</option>
-                        <option value="Offline" ${current=='Offline'?'selected':''}>🔴 Offline</option>`;
+                return `<option value="Online" ${current=='Online'?'selected':''}>🟢 Hoạt động (Online)</option>
+                        <option value="Offline" ${current=='Offline'?'selected':''}>🔴 Bảo trì (Offline)</option>`;
             }
-            return `<option value="Online" ${current=='Online'?'selected':''}>🟢 Cả 2 Online</option>
-                    <option value="Offline" ${current=='Offline'?'selected':''}>🔴 Cả 2 Offline</option>
-                    <option value="Partial_GOn" ${current=='Partial'?'selected':''}>🟡 Global On / VNG Off</option>
-                    <option value="Partial_VOn" ${current=='Partial'?'selected':''}>🟡 Global Off / VNG On</option>`;
+            return `<option value="Online" ${current=='Online'?'selected':''}>🟢 Cả 2 hoạt động</option>
+                    <option value="Offline" ${current=='Offline'?'selected':''}>🔴 Cả 2 bảo trì</option>
+                    <option value="Partial_GOn" ${current=='Partial_GOn'?'selected':''}>🟡 Global On / VNG Off</option>
+                    <option value="Partial_VOn" ${current=='Partial_VOn'?'selected':''}>🟡 Global Off / VNG On</option>`;
         }
 
         function updateStatusLogic(p, idx, val, isDual) {
@@ -229,22 +274,23 @@
             }
         }
 
-        // --- VIEW: THÊM MỚI ---
         function renderAddView(container) {
             container.innerHTML = `
                 <div class="card">
-                    <div class="form-group"><label>Tên Executor:</label><input type="text" id="add-name" class="form-control" placeholder="VD: Delta"></div>
+                    <div class="form-group"><label>Tên ứng dụng:</label><input type="text" id="add-name" class="form-control" placeholder="Ví dụ: Arceus X"></div>
                     <div class="form-group"><label>Link Global (Bắt buộc):</label><input type="text" id="add-lg" class="form-control" placeholder="https://..."></div>
-                    <div class="form-group"><label>Link VNG (Không bắt buộc):</label><input type="text" id="add-lv" class="form-control" placeholder="Bỏ trống nếu không có"></div>
-                    <div class="form-group"><label>Version:</label><input type="text" id="add-ver" class="form-control" placeholder="VD: 2.700"></div>
-                    <div class="form-group"><label>Link Ảnh Logo:</label><input type="text" id="add-logo" class="form-control" placeholder="https://..."></div>
+                    <div class="form-group"><label>Link VNG (Nếu không có hãy bỏ trống):</label><input type="text" id="add-lv" class="form-control" placeholder="https://..."></div>
+                    <div class="form-group"><label>Phiên bản (Version):</label><input type="text" id="add-ver" class="form-control" placeholder="Ví dụ: 2.1.4"></div>
+                    <div class="form-group"><label>Link ảnh Logo:</label><input type="text" id="add-logo" class="form-control" placeholder="https://..."></div>
                     <div class="form-group">
-                        <label>Chọn Thiết Bị (Device):</label>
+                        <label>Dành cho thiết bị:</label>
                         <select id="add-platform" class="form-control">
-                            <option value="pc">PC</option><option value="android">Android</option><option value="ios">iOS</option>
+                            <option value="pc">Máy tính (PC)</option>
+                            <option value="android">Điện thoại (Android)</option>
+                            <option value="ios">Điện thoại (iOS)</option>
                         </select>
                     </div>
-                    <button class="btn btn-success" onclick="executeAdd()">+ Thêm vào danh sách tạm</button>
+                    <button class="btn btn-success" onclick="executeAdd()"><i class="fas fa-plus"></i> XÁC NHẬN THÊM</button>
                 </div>
             `;
         }
@@ -257,7 +303,7 @@
             const logo = document.getElementById('add-logo').value;
             const plat = document.getElementById('add-platform').value;
 
-            if(!name || !lg || !ver || !logo) return alert("Vui lòng điền đủ các ô bắt buộc!");
+            if(!name || !lg || !ver || !logo) return alert("Vui lòng nhập đầy đủ thông tin bắt buộc!");
 
             let links = [];
             if(lv.trim() !== "") {
@@ -269,21 +315,21 @@
 
             const newExe = { name, logo, version: ver, status: "Online", links };
             DATA[plat].push(newExe);
-            alert("Đã thêm " + name + " vào danh sách tạm của " + plat.toUpperCase());
+            alert(`Đã thêm ${name} vào danh sách chờ của ${plat.toUpperCase()}!`);
             switchView('edit', plat);
         }
 
-        // --- VIEW: XÓA ---
         function renderDeleteView(container) {
             ['pc', 'android', 'ios'].forEach(plat => {
+                if(DATA[plat].length === 0) return;
                 const card = document.createElement('div');
                 card.className = 'card';
-                card.innerHTML = `<div class="card-title">${plat.toUpperCase()}</div>`;
+                card.innerHTML = `<div class="card-title" style="color:var(--primary)">Hệ điều hành: ${plat.toUpperCase()}</div>`;
                 DATA[plat].forEach((exe, idx) => {
                     const item = document.createElement('div');
                     item.className = 'delete-item';
-                    item.innerHTML = `<span>${exe.name} (v${exe.version})</span>
-                                      <button class="btn btn-danger" onclick="executeDelete('${plat}', ${idx})">Xóa</button>`;
+                    item.innerHTML = `<div><b style="color:white">${exe.name}</b> <br><small style="color:#777">v${exe.version}</small></div>
+                                      <button class="btn btn-danger" style="padding: 8px 15px" onclick="executeDelete('${plat}', ${idx})"><i class="fas fa-trash"></i> Xóa</button>`;
                     card.appendChild(item);
                 });
                 container.appendChild(card);
@@ -291,13 +337,12 @@
         }
 
         function executeDelete(plat, idx) {
-            if(confirm("Xóa " + DATA[plat][idx].name + "?")) {
+            if(confirm(`Bạn chắc chắn muốn xóa "${DATA[plat][idx].name}" khỏi hệ thống?`)) {
                 DATA[plat].splice(idx, 1);
                 render();
             }
         }
 
-        // --- LƯU LÊN GITHUB ---
         function generateJSString(data) {
             const formatLinks = links => links.map(l => 
                 `{ text: "${l.text}", url: "${l.url}", className: "${l.className}"${l.statusText ? `, statusText: "${l.statusText}"` : ''} }`
@@ -306,7 +351,10 @@
             const platforms = Object.keys(data).map(p => {
                 const exes = data[p].map(e => 
                     `            {
-                name: "${e.name}", logo: "${e.logo}", version: "${e.version}", status: "${e.status}",
+                name: "${e.name}",
+                logo: "${e.logo}",
+                version: "${e.version}",
+                status: "${e.status}",
                 links: [
                     ${formatLinks(e.links)}
                 ]
@@ -318,16 +366,20 @@
         }
 
         async function saveToGithub() {
-            const btn = document.getElementById('save-btn');
-            if(!confirm("Đẩy tất cả thay đổi (Sửa/Thêm/Xóa) lên GitHub?")) return;
+            if(!confirm("Xác nhận lưu mọi thay đổi lên GitHub và cập nhật trang web?")) return;
 
+            const btn = document.getElementById('save-btn');
             btn.innerHTML = '<i class="fas fa-spinner loading-spin"></i>';
+            btn.style.pointerEvents = 'none';
+
             const newDataString = generateJSString(DATA);
             
             try {
-                // Tải file gốc để giữ nguyên phần code bao quanh (nếu có)
+                // Tải file gốc từ GitHub để giữ nguyên cấu trúc bao quanh
                 const resRaw = await fetch('https://raw.githubusercontent.com/ugphone839/Executors/refs/heads/main/script.js?t=' + Date.now());
                 const originalText = await resRaw.text();
+                
+                // Thay thế phần data mới
                 const finalContent = originalText.replace(/const EXECUTOR_DATA = {[\s\S]*?};/, newDataString);
 
                 const res = await fetch('/api/save', {
@@ -337,10 +389,18 @@
                 });
 
                 const result = await res.json();
-                if (res.ok) alert("✅ " + result.message);
-                else alert("❌ " + result.message);
-            } catch (e) { alert("❌ Lỗi: " + e.message); }
-            finally { btn.innerHTML = '<i class="fas fa-check"></i>'; }
+                if (res.ok) {
+                    alert("✅ LƯU THÀNH CÔNG!\nWeb sẽ được cập nhật sau ít phút.");
+                    location.reload();
+                } else {
+                    throw new Error(result.message);
+                }
+            } catch (e) { 
+                alert("❌ LỖI LƯU DỮ LIỆU: " + e.message); 
+            } finally { 
+                btn.innerHTML = '<i class="fas fa-check"></i>'; 
+                btn.style.pointerEvents = 'auto';
+            }
         }
     </script>
 </body>
