@@ -123,11 +123,11 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Cryptic",
                 logo: "https://getcryptic.net/logo.png",
-                version: "2.705",
+                version: "2.706",
                 status: "Online",
                 links: [
-                    { text: "Global", url: "https://www.mediafire.com/file/psf968uaeptev92/Cryptic_APK_2.705.924.apk/file", className: "btn-download-main", statusText: "Global: Online" },
-                    { text: "VNG", url: "https://www.mediafire.com/file/ky9tepugo2qwmyi/Cryptic_VNG_APK_2.704.1057.apk/file", className: "btn-download-alt", statusText: "VNG: Online" }
+                    { text: "Global", url: "https://getcryptic.net/", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "VNG", url: "https://getcryptic.net/", className: "btn-download-alt", statusText: "VNG: Online" }
                 ]
             }
         ],
