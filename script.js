@@ -10,9 +10,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 name: "Velocity",
                 logo: "https://files.catbox.moe/tj6brv.png",
                 version: "version-80c7b8e578f241ff",
-                status: "Online",
+                status: "Offline",
                 links: [
-                    { text: "Download", url: "https://gofile.io/d/biQGwp", className: "btn-download-main", statusText: "Status: Online" }
+                    { text: "Download", url: "https://gofile.io/d/biQGwp", className: "btn-download-main", statusText: "Status: Offline" }
                 ]
             },
             {
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Solara",
                 logo: "https://files.catbox.moe/gjzzjt.png",
-                version: "version-80c7b8e578f241ff",
+                version: "version-bd08027bb04e4045",
                 status: "Online",
                 links: [
                     { text: "Download", url: "https://getsolara.dev/download/static/files/Solara.Dir.zip", className: "btn-download-main", statusText: "Status: Online" }
@@ -36,19 +36,19 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Xeno",
                 logo: "https://www.xeno.onl/images/xeno.png",
-                version: "version-80c7b8e578f241ff",
+                version: "version-bd08027bb04e4045",
                 status: "Online",
                 links: [
-                    { text: "Download", url: "https://xeno.onl/40a25bcf88299d7d251541579671ca47/a92f0e88/5729899ebcd696a9?hash=ruwpt04OBYbX1UNyEi3jG7xOx35n11l7kW8uPwwC1Px9LBpGbdoGpUPV08A4f0zm", className: "btn-download-main", statusText: "Status: Online" }
+                    { text: "Download", url: "https://xeno.onl/33054e6324afae35e63859ba1f6b492f/98000f2a/bdf367db6b50b0b2?hash=egDUI5nKm0EBGCQ95Ff4Nqvfq3A8rHv01uyoCt1p9PjdfwGe3kZrBrkPQbOJ8bBsBpGbdoGpUPV08A4f0zm", className: "btn-download-main", statusText: "Status: Online" }
                 ]
             },
             {
                 name: "Ronix PC",
                 logo: "https://wearedevs.net/images/ronix/ronix-animated.gif",
                 version: "version-80c7b8e578f241ff",
-                status: "Online",
+                status: "Offline",
                 links: [
-                    { text: "Download", url: "https://wrdcdn.net/r/154522/1769203129478/RonixInstaller_NEW.exe", className: "btn-download-main", statusText: "Status: Online" }
+                    { text: "Download", url: "https://wrdcdn.net/r/154522/1769203129478/RonixInstaller_NEW.exe", className: "btn-download-main", statusText: "Status: Offline" }
                 ]
             }
         ],
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 version: "2.706",
                 status: "Online",
                 links: [
-                    { text: "Global", url: "https://www.mediafire.com/file/rkzfe3wkaqu9obg/Roblox_Arceus_X_NEO_2.0.1_%2528FIXED_2.0%2529.apk/file", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "Global", url: "https://www.mediafire.com/file/ji8v77dfs2p86he/Roblox_Arceus_X_NEO_2.0.2.apk/file", className: "btn-download-main", statusText: "Global: Online" },
                     { text: "VNG", url: "https://www.mediafire.com/file/bul1tishkuximno/Roblox_-_VNG_Arceus_X_NEO_2.0.1_%2528FIXED_2.0%2529.apk/file", className: "btn-download-alt", statusText: "VNG: Online" }
                 ]
             },
