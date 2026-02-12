@@ -45,10 +45,10 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Ronix PC",
                 logo: "https://wearedevs.net/images/ronix/ronix-animated.gif",
-                version: "version-80c7b8e578f241ff",
-                status: "Offline",
+                version: "version-bd08027bb04e4045",
+                status: "Online",
                 links: [
-                    { text: "Download", url: "https://wrdcdn.net/r/154522/1769203129478/RonixInstaller_NEW.exe", className: "btn-download-main", statusText: "Status: Offline" }
+                    { text: "Download", url: "https://wrdcdn.net/r/154522/1769203129478/RonixInstaller_NEW.exe", className: "btn-download-main", statusText: "Status: Online" }
                 ]
             }
         ],
@@ -56,10 +56,10 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Arceus X NEO",
                 logo: "https://sf-static.upanhlaylink.com/img/image_2025091341b69c6afa4e02709bf1ba299bdbafbd.jpg",
-                version: "2.706",
+                version: "2.707",
                 status: "Online",
                 links: [
-                    { text: "Global", url: "https://www.mediafire.com/file/ji8v77dfs2p86he/Roblox_Arceus_X_NEO_2.0.2.apk/file", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "Global", url: "https://spdmteam.com/neo#downloads", className: "btn-download-main", statusText: "Global: Online" },
                     { text: "VNG", url: "https://www.mediafire.com/file/bul1tishkuximno/Roblox_-_VNG_Arceus_X_NEO_2.0.1_%2528FIXED_2.0%2529.apk/file", className: "btn-download-alt", statusText: "VNG: Online" }
                 ]
             },
