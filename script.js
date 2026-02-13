@@ -9,10 +9,10 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Velocity",
                 logo: "https://files.catbox.moe/tj6brv.png",
-                version: "version-80c7b8e578f241ff",
-                status: "Offline",
+                version: "version-bd08027bb04e4045",
+                status: "Online",
                 links: [
-                    { text: "Download", url: "https://gofile.io/d/biQGwp", className: "btn-download-main", statusText: "Status: Offline" }
+                    { text: "Download", url: "https://gofile.io/d/biQGwp", className: "btn-download-main", statusText: "Status: Online" }
                 ]
             },
             {
