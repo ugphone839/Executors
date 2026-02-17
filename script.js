@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 status: "Online",
                 links: [
                     { text: "Global", url: "https://spdmteam.com/neo#downloads", className: "btn-download-main", statusText: "Global: Online" },
-                    { text: "VNG", url: "https://www.mediafire.com/file/bul1tishkuximno/Roblox_-_VNG_Arceus_X_NEO_2.0.1_%2528FIXED_2.0%2529.apk/file", className: "btn-download-alt", statusText: "VNG: Online" }
+                    { text: "VNG", url: "https://spdmteam.com/neo#downloads", className: "btn-download-alt", statusText: "VNG: Online" }
                 ]
             },
             {
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Ronix",
                 logo: "https://wearedevs.net/images/ronix/ronix-animated.gif",
-                version: "2.706",
+                version: "2.707",
                 status: "Online",
                 links: [
                     { text: "Global", url: "https://wearedevs.net/d/Ronix", className: "btn-download-main", statusText: "Global: Online" },
@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Cryptic",
                 logo: "https://getcryptic.net/logo.png",
-                version: "2.706",
+                version: "2.707",
                 status: "Online",
                 links: [
                     { text: "Global", url: "https://getcryptic.net/", className: "btn-download-main", statusText: "Global: Online" },
