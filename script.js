@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             {
                 name: "Ronix IOS",
-                logo: "https://i.imgur.com/HIZDzFq.png",
+                logo: "https://obj.wearedevs.net/images/software/ronix/ronix-020426.webp",
                 version: "2.708",
                 status: "Online",
                 links: [
