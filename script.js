@@ -158,6 +158,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 links: [
                     { text: "Download", url: "https://deltaexploits.gg/delta-executor-ios", className: "btn-download-main", statusText: "Status: Online" }
                 ]
+            },
+            {
+                name: "Ronix IOS",
+                logo: "https://i.imgur.com/HIZDzFq.png",
+                version: "2.708",
+                status: "Online",
+                links: [
+                    { text: "Global", url: "https://ronixstudios.io/#/download?platform=ios", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "VNG", url: "https://ronixstudios.io/#/download?platform=vng-ios", className: "btn-download-alt", statusText: "VNG: Online" }
+                ]
             }
         ]
     };
