@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Delta",
                 logo: "https://sf-static.upanhlaylink.com/img/image_2025091320b780aa4e49c945bdddf569984a41b6.jpg",
-                version: "2.706",
+                version: "2.707",
                 status: "Online",
                 links: [
                     { text: "Download", url: "https://delta.filenetwork.vip/file/Delta-2.706.750.apk", className: "btn-download-main", statusText: "Status: Online" }
@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Vega X",
                 logo: "https://vegax.gg/assets/img/V_logo_white.png",
-                version: "2.706",
+                version: "2.708",
                 status: "Online",
                 links: [
                     { text: "Download", url: "https://github.com/1f0yt/community/releases/download/Vegax/Vega.X.apk", className: "btn-download-main", statusText: "Status: Online" }
