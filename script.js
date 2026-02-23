@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Delta",
                 logo: "https://sf-static.upanhlaylink.com/img/image_2025091320b780aa4e49c945bdddf569984a41b6.jpg",
-                version: "2.707",
+                version: "2.708",
                 status: "Online",
                 links: [
                     { text: "Download", url: "https://delta.filenetwork.vip/file/Delta-2.706.750.apk", className: "btn-download-main", statusText: "Status: Online" }
@@ -153,7 +153,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Delta iOS",
                 logo: "https://sf-static.upanhlaylink.com/img/image_2025091320b780aa4e49c945bdddf569984a41b6.jpg",
-                version: "2.707",
+                version: "2.708",
                 status: "Online",
                 links: [
                     { text: "Download", url: "https://deltaexploits.gg/delta-executor-ios", className: "btn-download-main", statusText: "Status: Online" }
@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Ronix IOS",
                 logo: "https://obj.wearedevs.net/images/software/ronix/ronix-020426.webp",
-                version: "2.708",
+                version: "2.709",
                 status: "Online",
                 links: [
                     { text: "Global", url: "https://ronixstudios.io/#/download?platform=ios", className: "btn-download-main", statusText: "Global: Online" },
