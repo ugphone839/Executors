@@ -67,9 +67,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 name: "Codex",
                 logo: "https://codex.lol/static/icons/icon.svg",
                 version: "2.708",
-                status: "Partial",
+                status: "Offline",
                 links: [
-                    { text: "Global", url: "https://www.mediafire.com/file/r4amuil7pd7bebv/Codex+V2.708.880.apk/file", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "Global", url: "https://www.mediafire.com/file/r4amuil7pd7bebv/Codex+V2.708.880.apk/file", className: "btn-download-main", statusText: "Global: Offline" },
                     { text: "VNG", url: "https://www.mediafire.com/file/8dxf37l1y6xtcct/Codex+v2.701.apk/file", className: "btn-download-alt", statusText: "VNG: Offline" }
                 ]
             },
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Ronix",
                 logo: "https://wearedevs.net/images/ronix/ronix-animated.gif",
-                version: "2.707",
+                version: "2.708",
                 status: "Online",
                 links: [
                     { text: "Global", url: "https://wearedevs.net/d/Ronix", className: "btn-download-main", statusText: "Global: Online" },
@@ -124,10 +124,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 name: "Cryptic",
                 logo: "https://getcryptic.net/logo.png",
                 version: "2.707",
-                status: "Online",
+                status: "Offline",
                 links: [
-                    { text: "Global", url: "https://getcryptic.net/", className: "btn-download-main", statusText: "Global: Online" },
-                    { text: "VNG", url: "https://getcryptic.net/", className: "btn-download-alt", statusText: "VNG: Online" }
+                    { text: "Global", url: "https://getcryptic.net/", className: "btn-download-main", statusText: "Global: Offline" },
+                    { text: "VNG", url: "https://getcryptic.net/", className: "btn-download-alt", statusText: "VNG: Offline" }
                 ]
             }
         ],
