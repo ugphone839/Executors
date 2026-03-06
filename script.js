@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Ronix",
                 logo: "https://wearedevs.net/images/ronix/ronix-animated.gif",
-                version: "2.708",
+                version: "2.710",
                 status: "Online",
                 links: [
                     { text: "Global", url: "https://wearedevs.net/d/Ronix", className: "btn-download-main", statusText: "Global: Online" },
