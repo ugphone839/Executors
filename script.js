@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Ronix IOS",
                 logo: "https://obj.wearedevs.net/images/software/ronix/ronix-020426.webp",
-                version: "2.709",
+                version: "2.710",
                 status: "Online",
                 links: [
                     { text: "Global", url: "https://ronixstudios.io/#/download?platform=ios", className: "btn-download-main", statusText: "Global: Online" },
