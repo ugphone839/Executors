@@ -95,16 +95,16 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Trigon",
                 logo: "https://trigonevo.com/wp-content/uploads/2021/09/cropped-New-Trigon-with-Shadow-300x300.png.webp",
-                version: "2.708",
+                version: "2.710",
                 status: "Online",
                 links: [
-                    { text: "Download", url: "https://www.mediafire.com/file/38mfn2dhkiqgk70/Trigon_2.708.880.apk/file", className: "btn-download-main", statusText: "Status: Online" }
+                    { text: "Download", url: "https://www.mediafire.com/file/sxtokob7ntotcvo/Trigon_v2.710.707.apk/file", className: "btn-download-main", statusText: "Status: Online" }
                 ]
             },
             {
                 name: "Vega X",
                 logo: "https://vegax.gg/assets/img/V_logo_white.png",
-                version: "2.708",
+                version: "2.710",
                 status: "Online",
                 links: [
                     { text: "Download", url: "https://github.com/1f0yt/community/releases/download/Vegax/Vega.X.apk", className: "btn-download-main", statusText: "Status: Online" }
