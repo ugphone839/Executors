@@ -123,11 +123,11 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Cryptic",
                 logo: "https://getcryptic.net/logo.png",
-                version: "2.707",
-                status: "Offline",
+                version: "2.710",
+                status: "Online",
                 links: [
-                    { text: "Global", url: "https://getcryptic.net/", className: "btn-download-main", statusText: "Global: Offline" },
-                    { text: "VNG", url: "https://getcryptic.net/", className: "btn-download-alt", statusText: "VNG: Offline" }
+                    { text: "Global", url: "https://getcryptic.net/", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "VNG", url: "https://getcryptic.net/", className: "btn-download-alt", statusText: "VNG: Online" }
                 ]
             }
         ],
