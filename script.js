@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 version: "2.710",
                 status: "Online",
                 links: [
-                    { text: "Download", url: "https://www.mediafire.com/file/sxtokob7ntotcvo/Trigon_v2.710.707.apk/file", className: "btn-download-main", statusText: "Status: Online" }
+                    { text: "Download", url: "https://www.mediafire.com/file/7cnuc4y691cv1j3/Trigon_v2.710.707_FIX.apk/file", className: "btn-download-main", statusText: "Status: Online" }
                 ]
             },
             {
