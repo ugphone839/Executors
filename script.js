@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Velocity",
                 logo: "https://files.catbox.moe/tj6brv.png",
-                version: "version-d599f7fc52a8404c",
+                version: "version-b130242ed064436f",
                 status: "Online",
                 links: [
                     { text: "Download", url: "https://gofile.io/d/v12Uk8", className: "btn-download-main", statusText: "Status: Online" }
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Solara",
                 logo: "https://files.catbox.moe/gjzzjt.png",
-                version: "version-d599f7fc52a8404c",
+                version: "version-b130242ed064436f",
                 status: "Online",
                 links: [
                     { text: "Download", url: "https://getsolara.dev/download/static/files/Solara.Dir.zip", className: "btn-download-main", statusText: "Status: Online" }
@@ -36,10 +36,10 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Xeno",
                 logo: "https://www.xeno.onl/images/xeno.png",
-                version: "version-d599f7fc52a8404c",
+                version: "version-b130242ed064436f",
                 status: "Online",
                 links: [
-                    { text: "Download", url: "https://xeno.onl/33054e6324afae35e63859ba1f6b492f/98000f2a/bdf367db6b50b0b2?hash=b0NQUJlkKLXHHenQ4lJ2hQJqbQDAAWu1iUnh6Nchfvk2SFfvmuVX9Nds6B9ZSGHT", className: "btn-download-main", statusText: "Status: Online" }
+                    { text: "Download", url: "https://xeno.onl/33054e6324afae35e63859ba1f6b492f/98000f2a/bdf367db6b50b0b2?hash=rn0C3F3BgaIolq7WnbInZossCmi61edJUohGoq7TiFLCVwzqzdlJ4gyzhen0Nba2SFfvmuVX9Nds6B9ZSGHT", className: "btn-download-main", statusText: "Status: Online" }
                 ]
             },
             {
