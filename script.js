@@ -74,15 +74,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 ]
             },
             {
-                name: "Delta",
-                logo: "https://sf-static.upanhlaylink.com/img/image_2025091320b780aa4e49c945bdddf569984a41b6.jpg",
-                version: "2.710",
-                status: "Online",
-                links: [
-                    { text: "Download", url: "https://delta.filenetwork.vip/android.html", className: "btn-download-main", statusText: "Status: Online" }
-                ]
-            },
-            {
                 name: "Ronix",
                 logo: "https://wearedevs.net/images/ronix/ronix-animated.gif",
                 version: "2.710",
@@ -128,6 +119,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 links: [
                     { text: "Global", url: "https://getcryptic.net/", className: "btn-download-main", statusText: "Global: Online" },
                     { text: "VNG", url: "https://getcryptic.net/", className: "btn-download-alt", statusText: "VNG: Online" }
+                ]
+            },
+            {
+                name: "Delta",
+                logo: "https://sf-static.upanhlaylink.com/img/image_2025091320b780aa4e49c945bdddf569984a41b6.jpg",
+                version: "2.711",
+                status: "Online",
+                links: [
+                    { text: "Global", url: "https://delta.filenetwork.vip/android.html", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "VNG", url: "https://cdn.gloopup.net/file/Delta-2.711.871-VN.apk", className: "btn-download-alt", statusText: "VNG: Online" }
                 ]
             }
         ],
