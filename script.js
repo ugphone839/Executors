@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Arceus X NEO",
                 logo: "https://sf-static.upanhlaylink.com/img/image_2025091341b69c6afa4e02709bf1ba299bdbafbd.jpg",
-                version: "2.710",
+                version: "2.711",
                 status: "Online",
                 links: [
                     { text: "Global", url: "https://spdmteam.com/neo#downloads", className: "btn-download-main", statusText: "Global: Online" },
@@ -86,16 +86,16 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Trigon",
                 logo: "https://trigonevo.com/wp-content/uploads/2021/09/cropped-New-Trigon-with-Shadow-300x300.png.webp",
-                version: "2.710",
+                version: "2.711",
                 status: "Online",
                 links: [
-                    { text: "Download", url: "https://www.mediafire.com/file/7cnuc4y691cv1j3/Trigon_v2.710.707_FIX.apk/file", className: "btn-download-main", statusText: "Status: Online" }
+                    { text: "Download", url: "https://www.mediafire.com/file/61glu17cqbwevd3/Trigon_2.711.876.apk/file", className: "btn-download-main", statusText: "Status: Online" }
                 ]
             },
             {
                 name: "Vega X",
                 logo: "https://vegax.gg/assets/img/V_logo_white.png",
-                version: "2.710",
+                version: "2.711",
                 status: "Online",
                 links: [
                     { text: "Download", url: "https://github.com/1f0yt/community/releases/download/Vegax/Vega.X.apk", className: "btn-download-main", statusText: "Status: Online" }
