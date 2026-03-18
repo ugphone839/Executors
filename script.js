@@ -66,10 +66,10 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Codex",
                 logo: "https://codex.lol/static/icons/icon.svg",
-                version: "2.710",
+                version: "2.711",
                 status: "Partial",
                 links: [
-                    { text: "Global", url: "https://www.mediafire.com/file/3py7clwl1zxm5oo/Codex+V2.710.707.apk/file", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "Global", url: "https://www.mediafire.com/file/no4ydloor0g947q/Codex+V2.711.876.apk/file", className: "btn-download-main", statusText: "Global: Online" },
                     { text: "VNG", url: "https://www.mediafire.com/file/8dxf37l1y6xtcct/Codex+v2.701.apk/file", className: "btn-download-alt", statusText: "VNG: Offline" }
                 ]
             },
