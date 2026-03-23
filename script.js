@@ -77,10 +77,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 name: "Ronix",
                 logo: "https://wearedevs.net/images/ronix/ronix-animated.gif",
                 version: "2.710",
-                status: "Online",
+                status: "Offline",
                 links: [
-                    { text: "Global", url: "https://wearedevs.net/d/Ronix", className: "btn-download-main", statusText: "Global: Online" },
-                    { text: "VNG", url: "https://wearedevs.net/d/Ronix", className: "btn-download-alt", statusText: "VNG: Online" }
+                    { text: "Global", url: "https://wearedevs.net/d/Ronix", className: "btn-download-main", statusText: "Global: Offline" },
+                    { text: "VNG", url: "https://wearedevs.net/d/Ronix", className: "btn-download-alt", statusText: "VNG: Offline" }
                 ]
             },
             {
@@ -115,10 +115,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 name: "Cryptic",
                 logo: "https://getcryptic.net/logo.png",
                 version: "2.710",
-                status: "Online",
+                status: "Offline",
                 links: [
-                    { text: "Global", url: "https://getcryptic.net/", className: "btn-download-main", statusText: "Global: Online" },
-                    { text: "VNG", url: "https://getcryptic.net/", className: "btn-download-alt", statusText: "VNG: Online" }
+                    { text: "Global", url: "https://getcryptic.net/", className: "btn-download-main", statusText: "Global: Offline" },
+                    { text: "VNG", url: "https://getcryptic.net/", className: "btn-download-alt", statusText: "VNG: Offline" }
                 ]
             },
             {
