@@ -59,8 +59,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 version: "2.713",
                 status: "Online",
                 links: [
-                    { text: "Global", url: "https://spdmteam.com/neo#downloads", className: "btn-download-main", statusText: "Global: Online" },
-                    { text: "VNG", url: "https://spdmteam.com/neo#downloads", className: "btn-download-alt", statusText: "VNG: Online" }
+                    { text: "Global", url: "https://android.spdmteam.com/", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "VNG", url: "https://vng.spdmteam.com/", className: "btn-download-alt", statusText: "VNG: Online" }
                 ]
             },
             {
@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Delta",
                 logo: "https://sf-static.upanhlaylink.com/img/image_2025091320b780aa4e49c945bdddf569984a41b6.jpg",
-                version: "2.711",
+                version: "2.713",
                 status: "Online",
                 links: [
                     { text: "Global", url: "https://delta.filenetwork.vip/android.html", className: "btn-download-main", statusText: "Global: Online" },
