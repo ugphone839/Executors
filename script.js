@@ -164,10 +164,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 name: "Ronix IOS",
                 logo: "https://obj.wearedevs.net/images/software/ronix/ronix-020426.webp",
                 version: "2.710",
-                status: "Online",
+                status: "Offline",
                 links: [
-                    { text: "Global", url: "https://ronixstudios.io/#/download?platform=ios", className: "btn-download-main", statusText: "Global: Online" },
-                    { text: "VNG", url: "https://ronixstudios.io/#/download?platform=vng-ios", className: "btn-download-alt", statusText: "VNG: Online" }
+                    { text: "Global", url: "https://ronixstudios.io/#/download?platform=ios", className: "btn-download-main", statusText: "Global: Offline" },
+                    { text: "VNG", url: "https://ronixstudios.io/#/download?platform=vng-ios", className: "btn-download-alt", statusText: "VNG: Offline" }
                 ]
             }
         ]
