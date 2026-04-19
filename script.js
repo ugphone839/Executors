@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Solara",
                 logo: "https://files.catbox.moe/gjzzjt.png",
-                version: "version-26c90be22e0d4758",
+                version: "version-9d412f44a6fe4081",
                 status: "Online",
                 links: [
                     { text: "Download", url: "https://getsolara.dev/download/static/files/Solara.Dir.zip", className: "btn-download-main", statusText: "Status: Online" }
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Xeno",
                 logo: "https://www.xeno.onl/images/xeno.png",
-                version: "version-26c90be22e0d4758",
+                version: "version-9d412f44a6fe4081",
                 status: "Online",
                 links: [
                     { text: "Download", url: "https://xeno.now/install?hash=X4Sm506b8nyjXw6oSESl8aLBReMNgwit3rIN3fgXxn6LTjSyT2JZdCdxUgpltiNh", className: "btn-download-main", statusText: "Status: Online" }
@@ -125,10 +125,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 name: "Delta",
                 logo: "https://sf-static.upanhlaylink.com/img/image_2025091320b780aa4e49c945bdddf569984a41b6.jpg",
                 version: "2.714",
-                status: "Online",
+                status: "Partial",
                 links: [
                     { text: "Global", url: "https://delta.filenetwork.vip/android.html", className: "btn-download-main", statusText: "Global: Online" },
-                    { text: "VNG", url: "https://cdn.gloopup.net/file/Delta-2.711.871-VN.apk", className: "btn-download-alt", statusText: "VNG: Online" }
+                    { text: "VNG", url: "https://cdn.gloopup.net/file/Delta-2.711.871-VN.apk", className: "btn-download-alt", statusText: "VNG: Offline" }
                 ]
             }
         ],
