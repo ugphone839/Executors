@@ -28,15 +28,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 name: "Solara",
                 logo: "https://files.catbox.moe/gjzzjt.png",
                 version: "version-9d412f44a6fe4081",
-                status: "Online",
+                status: "Offline",
                 links: [
-                    { text: "Download", url: "https://getsolara.dev/download/static/files/Solara.Dir.zip", className: "btn-download-main", statusText: "Status: Online" }
+                    { text: "Download", url: "https://getsolara.dev/download/static/files/Solara.Dir.zip", className: "btn-download-main", statusText: "Status: Offline" }
                 ]
             },
             {
                 name: "Xeno",
                 logo: "https://www.xeno.onl/images/xeno.png",
-                version: "version-9d412f44a6fe4081",
+                version: "version-2e6461290a3541f5",
                 status: "Online",
                 links: [
                     { text: "Download", url: "https://xeno.now/install?hash=X4Sm506b8nyjXw6oSESl8aLBReMNgwit3rIN3fgXxn6LTjSyT2JZdCdxUgpltiNh", className: "btn-download-main", statusText: "Status: Online" }
@@ -45,10 +45,10 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Ronix PC",
                 logo: "https://wearedevs.net/images/ronix/ronix-animated.gif",
-                version: "version-bd08027bb04e4045",
-                status: "Offline",
+                version: "version-2e6461290a3541f5",
+                status: "Online",
                 links: [
-                    { text: "Download", url: "https://wrdcdn.net/r/154522/1769203129478/RonixInstaller_NEW.exe", className: "btn-download-main", statusText: "Status: Offline" }
+                    { text: "Download", url: "https://wrdcdn.net/r/154522/1776624538288/Ronix-Installer.exe", className: "btn-download-main", statusText: "Status: Online" }
                 ]
             }
         ],
