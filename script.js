@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 status: "Online",
                 links: [
                     { text: "Global", url: "https://delta.filenetwork.vip/android.html", className: "btn-download-main", statusText: "Global: Online" },
-                    { text: "VNG", url: "https://cdn.gloopup.net/file/Delta-2.711.871-VN.apk", className: "btn-download-alt", statusText: "VNG: Online" }
+                    { text: "VNG", url: "https://gloopup.net/Delta/android_vn/", className: "btn-download-alt", statusText: "VNG: Online" }
                 ]
             }
         ],
