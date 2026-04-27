@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Xeno",
                 logo: "https://www.xeno.onl/images/xeno.png",
-                version: "version-2e6461290a3541f5",
+                version: "version-390ba09e7e944154",
                 status: "Online",
                 links: [
                     { text: "Download", url: "https://xeno.now/install?hash=X4Sm506b8nyjXw6oSESl8aLBReMNgwit3rIN3fgXxn6LTjSyT2JZdCdxUgpltiNh", className: "btn-download-main", statusText: "Status: Online" }
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Ronix PC",
                 logo: "https://wearedevs.net/images/ronix/ronix-animated.gif",
-                version: "version-2e6461290a3541f5",
+                version: "version-390ba09e7e944154",
                 status: "Online",
                 links: [
                     { text: "Download", url: "https://wrdcdn.net/r/154522/1776624538288/Ronix-Installer.exe", className: "btn-download-main", statusText: "Status: Online" }
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Arceus X NEO",
                 logo: "https://sf-static.upanhlaylink.com/img/image_2025091341b69c6afa4e02709bf1ba299bdbafbd.jpg",
-                version: "2.716",
+                version: "2.717",
                 status: "Online",
                 links: [
                     { text: "Global", url: "https://android.spdmteam.com/", className: "btn-download-main", statusText: "Global: Online" },
@@ -124,11 +124,11 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Delta",
                 logo: "https://sf-static.upanhlaylink.com/img/image_2025091320b780aa4e49c945bdddf569984a41b6.jpg",
-                version: "2.716",
-                status: "Partial",
+                version: "2.718",
+                status: "Online",
                 links: [
                     { text: "Global", url: "https://delta.filenetwork.vip/android.html", className: "btn-download-main", statusText: "Global: Online" },
-                    { text: "VNG", url: "https://cdn.gloopup.net/file/Delta-2.711.871-VN.apk", className: "btn-download-alt", statusText: "VNG: Offline" }
+                    { text: "VNG", url: "https://cdn.gloopup.net/file/Delta-2.711.871-VN.apk", className: "btn-download-alt", statusText: "VNG: Online" }
                 ]
             }
         ],
