@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Codex",
                 logo: "https://codex.lol/static/icons/icon.svg",
-                version: "2.716",
+                version: "2.717",
                 status: "Partial",
                 links: [
                     { text: "Global", url: "https://www.mediafire.com/file/gc3ny8s4i1novvr/Codex+v2.717.apk/file", className: "btn-download-main", statusText: "Global: Online" },
