@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Arceus X NEO",
                 logo: "https://sf-static.upanhlaylink.com/img/image_2025091341b69c6afa4e02709bf1ba299bdbafbd.jpg",
-                version: "2.717",
+                version: "2.718",
                 status: "Online",
                 links: [
                     { text: "Global", url: "https://android.spdmteam.com/", className: "btn-download-main", statusText: "Global: Online" },
