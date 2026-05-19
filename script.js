@@ -28,18 +28,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 name: "Solara",
                 logo: "https://files.catbox.moe/gjzzjt.png",
                 version: "version-bf6344c9c23446bf",
-                status: "Online",
+                status: "Offline",
                 links: [
-                    { text: "Download", url: "https://getsolara.dev/download/static/files/Solara.Dir.zip", className: "btn-download-main", statusText: "Status: Online" }
+                    { text: "Download", url: "https://getsolara.dev/download/static/files/Solara.Dir.zip", className: "btn-download-main", statusText: "Status: Offline" }
                 ]
             },
             {
                 name: "Xeno",
                 logo: "https://www.xeno.onl/images/xeno.png",
                 version: "version-bf6344c9c23446bf",
-                status: "Online",
+                status: "Offline",
                 links: [
-                    { text: "Download", url: "https://xeno.now/install?hash=X4Sm506b8nyjXw6oSESl8aLBReMNgwit3rIN3fgXxn6LTjSyT2JZdCdxUgpltiNh", className: "btn-download-main", statusText: "Status: Online" }
+                    { text: "Download", url: "https://xeno.now/install?hash=X4Sm506b8nyjXw6oSESl8aLBReMNgwit3rIN3fgXxn6LTjSyT2JZdCdxUgpltiNh", className: "btn-download-main", statusText: "Status: Offline" }
                 ]
             },
             {
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Arceus X NEO",
                 logo: "https://sf-static.upanhlaylink.com/img/image_2025091341b69c6afa4e02709bf1ba299bdbafbd.jpg",
-                version: "2.718",
+                version: "2.720",
                 status: "Online",
                 links: [
                     { text: "Global", url: "https://android.spdmteam.com/", className: "btn-download-main", statusText: "Global: Online" },
@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Vega X",
                 logo: "https://vegax.gg/assets/img/V_logo_white.png",
-                version: "2.719",
+                version: "2.720",
                 status: "Online",
                 links: [
                     { text: "Download", url: "https://github.com/1f0yt/community/releases/download/Vegax/Vega.X.apk", className: "btn-download-main", statusText: "Status: Online" }
