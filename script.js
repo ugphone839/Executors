@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Velocity",
                 logo: "https://files.catbox.moe/tj6brv.png",
-                version: "version-689e359b09ad43b0",
+                version: "version-4b6315bf1f0a4dbb",
                 status: "Offline",
                 links: [
                     { text: "Download", url: "https://gofile.io/d/biQGwp", className: "btn-download-main", statusText: "Status: Offline" }
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Solara",
                 logo: "https://files.catbox.moe/gjzzjt.png",
-                version: "version-bf6344c9c23446bf",
+                version: "version-4b6315bf1f0a4dbb",
                 status: "Offline",
                 links: [
                     { text: "Download", url: "https://getsolara.dev/download/static/files/Solara.Dir.zip", className: "btn-download-main", statusText: "Status: Offline" }
