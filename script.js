@@ -57,10 +57,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 name: "Arceus X NEO",
                 logo: "https://sf-static.upanhlaylink.com/img/image_2025091341b69c6afa4e02709bf1ba299bdbafbd.jpg",
                 version: "2.723",
-                status: "Partial",
+                status: "Online",
                 links: [
                     { text: "Global", url: "https://android.spdmteam.com/", className: "btn-download-main", statusText: "Global: Online" },
-                    { text: "VNG", url: "https://vng.spdmteam.com/", className: "btn-download-alt", statusText: "VNG: Offline" }
+                    { text: "VNG", url: "https://vng.spdmteam.com/", className: "btn-download-alt", statusText: "VNG: Online" }
                 ]
             },
             {
