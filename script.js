@@ -56,20 +56,20 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Arceus X NEO",
                 logo: "https://sf-static.upanhlaylink.com/img/image_2025091341b69c6afa4e02709bf1ba299bdbafbd.jpg",
-                version: "2.721",
-                status: "Online",
+                version: "2.723",
+                status: "Partial",
                 links: [
                     { text: "Global", url: "https://android.spdmteam.com/", className: "btn-download-main", statusText: "Global: Online" },
-                    { text: "VNG", url: "https://vng.spdmteam.com/", className: "btn-download-alt", statusText: "VNG: Online" }
+                    { text: "VNG", url: "https://vng.spdmteam.com/", className: "btn-download-alt", statusText: "VNG: Offline" }
                 ]
             },
             {
                 name: "Codex",
                 logo: "https://codex.lol/static/icons/icon.svg",
-                version: "2.721",
+                version: "2.723",
                 status: "Partial",
                 links: [
-                    { text: "Global", url: "https://www.mediafire.com/file/sobpqtwcfmrp6r8/Codex+v2.721.apk/file", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "Global", url: "https://www.mediafire.com/file/oru3fm6zznsekbz/Codex+V2.723.apk/file", className: "btn-download-main", statusText: "Global: Online" },
                     { text: "VNG", url: "https://www.mediafire.com/file/8dxf37l1y6xtcct/Codex+v2.701.apk/file", className: "btn-download-alt", statusText: "VNG: Offline" }
                 ]
             },
