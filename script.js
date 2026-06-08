@@ -124,11 +124,11 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Delta",
                 logo: "https://sf-static.upanhlaylink.com/img/image_2025091320b780aa4e49c945bdddf569984a41b6.jpg",
-                version: "2.721",
-                status: "Online",
+                version: "2.724",
+                status: "Partial",
                 links: [
                     { text: "Global", url: "https://delta.filenetwork.vip/android.html", className: "btn-download-main", statusText: "Global: Online" },
-                    { text: "VNG", url: "https://gloopup.net/Delta/android_vn/", className: "btn-download-alt", statusText: "VNG: Online" }
+                    { text: "VNG", url: "https://gloopup.net/Delta/android_vn/", className: "btn-download-alt", statusText: "VNG: Offline" }
                 ]
             }
         ],
