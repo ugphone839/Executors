@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 version: "2.723",
                 status: "Partial",
                 links: [
-                    { text: "Global", url: "https://www.mediafire.com/file/oru3fm6zznsekbz/Codex+V2.723.apk/file", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "Global", url: "https://www.mediafire.com/https://www.mediafire.com/file/pisyl3fezmn74ev/Codex+v2.723.787.apk/file/oru3fm6zznsekbz/Codex+V2.723.apk/file", className: "btn-download-main", statusText: "Global: Online" },
                     { text: "VNG", url: "https://www.mediafire.com/file/8dxf37l1y6xtcct/Codex+v2.701.apk/file", className: "btn-download-alt", statusText: "VNG: Offline" }
                 ]
             },
