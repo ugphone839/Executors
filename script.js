@@ -86,19 +86,19 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Trigon",
                 logo: "https://trigonevo.com/wp-content/uploads/2021/09/cropped-New-Trigon-with-Shadow-300x300.png.webp",
-                version: "2.724",
-                status: "Offline",
+                version: "2.726",
+                status: "Online",
                 links: [
-                    { text: "Download", url: "https://www.mediafire.com/file/mos3x43fzvlidub/2.724.735_trigon.apk", className: "btn-download-main", statusText: "Status: Offline" }
+                    { text: "Download", url: "https://www.mediafire.com/file/73pg0sb6fqw1bq7/2.726.1142_trigon.apk/file", className: "btn-download-main", statusText: "Status: Online" }
                 ]
             },
             {
                 name: "Vega X",
                 logo: "https://vegax.gg/assets/img/V_logo_white.png",
-                version: "2.724",
-                status: "Offline",
+                version: "2.726",
+                status: "Online",
                 links: [
-                    { text: "Download", url: "https://github.com/1f0yt/community/releases/download/Vegax/Vega.X.apk", className: "btn-download-main", statusText: "Status: Offline" }
+                    { text: "Download", url: "https://github.com/1f0yt/community/releases/download/Vegax/Vega.X.apk", className: "btn-download-main", statusText: "Status: Online" }
                 ]
             },
             {
@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Delta iOS",
                 logo: "https://sf-static.upanhlaylink.com/img/image_2025091320b780aa4e49c945bdddf569984a41b6.jpg",
-                version: "2.711",
+                version: "2.726",
                 status: "Online",
                 links: [
                     { text: "Download", url: "https://deltaexploits.gg/delta-executor-ios", className: "btn-download-main", statusText: "Status: Online" }
