@@ -27,19 +27,19 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Solara",
                 logo: "https://files.catbox.moe/gjzzjt.png",
-                version: "version-4b6315bf1f0a4dbb",
-                status: "Offline",
+                version: "version-1a951716f19e4638",
+                status: "Online",
                 links: [
-                    { text: "Download", url: "https://getsolara.dev/download/static/files/Solara.Dir.zip", className: "btn-download-main", statusText: "Status: Offline" }
+                    { text: "Download", url: "https://getsolara.dev/download/static/files/Solara.Dir.zip", className: "btn-download-main", statusText: "Status: Online" }
                 ]
             },
             {
                 name: "Xeno",
                 logo: "https://www.xeno.onl/images/xeno.png",
-                version: "version-bf6344c9c23446bf",
-                status: "Offline",
+                version: "version-1a951716f19e4638",
+                status: "Online",
                 links: [
-                    { text: "Download", url: "https://xeno.now/install?hash=X4Sm506b8nyjXw6oSESl8aLBReMNgwit3rIN3fgXxn6LTjSyT2JZdCdxUgpltiNh", className: "btn-download-main", statusText: "Status: Offline" }
+                    { text: "Download", url: "https://xeno.now/install?hash=X4Sm506b8nyjXw6oSESl8aLBReMNgwit3rIN3fgXxn6LTjSyT2JZdCdxUgpltiNh", className: "btn-download-main", statusText: "Status: Online" }
                 ]
             },
             {
