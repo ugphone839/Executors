@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Arceus X NEO",
                 logo: "https://sf-static.upanhlaylink.com/img/image_2025091341b69c6afa4e02709bf1ba299bdbafbd.jpg",
-                version: "2.723",
+                version: "2.726",
                 status: "Online",
                 links: [
                     { text: "Global", url: "https://android.spdmteam.com/", className: "btn-download-main", statusText: "Global: Online" },
@@ -67,9 +67,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 name: "Codex",
                 logo: "https://codex.lol/static/icons/icon.svg",
                 version: "2.724",
-                status: "Partial",
+                status: "Offline",
                 links: [
-                    { text: "Global", url: "https://www.mediafire.com/file/mjuct6hu6v31u42/Codex+v2.724.735.apk/file23.apk/file", className: "btn-download-main", statusText: "Global: Online" },
+                    { text: "Global", url: "https://www.mediafire.com/file/mjuct6hu6v31u42/Codex+v2.724.735.apk/file23.apk/file", className: "btn-download-main", statusText: "Global: Offline" },
                     { text: "VNG", url: "https://www.mediafire.com/file/8dxf37l1y6xtcct/Codex+v2.701.apk/file", className: "btn-download-alt", statusText: "VNG: Offline" }
                 ]
             },
@@ -87,18 +87,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 name: "Trigon",
                 logo: "https://trigonevo.com/wp-content/uploads/2021/09/cropped-New-Trigon-with-Shadow-300x300.png.webp",
                 version: "2.724",
-                status: "Online",
+                status: "Offline",
                 links: [
-                    { text: "Download", url: "https://www.mediafire.com/file/mos3x43fzvlidub/2.724.735_trigon.apk", className: "btn-download-main", statusText: "Status: Online" }
+                    { text: "Download", url: "https://www.mediafire.com/file/mos3x43fzvlidub/2.724.735_trigon.apk", className: "btn-download-main", statusText: "Status: Offline" }
                 ]
             },
             {
                 name: "Vega X",
                 logo: "https://vegax.gg/assets/img/V_logo_white.png",
                 version: "2.724",
-                status: "Online",
+                status: "Offline",
                 links: [
-                    { text: "Download", url: "https://github.com/1f0yt/community/releases/download/Vegax/Vega.X.apk", className: "btn-download-main", statusText: "Status: Online" }
+                    { text: "Download", url: "https://github.com/1f0yt/community/releases/download/Vegax/Vega.X.apk", className: "btn-download-main", statusText: "Status: Offline" }
                 ]
             },
             {
@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Delta",
                 logo: "https://sf-static.upanhlaylink.com/img/image_2025091320b780aa4e49c945bdddf569984a41b6.jpg",
-                version: "2.724",
+                version: "2.727",
                 status: "Partial",
                 links: [
                     { text: "Global", url: "https://delta.filenetwork.vip/android.html", className: "btn-download-main", statusText: "Global: Online" },
