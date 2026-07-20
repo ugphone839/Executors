@@ -56,11 +56,11 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Arceus X NEO",
                 logo: "https://sf-static.upanhlaylink.com/img/image_2025091341b69c6afa4e02709bf1ba299bdbafbd.jpg",
-                version: "2.726",
-                status: "Online",
+                version: "2.729",
+                status: "Partial",
                 links: [
                     { text: "Global", url: "https://android.spdmteam.com/", className: "btn-download-main", statusText: "Global: Online" },
-                    { text: "VNG", url: "https://vng.spdmteam.com/", className: "btn-download-alt", statusText: "VNG: Online" }
+                    { text: "VNG", url: "https://vng.spdmteam.com/", className: "btn-download-alt", statusText: "VNG: Offline" }
                 ]
             },
             {
@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Delta",
                 logo: "https://sf-static.upanhlaylink.com/img/image_2025091320b780aa4e49c945bdddf569984a41b6.jpg",
-                version: "2.727",
+                version: "2.729",
                 status: "Partial",
                 links: [
                     { text: "Global", url: "https://delta.filenetwork.vip/android.html", className: "btn-download-main", statusText: "Global: Online" },
