@@ -9,10 +9,10 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Velocity",
                 logo: "https://files.catbox.moe/tj6brv.png",
-                version: "version-4b6315bf1f0a4dbb",
-                status: "Offline",
+                version: "version-ddf02245bdbb428c",
+                status: "Online",
                 links: [
-                    { text: "Download", url: "https://gofile.io/d/biQGwp", className: "btn-download-main", statusText: "Status: Offline" }
+                    { text: "Download", url: "https://gofile.io/d/6HAQxH", className: "btn-download-main", statusText: "Status: Online" }
                 ]
             },
             {
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Solara",
                 logo: "https://files.catbox.moe/gjzzjt.png",
-                version: "version-1a951716f19e4638",
+                version: "version-ddf02245bdbb428c",
                 status: "Online",
                 links: [
                     { text: "Download", url: "https://getsolara.dev/download/static/files/Solara.Dir.zip", className: "btn-download-main", statusText: "Status: Online" }
@@ -36,10 +36,10 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Xeno",
                 logo: "https://www.xeno.onl/images/xeno.png",
-                version: "version-1a951716f19e4638",
+                version: "version-ddf02245bdbb428c",
                 status: "Online",
                 links: [
-                    { text: "Download", url: "https://xeno.now/install?hash=X4Sm506b8nyjXw6oSESl8aLBReMNgwit3rIN3fgXxn6LTjSyT2JZdCdxUgpltiNh", className: "btn-download-main", statusText: "Status: Online" }
+                    { text: "Download", url: "https://xeno.now/99aca0c5/3734fe27c699/73662e3d135f?hash=Iu2UNYfC2U45e2q7u7v9dSNwBH9qbO4ZOGNWMBS58vdJXegpRP0bwpNM5D40eziO", className: "btn-download-main", statusText: "Status: Online" }
                 ]
             },
             {
@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Delta iOS",
                 logo: "https://sf-static.upanhlaylink.com/img/image_2025091320b780aa4e49c945bdddf569984a41b6.jpg",
-                version: "2.726",
+                version: "2.729",
                 status: "Online",
                 links: [
                     { text: "Download", url: "https://deltaexploits.gg/delta-executor-ios", className: "btn-download-main", statusText: "Status: Online" }
